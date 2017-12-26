@@ -32,6 +32,9 @@ exports.plugins = {
   copycat: {
     "fonts": [
       "node_modules/font-awesome/fonts"
+    ],
+    "images": [
+      "app/assets/images"
     ]
   }
 };
