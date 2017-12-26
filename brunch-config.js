@@ -30,6 +30,8 @@ exports.plugins = {
     }
   },
   copycat: {
+    verbose: true,
+    onlyChanged: true,
     "fonts": [
       "node_modules/font-awesome/fonts"
     ],
