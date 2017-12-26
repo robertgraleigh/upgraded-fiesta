@@ -37,6 +37,9 @@ exports.plugins = {
     ],
     "images": [
       "app/assets/images"
+    ],
+    "media": [
+      "app/assets/media"
     ]
   }
 };
