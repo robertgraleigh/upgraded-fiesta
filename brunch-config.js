@@ -28,6 +28,11 @@ exports.plugins = {
       ],
       precision: 8
     }
+  },
+  copycat: {
+    "fonts": [
+      "node_modules/font-awesome/fonts"
+    ]
   }
 };
 
