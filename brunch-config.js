@@ -22,7 +22,10 @@ exports.plugins = {
   },
   sass: {
     options: {
-      includePaths: ['./node_modules/foundation-sites/scss'],
+      includePaths: [
+        'node_modules/foundation-sites/scss',
+        'node_modules/font-awesome/scss'
+      ],
       precision: 8
     }
   }
