@@ -1,4 +1,7 @@
 // See http://brunch.io for documentation.
+// main configuration file for brunch.io
+
+// module export to output configuration for generated files
 exports.files = {
   javascripts: {
     joinTo: {
@@ -12,9 +15,10 @@ exports.files = {
   }
 };
 
+// module exports for babel, generated sass, and brunch plugins
 exports.plugins = {
   babel: {
-    presets: ['env','latest']
+    presets: ['es2015', 'env','latest']
   },
   sass: {
     options: {
@@ -24,6 +28,7 @@ exports.plugins = {
   }
 };
 
+// module exports for babel, adding global variables from node_modules
 exports.npm = {
   globals: {
     $: 'jquery',
