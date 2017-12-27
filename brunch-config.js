@@ -5,20 +5,19 @@
 exports.files = {
   javascripts: {
     joinTo: {
-      'vendor.js': /^(?!app)/, // Files that are not in `app` dir.
-      'app.js': /^app/
+      'js/vendor.js': /^(?!app)/, // Files that are not in `app` dir.
+      'js/app.js': /^app/
     }
   },
   stylesheets: {
     joinTo: {'app.css':/^app/},
-
   }
 };
 
 // module exports for babel, generated sass, and brunch plugins
 exports.plugins = {
   babel: {
-    presets: ['es2015', 'env','latest']
+    presets: ['env']
   },
   sass: {
     options: {
@@ -54,6 +53,6 @@ exports.npm = {
     $: 'jquery',
     jQuery: 'jquery',
     MotionUI: 'motion-ui',
-    foundation: 'foundation-sites'
+    Foundation: 'foundation-sites'
   }
 };

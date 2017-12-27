@@ -1,0 +1,15 @@
+@mixin margin($margin) {
+  padding: $margin;
+}
+
+@mixin padding($padding) {
+  padding: $padding;
+}
+
+.single-column-hero {
+  @include margin(null null null null);
+  @include padding(80px null 80px null);
+  background-color: #000000;
+  color: #999999;
+  height: 60vh;
+}
