@@ -24,6 +24,7 @@ exports.plugins = {
     options: {
       includePaths: [
         'node_modules/foundation-sites/scss',
+        'node_modules/motion-ui/src',
         'node_modules/font-awesome/scss'
       ],
       precision: 8
@@ -46,9 +47,12 @@ exports.plugins = {
 
 // module exports for babel, adding global variables from node_modules
 exports.npm = {
+  enabled: true,
+  compilers: ['babel-brunch'],
   globals: {
     $: 'jquery',
     jQuery: 'jquery',
-    MotionUI: 'motion-ui'
+    MotionUI: 'motion-ui',
+    foundation: 'foundation-sites'
   }
 };
