@@ -32,6 +32,12 @@
   background-color: #666666;
 }
 
+.work-experience {
+  @include margin(0px null 0px null);
+  @include padding(40px null 40px null);
+  background-color: #FFFFFF;
+}
+
 .contact-information {
   @include margin(0px null 0px null);
   @include padding(20px null 20px null);
