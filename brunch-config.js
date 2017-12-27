@@ -25,7 +25,8 @@ exports.plugins = {
       includePaths: [
         'node_modules/foundation-sites/scss',
         'node_modules/motion-ui/src',
-        'node_modules/font-awesome/scss'
+        'node_modules/font-awesome/scss',
+        'app/scss/custom'
       ],
       precision: 8
     }
