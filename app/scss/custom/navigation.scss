@@ -7,7 +7,7 @@
 }
 
 
-.primary-navigation {
+#primary-navigation {
   @include margin(null null null null);
   @include padding(20px null 20px null);
 }
