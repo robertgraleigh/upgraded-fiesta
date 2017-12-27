@@ -32,10 +32,34 @@
   background-color: #666666;
 }
 
-.work-experience {
+.experience {
   @include margin(0px null 0px null);
   @include padding(40px null 40px null);
-  background-color: #FFFFFF;
+  background-color: #FCFCFC;
+  & h2 {
+    font-size: 24px;
+  }
+  & h3 {
+    font-size: 21px;
+  }
+  & h4 {
+    font-size: 18px;
+  }
+  & h5 {
+    font-size: 16px;
+  }
+  & h6 {
+    font-size: 16px;
+  }
+  & .accordion-title {
+    font-size: 21px;
+    color: #222222;
+  }
+  & .tabs-title > a {
+    color: #222222;
+    font-size: 21px;
+
+  }
 }
 
 .contact-information {
