@@ -77,3 +77,17 @@
   @include padding(60px null 60px null);
   background-color: #ffff00;
 }
+
+.get-started {
+  @include margin(0px null 0px null);
+  @include padding(60px null 60px null);  
+  & .card {
+    border: solid 2px #CCCCCC;
+    border-radius: 5px;
+  }
+  & .card-icon {
+    @include margin(0px null 0px null);
+    @include padding(20px null 0px null);
+    font-size: 54px;
+  }
+}
