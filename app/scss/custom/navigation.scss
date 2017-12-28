@@ -56,8 +56,14 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Arial', sans-serif;
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
+    & .blue-border {
+      border-bottom: none;
+    }
   }
   & ul li a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    & .blue-border {
+      border-bottom: solid 5px #0066CC;
+    }
   }
 }
