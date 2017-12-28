@@ -1,0 +1,50 @@
+$cardHeadingFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$cardDescriptionFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roman', serif;
+
+@mixin margin($margin) {
+  padding: $margin;
+}
+
+@mixin padding($padding) {
+  padding: $padding;
+}
+
+.card {
+  @include margin(0px null 0px null);
+  @include padding(20px null 20px null);
+  background-color: #FCFCFC;
+  border: solid 2px #CCCCCC;
+  border-radius: 5px;
+  & .card-heading {
+    font-family: $cardHeadingFontStack;
+    font-weight: bold;
+    font-size: 21px;
+    text-transform: uppercase;
+  }
+  & .card-description {
+    @include margin(0px null 0px null);
+    @include padding(10px null 10px null);
+    font-family: $cardDescriptionFontStack;
+    font-size: 16px;
+  }
+  & .card-icon {
+    @include margin(0px null 0px null);
+    @include padding(20px null 0px null);
+    font-size: 54px;
+  }
+  & .fa-blue {
+    color: #0066CC;
+  }
+  & .button {
+    @include margin(0px null 0px null);
+    @include padding(10px null 10px null);  
+    font-size: 21px;
+    font-weight: bold;
+  }
+  & .blue-border {
+    border-bottom: solid 5px #0066CC;
+  }
+  * .dark-gray-border {
+    border-bottom: solid 5px #222222;
+  }
+}
