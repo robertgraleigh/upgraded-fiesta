@@ -1,3 +1,6 @@
+$footerHeadingFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$footerDescriptionFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roman', serif;
+
 @mixin margin($margin) {
   padding: $margin;
 }
@@ -6,30 +9,61 @@
   padding: $padding;
 }
 
+.footer-heading {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.copyright-notice {
+  color: darken(#FCFCFC, 0%);
+}
+
 .primary-footer {
   @include margin(null null null null);
   @include padding(0px null 0px null);
   background-color: #222222;
   color: #FCFCFC;
-  & h2.section-heading {
+  & h1.footer-heading {
+    font-family: $footerHeadingFontStack;
+    font-size: 54px;
+  }
+  & h2.footer-heading {
+    font-family: $footerHeadingFontStack;
     font-size: 36px;
   }
-  & h3.section-heading {
+  & h3.footer-heading {
     @include margin(null null null null);
-    @include padding(5px null 0px null);    
+    @include padding(5px null 0px null);
+    font-family: $footerHeadingFontStack;
     font-size: 24px;
+  }
+  & h4.footer-heading {
+    font-family: $footerHeadingFontStack;
+    font-size: 21px;
+  }
+  & p.footer-description {
+    font-family: $footerDescriptionFontStack;
+    font-size: 18px;
+    @include margin(null null null null);
+    @include padding(0px null 0px null);
   }
   & a {
     font-size: 16px;
     font-weight: bold;
+  }
+  & a:hover {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: underline;
   }
   & img {
     @include margin(null null null null);
     @include padding(10px null 0px null);
   }
   & .copyright-notice {
+    font-family: $footerDescriptionFontStack;
+    font-size: 16px;
     @include margin(0px null null null);
     @include padding(20px null 0px null);
-    color: darken(#FCFCFC, 30%);
   }
 }
