@@ -42,6 +42,12 @@
     font-size: 21px;
     color: #999999;
   }
+  & a {
+    color: #999999;
+  }
+  & a:hover {
+    color: darken(#999999, 20%);
+  }
 }
 
 .single-column-hero {
