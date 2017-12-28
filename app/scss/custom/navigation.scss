@@ -6,6 +6,8 @@
   padding: $padding;
 }
 
+$navigationFontStack: 'Oswald', 'Helvetica Neue', 'Arial', sans-serif;
+
 #primary-navigation {
   @include margin(null null null null);
   @include padding(20px null 20px null);
@@ -14,19 +16,20 @@
     background-color: #FCFCFC;
   }
   & ul.menu li a {
-    font-family: 'Oswald', 'Helvetica Neue', 'Arial', sans-serif;
-    font-size: 16px;
+    font-family: $navigationFontStack;
+    font-size: 21px;
     font-weight: bold;
-    color: #0066CC;
+    color: #222222;
     text-transform: uppercase;
   }
   & ul.menu li a:hover {
-    color: darken(#0066CC, 20%);
+    color: darken(#222222, 20%);
     text-decoration: underline;
   }
   & ul.menu li a.button {
     color: #FCFCFC;
-    text-transform: uppercase;
+    text-transform: none;
+    text-decoration: none;
   }
 }
 
@@ -36,8 +39,13 @@
   background-color: #222222;
   & ul li a {
     color: #FCFCFC;
-    font-family: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-family: $navigationFontStack;
+    font-size: 21px;
     font-weight: bold;
+    text-decoration: none;
     text-transform: uppercase;
+  }
+  & ul li a:hover {
+    text-decoration: underline;
   }
 }
