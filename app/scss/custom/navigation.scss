@@ -6,14 +6,37 @@
   padding: $padding;
 }
 
-
 #primary-navigation {
   @include margin(null null null null);
   @include padding(20px null 20px null);
+  background-color: #FCFCFC;
+  & ul {
+    background-color: #FCFCFC;
+  }
+  & ul.menu li a {
+    font-family: 'Oswald', 'Helvetica Neue', 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0066CC;
+    text-transform: uppercase;
+  }
+  & ul.menu li a:hover {
+    color: darken(#0066CC, 20%);
+    text-decoration: underline;
+  }
+  & ul.menu li a.button {
+    color: #FCFCFC;
+    text-transform: uppercase;
+  }
 }
 
 .secondary-navigation {
   @include margin(null null null null);
   @include padding(40px null 0px null);
   background-color: #222222;
+  & ul li a {
+    font-family: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-weight: bold;
+    color: #FCFCFC;
+  }
 }

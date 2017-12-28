@@ -26,6 +26,18 @@
   }
 }
 
+.about-robert {
+  @include margin(0px null 0px null);
+  @include padding(60px null 60px null);
+  background-color: #FCFCFC;
+  & h2 {
+    font-size: 42px;
+  }
+  & .lead {
+    font-size: 30px;
+  }
+}
+
 .roberts-story {
   @include margin(0px null 0px null);
   @include padding(60px null 60px null);
@@ -103,7 +115,7 @@
 .contact-information {
   @include margin(0px null 0px null);
   @include padding(20px null 20px null);
-  background-color: #666666;
+  background-color: #222222;
   color: #FCFCFC;
   font-size: 18px;
 }

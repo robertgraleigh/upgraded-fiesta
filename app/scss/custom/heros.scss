@@ -14,7 +14,7 @@
   & .hero-heading {
     @include margin(null null null null);
     @include padding(0px null 0px null);
-    font-size: 24px;
+    font-size: 45px;
     text-transform: uppercase;
   }
   & .hero-subheading {
@@ -47,6 +47,13 @@
   }
   & a:hover {
     color: darken(#999999, 20%);
+  }
+  & .white .hollow .button {
+    color: #FCFCFC;
+  }
+  & a.white.hollow.button {
+    color: #FCFCFC;
+    border: solid 2px #FCFCFC;
   }
 }
 
