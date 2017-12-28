@@ -91,7 +91,10 @@ $cardDescriptionFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roma
   }
   & .tabs-title > a {
     color: #222222;
+    font-family: $cardHeadingFontStack;
     font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
   }
 }
 
