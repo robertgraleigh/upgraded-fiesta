@@ -1,3 +1,6 @@
+$cardHeadingFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$cardDescriptionFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roman', serif;
+
 @mixin margin($margin) {
   padding: $margin;
 }
@@ -44,41 +47,37 @@
   background-color: #FCFCFC;
 }
 
-.professional-skillset {
+.skillset {
   @include margin(0px null 0px null);
-  @include padding(20px null 20px null);
+  @include padding(40px null 40px null);
   background-color: #666666;
-  & h1 {
-
-  }
-  & h2 {
-
-  }
-  & h3 {
-
-  }
-  & h4 {
-
-  }
-  & h5 {
-  }
-  & h6 {
-
-  }
   & .card {
     @include margin(0px null 0px null);
     @include padding(20px null 20px null);
+    background-color: #666666;
     border: solid 2px #CCCCCC;
     border-radius: 5px;
+  }
+  & .section-heading {
+    color: #FCFCFC;
+  }
+  & .section-description {
+    color: #FCFCFC;
+  }
+  & .card-heading {
+    font-family: $cardHeadingFontStack;
+    font-weight: bold;
+    font-size: 21px;
+    text-transform: uppercase;
+  }
+  & .card-description {
+    font-family: $cardDescriptionFontStack;
+    font-size: 16px;
   }
   & .card-icon {
     @include margin(0px null 0px null);
     @include padding(20px null 0px null);
     font-size: 54px;
-  }
-  & .card-heading {
-    font-family: 'Oswald', 'Arial', sans-serif;
-    font-size: 16px;
   }
 }
 

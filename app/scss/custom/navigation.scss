@@ -35,8 +35,9 @@
   @include padding(40px null 0px null);
   background-color: #222222;
   & ul li a {
+    color: #FCFCFC;
     font-family: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     font-weight: bold;
-    color: #FCFCFC;
+    text-transform: uppercase;
   }
 }
