@@ -124,8 +124,9 @@ $cardDescriptionFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roma
 
 .get-started {
   @include margin(0px null 0px null);
-  @include padding(60px null 60px null);
+  @include padding(40px null 40px null);
   & .card {
+    background-color: #FEFEFE;
     border: solid 2px #CCCCCC;
     border-radius: 5px;
   }

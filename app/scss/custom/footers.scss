@@ -65,5 +65,9 @@ $footerDescriptionFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Ro
     font-size: 16px;
     @include margin(0px null null null);
     @include padding(20px null 0px null);
+    & a {
+      font-family: $footerHeadingFontStack;
+      font-size: 16px;
+    }
   }
 }
