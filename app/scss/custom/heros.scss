@@ -6,6 +6,44 @@
   padding: $padding;
 }
 
+.hero {
+  @include margin(null null null null);
+  @include padding(60px null 60px null);
+  background-color: #0066CC;
+  color: #FCFCFC;
+  & .hero-heading {
+    @include margin(null null null null);
+    @include padding(0px null 0px null);
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  & .hero-subheading {
+    @include margin(null null null null);
+    @include padding(0px null 0px null);
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  & .hero-description {
+    font-size: 16px;
+  }
+  & .lead {
+    @include margin(null null null null);
+    @include padding(40px null 0px null);
+    font-size: 30px;
+  }
+  & .hero-icon {
+    @include margin(null null null null);
+    @include padding(20px null 0px null);
+    font-size: 54px;
+  }
+  & .hero-arrow-icon {
+    @include margin(null null null null);
+    @include padding(0px null 0px null);
+    font-size: 21px;
+    color: #999999;
+  }
+}
+
 .single-column-hero {
   @include margin(null null null null);
   @include padding(80px null 80px null);

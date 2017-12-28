@@ -1,0 +1,25 @@
+// import the necessary google fonts
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700');
+
+
+$headingFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$descriptionFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roman', serif;
+
+.section-heading {
+  font-family: $headingFontStack;
+  font-size: 54px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.section-description {
+  font-family: $descriptionFontStack;
+  font-size: 21px;
+}
+
+.lead {
+  font-family: 'EB Garamond', 'Garamond', 'Baskerville', 'Georgia', sans-serif;
+  font-size: 42px;
+  font-weight: bold;
+  text-transform: none;
+}

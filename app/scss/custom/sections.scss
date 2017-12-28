@@ -20,10 +20,16 @@
   height: 60vh;
 }
 
-.meet-robert-g-raleigh {
+.hero {
+  & .hero-icon {
+    color: #999999;
+  }
+}
+
+.roberts-story {
   @include margin(0px null 0px null);
-  @include padding(20px null 20px null);
-  background-color: #666666;
+  @include padding(60px null 60px null);
+  background-color: #FCFCFC;
 }
 
 .professional-skillset {
@@ -57,6 +63,10 @@
     @include margin(0px null 0px null);
     @include padding(20px null 0px null);
     font-size: 54px;
+  }
+  & .card-heading {
+    font-family: 'Oswald', 'Arial', sans-serif;
+    font-size: 16px;
   }
 }
 
