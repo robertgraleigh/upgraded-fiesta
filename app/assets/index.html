@@ -1,862 +1,1591 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Robert G. Raleigh | A Project management, frontend development, &amp; technology consulting services</title>
-    <link rel="stylesheet" href="/app.css">
-    <script src="js/vendor.js"></script>
-    <script src="js/app.js"></script>
-    <script>require('initialize');</script>
-  </head>
-  <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Robert G. Raleigh | A Project management, frontend development, &amp; technology consulting services</title>
+  <link rel="stylesheet" href="/app.css">
+  <script src="js/vendor.js"></script>
+  <script src="js/app.js"></script>
+  <script>require('initialize');</script>
+</head>
+<body>
 
-    <!-- contact-information section -->
-    <section class="contact-information">
-      <a id="top"></a>
-      <div class="grid-container">
-        <div class="grid-x grid-margin-x grid padding-x">
-          <div class="large-4 cell">
-            <ul class="menu align-left">
-              <li class="menu-text">
-                <span class="text-left">Get in touch with Robert G. Raleigh</span>
-              </li>
-            </ul>
-          </div>
-          <div class="large-8 cell">
-            <ul class="horizontal padded menu align-right">
-              <li class="menu-text">
-                <span>
-                  <i class="fa fa-phone fa-1x"></i>&nbsp; +1 (971) 533-5868
-                </span>
-              </li>
-              <li class="menu-text">
-                <span>
-                  <i class="fa fa-envelope fa-1x"></i>&nbsp; robert@robertgraleigh.com
-                </span>
-              </li>
-              <li class="menu-text">
-                <span><i class="fa fa-slack fa-1x"></i>&nbsp; @RobertGRaleigh</span>
-              </li>
-            </ul>
-          </div>
+  <!-- contact-information section -->
+  <section class="contact-information">
+    <a id="top"></a>
+    <div class="grid-container">
+      <div class="grid-x grid-margin-x grid padding-x">
+        <div class="large-4 cell">
+          <ul class="menu align-left">
+            <li class="menu-text">
+              <span class="text-left">Get in touch with Robert G. Raleigh</span>
+            </li>
+          </ul>
+        </div>
+        <div class="large-8 cell">
+          <ul class="horizontal padded menu align-right">
+            <li class="menu-text">
+              <span class="fa-stack">
+                <i class="fa fa-square-o fa-stack-2x"></i>
+                <i class="fa fa-phone fa-stack-1x"></i>
+              </span>
+              +1 (971) 533-5868
+            </li>
+            <li class="menu-text">
+              <span class="fa-stack">
+                <i class="fa fa-square-o fa-stack-2x"></i>
+                <i class="fa fa-envelope fa-stack-1x"></i>
+              </span>
+               robert@robertgraleigh.com
+            </li>
+            <li class="menu-text">
+              <span class="fa-stack">
+                <i class="fa fa-square-o fa-stack-2x"></i>
+                <i class="fa fa-slack fa-stack-1x"></i>
+              </span>
+              @RobertGRaleigh
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- customized primary navigation class -->
-    <nav id="primary-navigation" class="top-bar">
-      <div class="top-bar-left">
-        <ul class="menu" >
-          <li class="menu-text">
-            <a href="index.html">Home</a>
-          </li>
-          <li class="menu-text">
-            <a href="#about">About</a>
-          </li>
-          <li class="menu-text">
-            <a href="#meet-robert">Meet Robert</a>
-          </li>
-          <li class="menu-text">
-            <a href="#skillset">Skillset</a>
-          </li>
-          <li class="menu-text">
-            <a href="#experience">Experience</a>
-          </li>
-          <li class="menu-text">
-            <a href="#education">Education</a>
-          </li>
-        </ul>
-      </div>
-      <div class="top-bar-right">
-        <ul class="horizontal menu">
-          <li><a href="#contact" class="dark-gray button">Contact Us</a></li>
-          <li><a href="#get-started" class="primary button">Get Started</a></li>
-        </ul>
-      </div>
-    </nav>
+  <!-- customized primary navigation class -->
+  <nav id="primary-navigation" class="top-bar">
+    <div class="top-bar-left">
+      <ul class="menu" >
+        <li class="menu-text">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="menu-text">
+          <a href="#about-robert" data-smooth-scroll>About</a>
+        </li>
+        <li class="menu-text">
+          <a href="#roberts-story" data-smooth-scroll>Robert's Story</a>
+        </li>
+        <li class="menu-text">
+          <a href="#skillset" data-smooth-scroll>Skillset</a>
+        </li>
+        <li class="menu-text">
+          <a href="#experience" data-smooth-scroll>Experience</a>
+        </li>
+        <li class="menu-text">
+          <a href="#clients" data-smooth-scroll>Clients</a>
+        </li>
+        <li class="menu-text">
+          <a href="#projects" data-smooth-scroll>Projects</a>
+        </li>
+      </ul>
+    </div>
+    <div class="top-bar-right">
+      <ul class="horizontal menu">
+        <li><a href="#contact-us" class="secondary button" data-smooth-scroll>Contact Us</a></li>
+        <li><a href="#get-started" class="primary button" data-smooth-scroll>Get Started</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <!-- custom hero class -->
-    <header class="single-column-hero">
-      <a id="about"></a>
-      <div class="grid-container full">
-        <div class="grid-x">
-          <div class="large-12 cell">
-            <h1 class="text-center">Robert G. Raleigh</h1>
-            <p class="lead text-center">
-              This is the intro to the main hero of the website.
-            </p>
+  <!-- custom hero class -->
+  <header class="hero">
+    <div class="grid-container full">
+      <div class="grid-x">
+        <div class="large-8 cell">
+          <h1 class="hero-heading text-left">
+            <strong>Robert G. Raleigh</strong>
+          </h1>
+          <p class="lead text-left">
+            I'm a versatile frontend developer, agile project manager, and technology consultant who lives and works in Portland, OR.
+          </p>
+          <div class="button-group">
+            <a class="white hollow button">Contact</a>
+            <a class="white hollow button">Get started</a>
           </div>
         </div>
-      </div>
-    </header>
-
-    <!-- meet robert g raleigh -->
-    <section class="meet-robert-g-raleigh">
-      <a id="#meet-robert"></a>
-      <div class="grid-container">
-        <div class="grid-x grid-margin-x grid-padding-x">
-          <div class="large-5 cell">
-            <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
-              <div class="orbit-wrapper">
-                <div class="orbit-controls">
-                  <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
-                  <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+        <div class="large-4 cell">
+          <div class="orbit" role="region" aria-label="Favorite Text Ever" data-orbit>
+            <ul class="orbit-container">
+              <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
+              <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button>
+              <li class="is-active orbit-slide">
+                <div class="docs-example-orbit-slide">
+                  <p class="hero-icon text-center">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-code fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </p>
+                  <h2 class="hero-subheading text-center">
+                    <strong>Frontend Development</strong>
+                  </h2>
                 </div>
-                <ul class="orbit-container">
-                  <li class="is-active orbit-slide">
-                    <figure class="orbit-figure">
-                      <img class="orbit-image" src="https://placehold.it/1200x600/999?text=Slide-1" alt="Space">
-                      <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
-                    </figure>
-                  </li>
-                  <li class="orbit-slide">
-                    <figure class="orbit-figure">
-                      <img class="orbit-image" src="https://placehold.it/1200x600/888?text=Slide-2" alt="Space">
-                      <figcaption class="orbit-caption">Lets Rocket!</figcaption>
-                    </figure>
-                  </li>
-                  <li class="orbit-slide">
-                    <figure class="orbit-figure">
-                      <img class="orbit-image" src="https://placehold.it/1200x600/777?text=Slide-3" alt="Space">
-                      <figcaption class="orbit-caption">Encapsulating</figcaption>
-                    </figure>
-                  </li>
-                  <li class="orbit-slide">
-                    <figure class="orbit-figure">
-                      <img class="orbit-image" src="https://placehold.it/1200x600/666&text=Slide-4" alt="Space">
-                      <figcaption class="orbit-caption">Outta This World</figcaption>
-                    </figure>
-                  </li>
-                </ul>
+              </li>
+              <li class="orbit-slide">
+                <div class="docs-example-orbit-slide">
+                  <p class="hero-icon text-center">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-tasks fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </p>
+                  <h2 class="hero-subheading text-center">
+                    <strong>Agile Project Management</strong>
+                  </h2>
+                </div>
+              </li>
+              <li class="orbit-slide">
+                <div class="docs-example-orbit-slide">
+                  <p class="hero-icon text-center">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-handshake-o fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </p>
+                  <h2 class="hero-subheading text-center">
+                    <strong>Technology Consulting</strong>
+                  </h2>
+                </div>
+              </li>
+            </ul>
+            <nav class="orbit-bullets">
+              <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+              <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+              <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid-container full">
+      <div class="grid-x">
+        <div class="large-12 cell">
+          <p class="hero-arrow-icon text-center">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-arrow-circle-down fa-stack-1x fa-inverse"></i>
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- custom hero class -->
+  <section class="about-robert">
+    <a id="about-robert"></a>"></a>
+    <div class="grid-container full">
+      <div class="grid-x">
+        <div class="large-5 cell">
+          <img src="images/128x128.png" class="float-center" alt="Robert G. Raleigh" />
+        </div>
+        <div class="large-7 cell">
+          <h2 class="section-heading text-left">About Robert G. Raleigh</h2>
+          <p class="lead text-left">
+            This is the intro to the main hero of the website.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="grid-container">
+      <div class="large-5 cell">
+        <img src="" alt='' />
+      </div>
+      <div class="large-7 cell">
+        <h3 class="section-heading"></h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- robert's story section -->
+  <section class="roberts-story">
+    <a id="roberts-story"></a>
+    <div class="grid-container">
+      <div class="grid-x grid-margin-x grid-padding-x">
+        <div class="large-5 cell">
+          <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+            <div class="orbit-wrapper">
+              <div class="orbit-controls">
+                <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
               </div>
-              <nav class="orbit-bullets">
-                <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
-                <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
-                <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
-                <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
-              </nav>
+              <ul class="orbit-container">
+                <li class="is-active orbit-slide">
+                  <figure class="orbit-figure">
+                    <img class="orbit-image" src="https://placehold.it/1200x600/999?text=Slide-1" alt="Space">
+                    <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
+                  </figure>
+                </li>
+                <li class="orbit-slide">
+                  <figure class="orbit-figure">
+                    <img class="orbit-image" src="https://placehold.it/1200x600/888?text=Slide-2" alt="Space">
+                    <figcaption class="orbit-caption">Lets Rocket!</figcaption>
+                  </figure>
+                </li>
+                <li class="orbit-slide">
+                  <figure class="orbit-figure">
+                    <img class="orbit-image" src="https://placehold.it/1200x600/777?text=Slide-3" alt="Space">
+                    <figcaption class="orbit-caption">Encapsulating</figcaption>
+                  </figure>
+                </li>
+                <li class="orbit-slide">
+                  <figure class="orbit-figure">
+                    <img class="orbit-image" src="https://placehold.it/1200x600/666&text=Slide-4" alt="Space">
+                    <figcaption class="orbit-caption">Outta This World</figcaption>
+                  </figure>
+                </li>
+              </ul>
             </div>
+            <nav class="orbit-bullets">
+              <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+              <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+              <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+              <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+            </nav>
           </div>
-          <div class="large-7 cell">
-            <h2 class="text-left">Meet Robert G. Raleigh</h2>
-            <p class="text-left">
-              This is some interesting placeholder content about Robert. He'll add some interesting information here soon.
-              This information will highlight his personality, and make people want to work with him.
-            </p>
-            <p class="text-left">
-              I'm not sure what the second block of text should highlight. Let's do some more research before we add this text.
-              The text should definately want to pull the reader into learning more, and meeting Robert.
-            </p>
-            <div class="button-group">
-              <a href="#about" class="hollow dark-gray secondary button">Resume</a>
-              <a href="#skillset" class="hollow dark-gray button">Email Me</a>
-              <a href="#experience" class="hollow dark-gray button">Let's talk</a>
-            </div>
+        </div>
+        <div class="large-7 cell">
+          <h2 class="section-heading text-left">Robert's Story</h2>
+          <p class="text-left">
+            This is some interesting placeholder content about Robert. He'll add some interesting information here soon.
+            This information will highlight his personality, and make people want to work with him.
+          </p>
+          <p class="text-left">
+            I'm not sure what the second block of text should highlight. Let's do some more research before we add this text.
+            The text should definately want to pull the reader into learning more, and meeting Robert.
+          </p>
+          <div class="button-group">
+            <a href="#about" class="hollow dark-gray secondary button">Resume</a>
+            <a href="#skillset" class="hollow dark-gray button">Email Me</a>
+            <a href="#experience" class="hollow dark-gray button">Let's talk</a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- professional skillset section -->
-    <section class="professional-skillset">
-      <div class="grid-container full">
-        <div class="grid-x">
-          <div class="">
-
-          </div>
+  <!-- professional skillset section -->
+  <section class="skillset">
+    <a id="skillset"></a>
+    <div class="grid-container full">
+      <div class="grid-x">
+        <div class="large-12 cell">
+          <h2 class="section-heading text-center">
+            <span class="blue-border">Skillset</span>
+            <p class="section-description text-center">
+              This is the summary description of your project management skills
+            </p>
+          </h2>
         </div>
-      </div>
-    </section>
-
-    <!-- project management skillset -->
-    <section class="about-pm-skillset bordered">
-      <a id="about-pm-skillset"></a>
-      <div class="grid-container full">
-        <div class="grid-x">
-          <div class="large-12 cell">
-            <h2 class="section-heading text-center">
-              <span class="blue-border">Project Management Skillset</span>
-              <p class="section-description text-center">
-                This is the summary description of your project management skills
-              </p>
-            </h2>
-          </div>
-          <div id="project-management-skillset" class="small-6 medium-6 large-6 cell">
-            <p class="fa-icon text-center">
-              <span class="">
-                <i class="fa fa-tasks fa-5x"></i>
+        <div id="project-management-skillset" class="small-6 medium-5 large-4 cell">
+          <div class="card">
+            <p class="card-icon text-center">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-tasks fa-stack-1x fa-inverse"></i>
               </span>
             </p>
-            <h3 class="text-center">Project Management Skills</h3>
+            <h3 class="card-heading text-center">Project Management</h3>
+            <p class="card-description text-left">
+              Experienced project manager with 10 years of leadership experience.
+            </p>
             <p class="text-center">
-              <a href="" class="hollow button">View skills</a>
-            </p>
-          </div>
-          <div id="frontend-development-skillset" class="small-6 medium-6 large-6 align-middle cell">
-            <p class="fa-icon text-center">
-              <span class="">
-                <i class="fa fa-tasks fa-5x"></i>
-              </span>
-            </p>
-            <h3 class="text-center">Frontend Development Skills</h3>
-            <p class="text-center">
-              <a href="" class="hollow button">View skills</a>
+              <a href="" class="primary hollow button expanded" data-open="projectManagementSkillset">View skills</a>
             </p>
           </div>
         </div>
-      </div>
-      <div class="grid-container full">
-        <div class="grid-x">
-          <div class="large-6 cell">
-
-          </div>
-          <div class="large-6 cell">
-
-          </div>
-        </div>
-      </div>
-
-      <div class="grid-container full">
-        <div class="grid-x grid-margin-x grid-padding-x">
-          <div class="large-4 cell">
-            <p class="skillset-icon text-center">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-              </span>
-            </p>
-            <h3 class="skillset-heading text-center">
-              Agile Methodology
-            </h3>
-            <p class="skillset-description text-center">
-              PM Skill One Description
-            </p>
-          </div>
-          <div class="large-4 cell">
-            <p class="skillset-icon text-center">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-              </span>
-            </p>
-            <h3 class="skillset-heading text-center">
-              Forecasting
-            </h3>
-            <p class="skillset-description text-center">
-              PM Skill One Description
-            </p>
-          </div>
-          <div class="large-4 cell">
-            <p class="skillset-icon text-center">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-              </span>
-            </p>
-            <h3 class="skillset-heading text-center">
-              Budgeting
-            </h3>
-            <p class="skillset-description text-center">
-              PM Skill One Description
-            </p>
-          </div>
-          <div class="large-4 cell">
-            <p class="skillset-icon text-center">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-              </span>
-            </p>
-            <h3 class="skillset-heading text-center">
-              Quality Assurance
-            </h3>
-            <p class="skillset-description text-center">
-              PM Skill One Description
-            </p>
-          </div>
-          <div class="large-4 cell">
-            <p class="skillset-icon text-center">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-              </span>
-            </p>
-            <h3 class="skillset-heading text-center">
-              Task Management
-            </h3>
-            <p class="skillset-description text-center">
-              PM Skill One Description
-            </p>
-          </div>
-          <div class="large-4 cell">
-            <p class="skillset-icon text-center">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-              </span>
-            </p>
-            <h3 class="skillset-heading text-center">
-              Documentation
-            </h3>
-            <p class="skillset-description text-center">
-              PM Skill One Description
-            </p>
-          </div>
-          <div class="large-4 cell">
-            <p class="skillset-icon text-center">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-              </span>
-            </p>
-            <h3 class="skillset-heading text-center">
-              Leadership
-            </h3>
-            <p class="skillset-description text-center">
-              PM Skill One Description
-            </p>
-          </div>
-          <div class="large-4 cell">
-            <p class="skillset-icon text-center">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-              </span>
-            </p>
-            <h3 class="skillset-heading text-center">
-              Communication
-            </h3>
-            <p class="skillset-description text-center">
-              PM Skill One Description
-            </p>
-          </div>
-          <div class="large-4 cell">
-            <p class="skillset-icon text-center">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-              </span>
-            </p>
-            <h3 class="skillset-heading text-center">
-              Empathy
-            </h3>
-            <p class="skillset-description text-center">
-              PM Skill One Description
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- custom frontend development skillset section -->
-    <section class="section-lg bordered">
-      <a id="about-frontend-dev-skillset"></a>
-      <div class="grid-container">
-        <div class="grid-x grid-margin-x grid-padding-x">
-          <div class="large-5 cell">
-            <h2 class="section-heading text-center">
-              <span class="blue-border">Frontend Development Skillset</span>
-            </h2>
-          </div>
-          <div class="large-7 cell">
-            <p class="section-description text-left">
-              This is the summary description of the frontend developer skillset
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="grid-container">
-        <div class="grid-x grid-margin-x grid-padding-x">
-          <div class="large-4 cell">
-            <p class="skillset-icon text-center">
+        <div id="frontend-development-skillset" class="small-6 medium-5 large-4 cell">
+          <div class="card">
+            <p class="card-icon text-center">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-code fa-stack-1x fa-inverse"></i>
               </span>
             </p>
-            <h3 class="skillset-heading text-center">
-              Programming Languages
-            </h3>
-            <p class="skillset-description text-center">
-              HTML5, CSS3, JS
+            <h3 class="card-heading text-center">Frontend Development</h3>
+            <p class="card-description text-left">
+              Broad knowledge of frontend development.
+            </p>
+            <p class="text-center">
+              <a href="" class="primary hollow button expanded" data-open="frontendDevelopmentSkillset">View skills</a>
             </p>
           </div>
-          <div class="large-4 cell">
-            <p class="skillset-icon text-center">
+        </div>
+        <div id="frontend-development-skillset" class="small-6 medium-5 large-4 cell">
+          <div class="card">
+            <p class="card-icon text-center">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
+                <i class="fa fa-code fa-stack-1x fa-inverse"></i>
               </span>
             </p>
-            <h3 class="skillset-heading text-center">
-              Javascript Frameworks
-            </h3>
-            <p class="skillset-description text-center">
-              PM Skill One Description
+            <h3 class="card-heading text-center">Technology Skills</h3>
+            <p class="card-description text-left">
+              Broad knowledge of frontend development.
             </p>
-          </div>
-          <div class="large-4 cell">
-            <p class="skillset-icon text-center">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-              </span>
-            </p>
-            <h3 class="skillset-heading text-center">
-              Frontend Frameworks
-            </h3>
-            <p class="skillset-description text-center">
-              Bootstrap, Semantic UI, Foundation
+            <p class="text-center">
+              <a href="" class="primary hollow button expanded" data-open="frontendDevelopmentSkillset">View skills</a>
             </p>
           </div>
         </div>
       </div>
-      <div class="grid-container">
-        <div class="grid-x grid-margin-x grid-padding-x">
-          <div class="large-4 cell">
-            <p class="skillset-icon text-center">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-              </span>
-            </p>
-            <h3 class="skillset-heading text-center">
-              PM Skill One Heading
-            </h3>
-            <p class="skillset-description text-center">
-              PM Skill One Description
-            </p>
-          </div>
-          <div class="large-4 cell">
-            <p class="skillset-icon text-center">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-              </span>
-            </p>
-            <h3 class="skillset-heading text-center">
-              Testing and Debugging
-            </h3>
-            <p class="skillset-description text-center">
-              PM Skill One Description
-            </p>
-          </div>
-          <div class="large-4 cell">
-            <p class="skillset-icon text-center">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-              </span>
-            </p>
-            <h3 class="skillset-heading text-center">
-              Version Control Systems
-            </h3>
-            <p class="skillset-description text-center">
-              Git, Github, and Bitbucket
-            </p>
-          </div>
-          <div class="large-4 cell">
-            <p class="skillset-icon text-center">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-              </span>
-            </p>
-            <h3 class="skillset-heading text-center">
-              PM Skill One Heading
-            </h3>
-            <p class="skillset-description text-center">
-              PM Skill One Description
-            </p>
-          </div>
-          <div class="large-4 cell">
-            <p class="skillset-icon text-center">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-              </span>
-            </p>
-            <h3 class="skillset-heading text-center">
-              PM Skill One Heading
-            </h3>
-            <p class="skillset-description text-center">
-              PM Skill One Description
-            </p>
-          </div>
-          <div class="large-4 cell">
-            <p class="skillset-icon text-center">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-              </span>
-            </p>
-            <h3 class="skillset-heading text-center">
-              PM Skill One Heading
-            </h3>
-            <p class="skillset-description text-center">
-              PM Skill One Description
-            </p>
-          </div>
+    </div>
+  </section>
+
+  <!-- experience section -->
+  <section class="experience">
+    <a id="experience"></a>
+    <div class="grid-container full">
+      <div class="grid-x">
+        <div class="large-12 cell">
+          <h2 class="section-heading text-center">Experience</h2>
+          <p class="section-description text-center">
+            This is the summary of the work experience section.
+          </p>
         </div>
       </div>
-    </section>
+    </div>
+    <div class="grid-container full">
+      <div class="grid-x grid-margin-x grid-padding-x">
+        <div class="large-12 cell">
+          <ul class="tabs" data-responsive-accordion-tabs="tabs medium-accordion large-tabs" id="example-tabs">
+            <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Work Experience</a></li>
+            <li class="tabs-title"><a href="#panel2">Volunteer Experience</a></li>
+            <li class="tabs-title"><a href="#panel3">Education</a></li>
+            <li class="tabs-title"><a href="#panel4">Training</a></li>
+            <li class="tabs-title"><a href="#panel5">Hackathons</a></li>
+          </ul>
+          <div class="tabs-content" data-tabs-content="example-tabs">
+            <div class="tabs-panel is-active" id="panel1">
+              <ul class="accordion" data-accordion>
+                <li class="accordion-item is-active" data-accordion-item>
+                  <!-- Accordion tab title -->
+                  <a href="#" class="accordion-title">
+                    Hello World Devs
+                    <span class="float-right">Portland, OR &nbsp;
+                    <i class="fa fa-plus"></i></span>
+                  </a>
+                  <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+                  <div class="accordion-content" data-tab-content>
+                    <div class="large-10 cell">
+                      <h3 class="">Hello World Devs <span class="float-right">Portland, OR</span></h3>
+                      <h4 class="text-left">
+                        <strong>Agile Project Manager</strong>
+                      </h4>
+                      <h5 class="">Aug, 2016 - Present</h5>
+                      <ul class="">
+                        <li>
+                          Accomplishment One should not pass over more than two lines on the screen in any circumstance
+                        </li>
+                        <li>
+                          Accomplishment Two should not pass over more than two lines on the screen in any circumstance
+                        </li>
+                        <li>
+                          Accomplishment Three should not pass over more than two lines on the screen in any circumstance
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <!-- Accordion tab title -->
+                  <a href="#" class="accordion-title">
+                    Log Camp
+                    <span class="float-right">Portland, OR &nbsp;
+                    <i class="fa fa-plus"></i></span></a>
+                  <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+                  <div class="accordion-content" data-tab-content>
+                    <div class="large-10 cell">
+                      <h3 class="">Log Camp <span class="float-right">Portland, OR</span></h3>
+                      <h4 class="">
+                        <strong>Executive Director</strong>
+                      </h4>
+                      <h5 class="">Dates: Oct 2012 - March 2016 </h5>
+                      <ul class="">
+                        <li>
+                          Accomplishment One
+                        </li>
+                        <li>
+                          Accomplishment Two
+                        </li>
+                        <li>
+                          Accomplishment Three
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <!-- Accordion tab title -->
+                  <a href="#" class="accordion-title">Technology Association of Oregon
+                    <span class="float-right">Portland, OR &nbsp;
+                    <i class="fa fa-plus"></i></span>
+                  </a>
+                  <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+                  <div class="accordion-content" data-tab-content>
+                    <div class="large-10 cell">
+                      <h3 class="">Technology Association of Oregon
+                        <span class="float-right">Portland, OR</span>
+                      </h3>
+                      <h4 class="">
+                        <strong>Event Manager</strong>
+                      </h4>
+                      <h5 class="">Dates: Mar 2009 - Nov 2009 </h5>
+                      <ul class="">
+                        <li>
+                          Accomplishment One
+                        </li>
+                        <li>
+                          Accomplishment Two
+                        </li>
+                        <li>
+                          Accomplishment Three
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <!-- Accordion tab title -->
+                  <a href="#" class="accordion-title">
+                    Linn-Benton Chamber Coalition
+                    <span class="float-right">Corvallis, OR &nbsp;
+                    <i class="fa fa-plus"></i></span>
+                  </a>
+                  <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+                  <div class="accordion-content" data-tab-content>
+                    <div class="large-10 cell">
+                      <h3 class="">Linn-Benton Chamber Coalition
+                        <span class="float-right">Corvallis, OR</span>
+                      </h3>
+                      <h4 class="">
+                        <strong>Technology Community Coordinator</strong>
+                      </h4>
+                      <span class="float-right">Mar 2009 - Nov 2009 </span>
+                      <ul class="">
+                        <li>
+                          Accomplishment One should not need to cross two lines
+                        </li>
+                        <li>
+                          Accomplishment Two
+                        </li>
+                        <li>
+                          Accomplishment Three
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <!-- Accordion tab title -->
+                  <a href="#" class="accordion-title">
+                    Startup Camp PDX
+                    <span class="float-right">Portland, OR &nbsp;
+                    <i class="fa fa-plus"></i></span>
+                  </a>
+                  <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+                  <div class="accordion-content" data-tab-content>
+                    <div class="large-10 cell">
+                      <h3 class="">Startup Camp PDX <span class="float-right">Portland, OR</span></h3>
+                      <h4 class=""><strong>Role: Technology Mentor</strong> <span class="float-right">Jan, 2007 - Present</span></h4>
+                      <ul class="">
+                        <li>
+                          Accomplishment One
+                        </li>
+                        <li>
+                          Accomplishment Two
+                        </li>
+                        <li>
+                          Accomplishment Three
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <!-- Accordion tab title -->
+                  <a href="#" class="accordion-title">
+                    Oregon Health Sciences University
+                    <span class="float-right">Portland, OR &nbsp;
+                    <i class="fa fa-plus"></i></span>
+                  </a>
+                  <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+                  <div class="accordion-content" data-tab-content>
+                    <div class="large-10 cell">
+                      <h3 class="">Oregon Health Sciences University <span class="float-right">Portland, OR</span></h3>
+                      <h4 class=""><strong>Shift Leader</strong> <span class="float-right">Sep, 2004 - Jan, 2007</span></h4>
+                      <ul class="">
+                        <li>
+                          Accomplishment One
+                        </li>
+                        <li>
+                          Accomplishment Two
+                        </li>
+                        <li>
+                          Accomplishment Three
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="tabs-panel" id="panel2">
+              <ul class="accordion" data-accordion>
+                <li class="accordion-item is-active" data-accordion-item>
+                  <!-- Accordion tab title -->
+                  <a href="#" class="accordion-title">
+                    Native American Youth and Family Center
+                    <span class="float-right">Portland, OR &nbsp;
+                    <i class="fa fa-plus"></i></span>
+                  </a>
+                  <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+                  <div class="accordion-content" data-tab-content>
+                    <div class="large-10 cell">
+                      <h3 class="">Native American Youth and Family Center <span class="float-right">Portland, OR</span></h3>
+                      <h4 class="text-left">
+                        <strong>Community Leaders Council</strong>, <strong>Sunrise East</strong>
+                      </h4>
+                      <h5 class="">Aug, 2016 - Present</h5>
+                      <ul class="">
+                        <li>
+                          Accomplishment One should not pass over more than two lines on the screen in any circumstance
+                        </li>
+                        <li>
+                          Accomplishment Two should not pass over more than two lines on the screen in any circumstance
+                        </li>
+                        <li>
+                          Accomplishment Three should not pass over more than two lines on the screen in any circumstance
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <!-- Accordion tab title -->
+                  <a href="#" class="accordion-title">
+                    Downtown Compassion Clinic
+                    <span class="float-right">Portland, OR &nbsp;
+                    <i class="fa fa-plus"></i></span></a>
+                  <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+                  <div class="accordion-content" data-tab-content>
+                    <div class="large-10 cell">
+                      <h3 class="">Downtown Compassion Clinic <span class="float-right">Portland, OR</span></h3>
+                      <h4 class="">
+                        <strong>Host</strong>, <strong>Web Developer</strong>
+                      </h4>
+                      <h5 class="">Dates: Oct 2012 - March 2016 </h5>
+                      <ul class="">
+                        <li>
+                          Accomplishment One
+                        </li>
+                        <li>
+                          Accomplishment Two
+                        </li>
+                        <li>
+                          Accomplishment Three
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <!-- Accordion tab title -->
+                  <a href="#" class="accordion-title">First Baptist Church of Portland
+                    <span class="float-right">Portland, OR &nbsp;
+                    <i class="fa fa-plus"></i></span>
+                  </a>
+                  <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+                  <div class="accordion-content" data-tab-content>
+                    <div class="large-10 cell">
+                      <h3 class="">First Baptist Church of Portland
+                        <span class="float-right">Portland, OR</span>
+                      </h3>
+                      <h4 class="">
+                        <strong>Board Secretary</strong>
+                        <strong>Building and Property</strong>
+                        <strong>Faith and Witness</strong>
+                      </h4>
+                      <h5 class="">Dates: Mar 2009 - Nov 2009 </h5>
+                      <ul class="">
+                        <li>
+                          Accomplishment One
+                        </li>
+                        <li>
+                          Accomplishment Two
+                        </li>
+                        <li>
+                          Accomplishment Three
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <!-- Accordion tab title -->
+                  <a href="#" class="accordion-title">
+                    Startup Camp PDX
+                    <span class="float-right">Corvallis, OR &nbsp;
+                    <i class="fa fa-plus"></i></span>
+                  </a>
+                  <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+                  <div class="accordion-content" data-tab-content>
+                    <div class="large-10 cell">
+                      <h3 class="">Startup Camp PDX
+                        <span class="float-right">Corvallis, OR</span>
+                      </h3>
+                      <h4 class="">
+                        <strong>Web Development Mentor</strong>
+                      </h4>
+                      <span class="float-right">Mar 2009 - Nov 2009 </span>
+                      <ul class="">
+                        <li>
+                          Accomplishment One should not need to cross two lines
+                        </li>
+                        <li>
+                          Accomplishment Two
+                        </li>
+                        <li>
+                          Accomplishment Three
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <!-- Accordion tab title -->
+                  <a href="#" class="accordion-title">
+                    RGR Digital, LLC.
+                    <span class="float-right">Portland, OR &nbsp;
+                    <i class="fa fa-plus"></i></span>
+                  </a>
+                  <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+                  <div class="accordion-content" data-tab-content>
+                    <div class="large-10 cell">
+                      <h3 class="">RGR Digital, LLC. <span class="float-right">Portland, OR</span></h3>
+                      <h4 class=""><strong>Frontend Web Developer</strong> <span class="float-right">Jan, 2007 - Present</span></h4>
+                      <ul class="">
+                        <li>
+                          Accomplishment One
+                        </li>
+                        <li>
+                          Accomplishment Two
+                        </li>
+                        <li>
+                          Accomplishment Three
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <!-- Accordion tab title -->
+                  <a href="#" class="accordion-title">
+                    Oregon Health Sciences University
+                    <span class="float-right">Portland, OR &nbsp;
+                    <i class="fa fa-plus"></i></span>
+                  </a>
+                  <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+                  <div class="accordion-content" data-tab-content>
+                    <div class="large-10 cell">
+                      <h3 class="">Oregon Health Sciences University <span class="float-right">Portland, OR</span></h3>
+                      <h4 class=""><strong>Shift Leader</strong> <span class="float-right">Sep, 2004 - Jan, 2007</span></h4>
+                      <ul class="">
+                        <li>
+                          Accomplishment One
+                        </li>
+                        <li>
+                          Accomplishment Two
+                        </li>
+                        <li>
+                          Accomplishment Three
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="tabs-panel" id="panel3">
+              <ul class="accordion" data-accordion>
+                <li class="accordion-item is-active" data-accordion-item>
+                  <!-- Accordion tab title -->
+                  <a href="#" class="accordion-title">
+                    Portland State University
+                    <span class="float-right">Portland, OR &nbsp;
+                    <i class="fa fa-plus"></i></span>
+                  </a>
+                  <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+                  <div class="accordion-content" data-tab-content>
+                    <div class="large-10 cell">
+                      <div class="large-10 cell">
+                        <h3 class="text-left">Portland State University <span class="float-right">Portland, OR</span></h3>
+                        <h4 class="text-left">Bachelor of Arts, English <span class="float-right">Sep, 2002 - July, 2006</span></h4>
+                        <p class="text-left">Concentration: Professional Writing</p>
+                        <p class="text-left">Graduated 2006</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <!-- Accordion tab title -->
+                  <a href="#" class="accordion-title">
+                    Portland Community College
+                    <span class="float-right">Portland, OR &nbsp;
+                    <i class="fa fa-plus"></i></span></a>
+                  <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+                  <div class="accordion-content" data-tab-content>
+                    <div class="large-10 cell">
+                      <h3 class="text-left">Portland Community College <span class="float-right">Portland, OR</span></h3>
+                      <h4 class="text-left">Associate of Applied Sciences <span class="float-right">Sep, 2011 - July, 2013</span></h4>
+                      <p class="text-left">Program: Web Development and Design</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <!-- Accordion tab title -->
+                  <a href="#" class="accordion-title">Portland Community College
+                    <span class="float-right">Portland, OR &nbsp;
+                    <i class="fa fa-plus"></i></span>
+                  </a>
+                  <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+                  <div class="accordion-content" data-tab-content>
+                    <div class="large-10 cell">
+                      <h3 class="text-left">Portland Community College <span class="float-right">Portland, OR</span></h3>
+                      <h4 class="text-left">Professional Development <span class="float-right">Sep, 2011 - July, 2013</span></h4>
+                      <p class="text-left">Certificate: Project Management</p>
+                      <p class="text-left">Certificate: Leadership</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <!-- Accordion tab title -->
+                  <a href="#" class="accordion-title">
+                    Corvallis High School
+                    <span class="float-right">Corvallis, OR &nbsp;
+                    <i class="fa fa-plus"></i></span>
+                  </a>
+                  <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+                  <div class="accordion-content" data-tab-content>
+                    <div class="large-10 cell">
+                      <h3 class="">Corvallis High School
+                        <span class="float-right">Corvallis, OR</span>
+                      </h3>
+                      <h4 class="">
+                        <strong>Technology Community Coordinator</strong>
+                      </h4>
+                      <span class="float-right">Mar 2009 - Nov 2009 </span>
+                      <ul class="">
+                        <li>
+                          Accomplishment One should not need to cross two lines
+                        </li>
+                        <li>
+                          Accomplishment Two
+                        </li>
+                        <li>
+                          Accomplishment Three
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="tabs-panel" id="panel4">
+              <p>four</p>
+              <img class="thumbnail" src="assets/img/generic/rectangle-2.jpg">
+            </div>
+            <div class="tabs-panel" id="panel5">
+              <ul class="accordion" data-accordion>
+                <li class="accordion-item is-active" data-accordion-item>
+                  <!-- Accordion tab title -->
+                  <a href="#" class="accordion-title">
+                    Hack The Dot PDX
+                    <span class="float-right">Portland, OR &nbsp;
+                    <i class="fa fa-plus"></i></span>
+                  </a>
+                  <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+                  <div class="accordion-content" data-tab-content>
+                    <div class="large-10 cell">
+                      <h3 class="">Hack The Dot PDX (Vacasa)  <span class="float-right">Portland, OR</span></h3>
+                      <h4 class="text-left">
+                        <strong>Frontend Development, Project Management</strong>
+                      </h4>
+                      <h5 class="">Feb 8, 2017</h5>
+                      <p class="text-left">
+                        A Hack the Dot is a two-hour hackathon where coding school students, junior developers, experienced developers, marketers, designers and curious web people come together to build ideas around a domain name.
+                        Our events are meant to be a quick and fun way to build a humorous (and functional) product quickly while meeting people in your tech/startup community.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <!-- Accordion tab title -->
+                  <a href="#" class="accordion-title">
+                    Hack The Dot PDX (Quickleft)
+                    <span class="float-right">Portland, OR &nbsp;
+                    <i class="fa fa-plus"></i></span></a>
+                  <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+                  <div class="accordion-content" data-tab-content>
+                    <div class="large-10 cell">
+                      <h3 class="">Log Camp <span class="float-right">Portland, OR</span></h3>
+                      <h4 class="">
+                        <strong>Executive Director</strong>
+                      </h4>
+                      <h5 class="">Nov 12, 2015</h5>
+                      <p class="text-left">
+                        A Hack the Dot is a two-hour hackathon where coding school students, junior developers, experienced developers, marketers, designers and curious web people come together to build ideas around a domain name.
+                        Our events are meant to be a quick and fun way to build a humorous (and functional) product quickly while meeting people in your tech/startup community.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <!-- Accordion tab title -->
+                  <a href="#" class="accordion-title">Hack Oregon (Spring Buildathon)
+                    <span class="float-right">Portland, OR &nbsp;
+                    <i class="fa fa-plus"></i></span>
+                  </a>
+                  <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+                  <div class="accordion-content" data-tab-content>
+                    <div class="large-10 cell">
+                      <h3 class="">Hack Oregon (Spring Buildathon)
+                        <span class="float-right">Portland, OR</span>
+                      </h3>
+                      <h4 class="">
+                        <strong>Event Manager</strong>
+                      </h4>
+                      <h5 class="">May 22, 2016</h5>
+                      <ul class="vertical menu">
+                        <li>
+                          <span class="">Date:</span>
+                        </li>
+                      </ul>
+                      <p class="text-left">
 
-    <!-- experience section -->
-    <section class="work-experience">
-      <div class="grid-container full">
-        <div class="grid-x">
-          <div class="large-5 cell">
-            <h2 class="text-left">Work Experience</h2>
-          </div>
-          <div class="large-7">
-            <p class="lead">
-              This is the summary of the work experience section.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="grid-container full">
-        <div class="grid-x grid-margin-x grid-padding-x">
-          <div class="large-2 cell">
-            <img src="images/128x128.png" class="float-center" alt="Test Image" />
-          </div>
-          <div class="large-10 cell">
-            <h3 class="">Hello World Devs <span class="float-right">Portland, OR</span></h3>
-            <h4 class="text-left">
-              <strong>Agile Project Manager</strong>
-            </h4>
-            <h5 class="">Aug, 2016 - Present</h5>
-            <ul class="">
-              <li>
-                Accomplishment One should not pass over more than two lines on the screen in any circumstance
-              </li>
-              <li>
-                Accomplishment Two should not pass over more than two lines on the screen in any circumstance
-              </li>
-              <li>
-                Accomplishment Three should not pass over more than two lines on the screen in any circumstance
-              </li>
-            </ul>
-          </div>
-          <div class="large-2 cell">
-            <img src="images/128x128.png" alt="Test Image" />
-          </div>
-          <div class="large-10 cell">
-            <h3 class="">Log Camp <span class="float-right">Portland, OR</span></h3>
-            <h4 class="">
-              <strong>Executive Director</strong>
-            </h4>
-            <h5 class="">Dates: Oct 2012 - March 2016 </h5>
-            <ul class="">
-              <li>
-                Accomplishment One
-              </li>
-              <li>
-                Accomplishment Two
-              </li>
-              <li>
-                Accomplishment Three
-              </li>
-            </ul>
-          </div>
-          <div class="large-2 cell">
-            <img src="images/128x128.png" alt="Test Image" />
-          </div>
-          <div class="large-10 cell">
-            <h3 class="">Technology Association of Oregon <span class="float-right">Portland, OR</span></h3>
-            <h4 class="">
-              <strong>Event Manager</strong>
-            </h4>
-            <h5 class="">Dates: Mar 2009 - Nov 2009 </h5>
-            <ul class="">
-              <li>
-                Accomplishment One
-              </li>
-              <li>
-                Accomplishment Two
-              </li>
-              <li>
-                Accomplishment Three
-              </li>
-            </ul>
-          </div>
-          <div class="large-2 cell">
-            <img src="images/128x128.png" alt="Test Image" />
-          </div>
-          <div class="large-10 cell">
-            <h3 class="">Linn-Benton Chamber Coalition <span class="float-right">Corvallis, OR</span></h3>
-            <h4 class="">
-              <strong>Technology Community Coordinator</strong>
-            </h4>
-            <span class="float-right">Mar 2009 - Nov 2009 </span>
-            <ul class="">
-              <li>
-                Accomplishment One should not need to cross two lines
-              </li>
-              <li>
-                Accomplishment Two
-              </li>
-              <li>
-                Accomplishment Three
-              </li>
-            </ul>
-          </div>
-          <div class="large-2 cell">
-            <img src="images/128x128.png" alt="Test Image" />
-          </div>
-          <div class="large-10 cell">
-            <h3 class="">RGR Digital, LLC. <span class="float-right">Portland, OR</span></h3>
-            <h4 class=""><strong>Frontend Web Developer</strong> <span class="float-right">Jan, 2007 - Present</span></h4>
-            <ul class="">
-              <li>
-                Accomplishment One
-              </li>
-              <li>
-                Accomplishment Two
-              </li>
-              <li>
-                Accomplishment Three
-              </li>
-            </ul>
-          </div>
-          <div class="large-2 cell">
-            <img src="images/128x128.png" alt="Test Image" />
-          </div>
-          <div class="large-10 cell">
-            <h3 class="">Oregon Health Sciences University <span class="float-right">Portland, OR</span></h3>
-            <h4 class=""><strong>Shift Leader</strong> <span class="float-right">Sep, 2004 - Jan, 2007</span></h4>
+                      </p>
+                      <p class="text-left">
 
-            <ul class="">
-              <li>
-                Accomplishment One
-              </li>
-              <li>
-                Accomplishment Two
-              </li>
-              <li>
-                Accomplishment Three
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="volunteer">
-      <div class="grid-container full">
-        <div class="grid-x">
-          <div class="large-5 cell">
-            <h2 class="text-left">Volunteer Experience</h2>
-          </div>
-          <div class="large-7 cell">
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="education">
-      <div class="grid-container full">
-        <div class="grid-x grid-margin-x grid-padding-x">
-          <div class="large-5 cell">
-            <h2 class="text-left">Education</h2>
-          </div>
-          <div class="large-7 cell">
-            <p class="lead">
-              This is the lead section for the education section.
-            </p>
-          </div>
-          <div class="large-2 cell">
-            <img src="images/128x128.png" class="float-center" alt="Test Image" />
-          </div>
-          <div class="large-10 cell">
-            <h3 class="text-left">Portland State University <span class="float-right">Portland, OR</span></h3>
-            <h4 class="text-left">Bachelor of Arts, English <span class="float-right">Sep, 2002 - July, 2006</span></h4>
-            <p class="text-left">Concentration: Professional Writing</p>
-            <p class="text-left">Graduated 2006</p>
-          </div>
-          <div class="large-2 cell">
-            <img src="images/128x128.png" class="float-center" alt="Test Image" />
-          </div>
-          <div class="large-10 cell">
-            <h3 class="text-left">Portland Community College <span class="float-right">Portland, OR</span></h3>
-            <h4 class="text-left">Associate of Applied Sciences <span class="float-right">Sep, 2011 - July, 2013</span></h4>
-            <p class="text-left">Program: Web Development and Design</p>
-          </div>
-          <div class="large-2 cell">
-            <img src="images/128x128.png" class="float-center" alt="Test Image" />
-          </div>
-          <div class="large-10 cell">
-            <h3 class="text-left">Portland Community College <span class="float-right">Portland, OR</span></h3>
-            <h4 class="text-left">Professional Development <span class="float-right">Sep, 2011 - July, 2013</span></h4>
-            <p class="text-left">Certificate: Project Management</p>
-            <p class="text-left">Certificate: Leadership</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- contact us section -->
-    <section class="contact-us">
-      <div class="grid-container full">
-        <div class="grid-x">
-          <div class="large-5 cell">
-            <h2 class="text-left">Contact Robert</h2>
-          </div>
-          <div class="large-7 cell">
-            <p class="lead">
-              Robert G. Raleigh is a frontend web developer and agile project manager with a decade of project management and
-              and team leadership.
-            </p>
-          </div>
-          <div class="offset-5 large-6 cell">
-            <div class="card">
-              <div class="card-section">
-                <h3 class="">Contact Information</h3>
-                <ul class="horizontal menu">
-                  <li>
-                    <a href="tel:+19715335868">+1 (971) 533-5868</a>
-                  </li>
-                  <li>
-                    <a href="mailto:robert@robertgraleigh.com">robert@robertgraleigh.com</a>
-                  </li>
-                  <li>
-                    <a href="">@RobertGRaleigh</a>
-                  </li>
-                </ul>
-                <address class="footer-address text-left">
-                  NXT Industries:Lab <br  />
-                  1302 SE Martin Luther King Jr Blvd <br />
-                  Portland, OR 97214 <br />
-                </address>
-                <h3 class="card-heading text-left">Hours of Operation</h3>
-                <ul class="no-bullet">
-                  <li>
-                    <span>Monday: 9:00am PST &mdash; 4:00pm PST</span>
-                  </li>
-                  <li>
-                    <span>Tuesday: 9:00am PST &mdash; 4:00pm PST</span>
-                  </li>
-                  <li>
-                    <span>Wednesday: 9:00am PST &mdash; 4:00pm PST</span>
-                  </li>
-                  <li>
-                    <span>Thursday: 9:00am PST &mdash; 4:00pm PST</span>
-                  </li>
-                  <li>
-                    <span>Friday: 9:00am PST &mdash; 4:00pm PST</span>
-                  </li>
-                  <li>
-                    <span>Saturday: By appointment only</span>
-                  </li>
-                  <li>
-                    <span>Sunday: Closed</span>
-                  </li>
-                </ul>
-              </div>
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <!-- Accordion tab title -->
+                  <a href="#" class="accordion-title">
+                    HackPDX (Airbnb)
+                    <span class="float-right">Portland, OR &nbsp;
+                    <i class="fa fa-plus"></i></span>
+                  </a>
+                  <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+                  <div class="accordion-content" data-tab-content>
+                    <div class="large-10 cell">
+                      <h3 class="">Hack PDX (Airbnb)
+                        <span class="float-right">Portland, OR</span>
+                      </h3>
+                      <h4 class="">
+                        <strong>Project Management</strong>
+                      </h4>
+                      <span class="float-right">Mar 2009 - Nov 2009 </span>
+                      <ul class="">
+                        <li>
+                          Accomplishment One should not need to cross two lines
+                        </li>
+                        <li>
+                          Accomplishment Two
+                        </li>
+                        <li>
+                          Accomplishment Three
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <!-- Accordion tab title -->
+                  <a href="#" class="accordion-title">
+                    HackPDX (schools)
+                    <span class="float-right">Portland, OR &nbsp;
+                    <i class="fa fa-plus"></i></span>
+                  </a>
+                  <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+                  <div class="accordion-content" data-tab-content>
+                    <div class="large-10 cell">
+                      <h3 class="">Hack PDX (schools) <span class="float-right">Portland, OR</span></h3>
+                      <h4 class=""><strong>Frontend Web Developer</strong> <span class="float-right">Jan, 2007 - Present</span></h4>
+                      <p class="text-left">
+                        Who & What -- HackPDX is a 12 hour hackathon with a theme of public education.
+                        We’re inviting software developers & graphic designers to come work on solutions to some really interesting problems.
+                        The event is totally free, but you should register soon - spots are filling up!
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <!-- Accordion tab title -->
+                  <a href="#" class="accordion-title">
+                    Startup Camp PDX
+                    <span class="float-right">Portland, OR &nbsp;
+                    <i class="fa fa-plus"></i></span>
+                  </a>
+                  <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+                  <div class="accordion-content" data-tab-content>
+                    <div class="large-10 cell">
+                      <h4 class="text-left">Description</h4>
+                      <p class="text-left">
+                        Catlin Gabel, Lincoln High School, and OES students will join together to launch products that just might change the world.
+                        It's three days of intense collaboration, innovation, and learning in order for students to pitch, build, and launch their own business.
+                        Join and invite your friends!
+                      </p>
+                      <a href="http://startupcamppdx.com/" class="primary button" disabled>Visit website</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- custom secondary navigation class -->
-    <nav class="secondary-navigation">
-      <ul class="horizontal menu align-center">
-        <li><a href="#home`">Home</a></li>
-        <li><a href="#about`">About</a></li>
-        <li><a href="#meet-robert">Meet Robert</a></li>
-        <li><a href="#skillset">Skillset</a></li>
-        <li><a href="#work-experience">Work Experience</a></li>
-        <li><a href="#volunteer-experience">Volunteer experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact-us">Contact Us</a></li>
-        <li><a href="#get-started">Get Started</a></li>
-      </ul>
-    </nav>
-
-    <!-- custom primary footer class -->
-    <footer class="primary-footer">
-      <div class="grid-container">
-        <div class="grid-x grid-margin-x grid-padding-x">
-          <div class="large-2 cell">
-            <img src="images/128x128.png" alt="Test Image" />
-          </div>
-          <div class="large-6 cell">
-            <h2 class="text-left">About Robert G. Raleigh</h2>
-            <p class="text-left">
-              Robert G. Raleigh is a project manager and frontend developer with 10+ years of project leadership and management
-              experience working in the technology, nonprofit, education, and creative sectors.
-            </p>
-            <p class="text-left">
-              <i class="fa fa-map-marker"></i>&nbsp;Robert G Raleigh lives in Portland, OR.
-            </p>
-          </div>
-          <div class="large-4 cell">
-            <h3 class="text-left">Contact Information</h3>
-            <ul class="vertical menu">
-              <li>
-                <a href="">
-                  <i class="fa fa-envelope-o"></i>
-                  robert@robertgraleigh.com
-                </a>
+  <!-- custom clients section -->
+  <section class="clients">
+    <a id="clients"></a>
+    <div class="grid-container full">
+      <div class="grid-x">
+        <div class="large-12 cell">
+          <h2 class="section-heading text-center">Clients</h2>
+          <p class="section-description text-center">
+            I've worked with , including enterprise apps, corporate websites,
+            and e-commerce projects.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="grid-container full">
+      <div class="grid-x">
+        <div class="large-12 cell">
+          <div class="orbit" role="region" aria-label="Favorite Text Ever" data-orbit>
+            <ul class="orbit-container">
+              <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
+              <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button>
+              <li class="is-active orbit-slide">
+                <div class="docs-example-orbit-slide">
+                  <p><strong>This is dodgerblue.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
               </li>
-              <li>
-                <a href="">
-                  <i class="fa fa-envelope-o"></i>
-                  +1 (1971) 533-5868
-                </a>
+              <li class="orbit-slide">
+                <div class="docs-example-orbit-slide">
+                  <p><strong>This is rebeccapurple.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
               </li>
-              <li>
-                <a href="">
-                  <i class="fa fa-slack"></i>
-                  @RobertGRaleigh
-                </a>
+              <li class="orbit-slide">
+                <div class="docs-example-orbit-slide">
+                  <p><strong>This is darkgoldenrod.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </li>
+              <li class="orbit-slide">
+                <div class="docs-example-orbit-slide">
+                  <p><strong>This is lightseagreen.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
               </li>
             </ul>
-          </div>
-          <div class="large-6 cell">
-            <p class="text-left">
-              &copy; Copyright 2007 - <script> document.write(new Date().getFullYear());</script>
-              RGR Digital, LLC. All rights reserved.
-            </p>
-          </div>
-          <div class="large-6 cell">
-            <ul class="horizontal menu align-center">
-              <li>
-                <a href="#">
-                  <i class="fa fa-facebook"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-slack"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-github"></i>
-                </a>
-              </li>
-            </ul>
-            <p class="text-right">
-              <a href="#top" data-smooth-scroll><i class="fa fa-chevron-up"></i>&nbsp; Back to top</a>
-            </p>
+            <nav class="orbit-bullets">
+              <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+              <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+              <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+              <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+            </nav>
           </div>
         </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </section>
+
+  <!-- custom clients section -->
+  <section class="projects">
+    <a id="projects"></a>
+    <div class="grid-container full">
+      <div class="grid-x">
+        <div class="large-12 cell">
+          <h2 class="section-heading text-center">Projects</h2>
+          <p class="section-description text-center">
+            I've worked on a variety of projects, including enterprise apps, corporate websites,
+            and e-commerce projects.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="grid-container full">
+      <div class="grid-x">
+        <div class="large-12 cell">
+          <div class="orbit" role="region" aria-label="Favorite Text Ever" data-orbit>
+            <ul class="orbit-container">
+              <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
+              <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button>
+              <li class="is-active orbit-slide">
+                <div class="docs-example-orbit-slide">
+                  <p><strong>This is dodgerblue.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </li>
+              <li class="orbit-slide">
+                <div class="docs-example-orbit-slide">
+                  <p><strong>This is rebeccapurple.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </li>
+              <li class="orbit-slide">
+                <div class="docs-example-orbit-slide">
+                  <p><strong>This is darkgoldenrod.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </li>
+              <li class="orbit-slide">
+                <div class="docs-example-orbit-slide">
+                  <p><strong>This is lightseagreen.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </li>
+            </ul>
+            <nav class="orbit-bullets">
+              <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+              <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+              <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+              <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact us section -->
+  <section class="contact-us">
+    <a id="contact-us"></a>
+    <div class="grid-container full">
+      <div class="grid-x">
+        <div class="large-offset-6 large-5 cell">
+          <h2 class="section-heading text-center">
+            <span class="blue-border">
+              Contact Robert
+            </span>
+          </h2>
+          <p class="section-description text-center">
+            Robert G. Raleigh is a frontend web developer and agile project manager. Robert is based in Portland, OR.
+          </p>
+          <div class="card">
+            <div class="card-section">
+              <h3 class="card-heading">Contact Information</h3>
+              <ul class="vertical menu">
+                <li>
+                  <a href="tel:+19715335868">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-square-o fa-stack-2x"></i>
+                      <i class="fa fa-phone fa-stack-1x"></i>
+                    </span>
+                    +1 (971) 533-5868
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:robert@robertgraleigh.com">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-square-o fa-stack-2x"></i>
+                      <i class="fa fa-envelope fa-stack-1x"></i>
+                    </span>
+                    robert@robertgraleigh.com
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.slack.com" target="_blank">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-square-o fa-stack-2x"></i>
+                      <i class="fa fa-slack fa-stack-1x"></i>
+                    </span>
+                    @RobertGRaleigh
+                  </a>
+                </li>
+              </ul>
+              <h3 class="card-heading text-left">Hours of Operation</h3>
+              <ul class="no-bullet">
+                <li>
+                  <span>Monday: 9:00am PST &mdash; 4:00pm PST</span>
+                </li>
+                <li>
+                  <span>Tuesday: 9:00am PST &mdash; 4:00pm PST</span>
+                </li>
+                <li>
+                  <span>Wednesday: 9:00am PST &mdash; 4:00pm PST</span>
+                </li>
+                <li>
+                  <span>Thursday: 9:00am PST &mdash; 4:00pm PST</span>
+                </li>
+                <li>
+                  <span>Friday: 9:00am PST &mdash; 4:00pm PST</span>
+                </li>
+                <li>
+                  <span>Saturday: By appointment only</span>
+                </li>
+                <li>
+                  <span>Sunday: Closed</span>
+                </li>
+              </ul>
+              <h3 class="card-heading">
+                Office
+              </h3>
+              <address class="footer-address text-left">
+                NXT Industries:Lab <br  />
+                1302 SE Martin Luther King Jr Blvd <br />
+                Portland, OR 97214 <br />
+              </address>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- get started section -->
+  <section class="get-started">
+    <a id="get-started"></a>
+    <div class="grid-container">
+      <div class="large-12 cell">
+        <h2 class="section-heading text-center">
+          <span class="blue-border">Get started</span>
+        </h2>
+        <p class="section-description text-center">
+          This is the section for getting started.
+        </p>
+      </div>
+    </div>
+    <div class="grid-container">
+      <div class="grid-x grid-margin-x grid-padding-x">
+        <div class="large-4 cell">
+          <div class="card">
+            <p class="card-icon text-center">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-blue fa-stack-2x"></i>
+                <i class="fa fa-coffee fa-stack-1x fa-inverse"></i>
+              </span>
+            </p>
+            <h3 class="card-heading text-center">
+              <span class="blue-border">
+                Let's grab coffee
+              </span>
+            </h3>
+            <p class="card-description text-center">
+              Let's grab a fresh cup of coffee, and discuss your new project or opportunity.
+            </p>
+            <a href="" class="secondary expanded button">
+              Get started
+            </a>
+          </div>
+        </div>
+        <div class="large-4 cell">
+          <div class="card">
+            <p class="card-icon text-center">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-blue fa-stack-2x"></i>
+                <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+              </span>
+            </p>
+            <h3 class="card-heading text-center">
+              <span class="blue-border">
+                Let's have a chat
+              </span>
+            </h3>
+            <p class="card-description text-center">
+              Let's grab a fresh cup of coffee, and discuss your new project or opportunity.
+            </p>
+              <a href="" class="secondary expanded button">
+                Get started
+              </a>
+          </div>
+        </div>
+        <div class="large-4 cell">
+          <div class="card">
+            <p class="card-icon text-center">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-square fa-blue fa-stack-2x"></i>
+                <i class="fa fa-envelope-open fa-stack-1x fa-inverse"></i>
+              </span>
+            </p>
+            <h3 class="card-heading text-center">
+              <span class="blue-border">
+                Send me a note
+              </span>
+            </h3>
+            <p class="card-description text-center">
+              Let's grab a fresh cup of coffee, and discuss your new project or opportunity.
+            </p>
+            <a href="" class="secondary expanded button">
+              Get started
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- custom secondary navigation class -->
+  <nav class="secondary-navigation">
+    <ul class="horizontal menu align-center">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#about-robert">About</a></li>
+      <li><a href="#roberts-story">Robert's Story</a></li>
+      <li><a href="#skillset">Skillset</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#clients">Clients</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact-us">Contact Us</a></li>
+      <li><a href="#get-started">Get Started</a></li>
+    </ul>
+  </nav>
+
+  <!-- custom primary footer class -->
+  <footer class="primary-footer">
+    <div class="grid-container">
+      <div class="grid-x grid-margin-x grid-padding-x">
+        <div class="large-2 cell">
+          <img src="images/128x128.png" alt="Test Image" />
+        </div>
+        <div class="large-6 cell">
+          <h3 class="section-heading text-left">About Robert G. Raleigh</h3>
+          <p class="text-left">
+            Robert G. Raleigh is a project manager and frontend developer with 10+ years of project leadership and management
+            experience working in the technology, nonprofit, education, and creative sectors.
+          </p>
+          <p class="text-left">
+            <i class="fa fa-map-marker"></i>&nbsp;Robert G Raleigh lives in Portland, OR.
+          </p>
+        </div>
+        <div class="large-4 cell">
+          <h3 class="section-heading text-left">Contact Information</h3>
+          <ul class="vertical menu">
+            <li>
+              <a href="">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square fa-blue fa-stack-2x"></i>
+                  <i class="fa fa-envelope-open fa-stack-1x fa-inverse"></i>
+                </span>
+                robert@robertgraleigh.com
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square fa-blue fa-stack-2x"></i>
+                  <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+                </span>
+                +1 (1971) 533-5868
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square fa-blue fa-stack-2x"></i>
+                  <i class="fa fa-slack fa-stack-1x fa-inverse"></i>
+                </span>
+                @RobertGRaleigh
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="large-6 cell">
+          <p class="copyright-notice text-left">
+            &copy; Copyright 2007 - <script> document.write(new Date().getFullYear());</script>
+            RGR Digital, LLC. All rights reserved.
+          </p>
+        </div>
+        <div class="large-6 cell">
+          <p class="copyright-notice text-right">
+            <a href="#top" data-smooth-scroll><i class="fa fa-chevron-up"></i>&nbsp; Back to top</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- maps to the project-management-skillset section -->
+  <div class="reveal" id="projectManagementSkillset" data-reveal>
+    <h1 class="text-left">Awesome. I Have It.</h1>
+    <p class="lead">Your couch. It is mine.</p>
+    <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+    <div class="grid-container full">
+      <div class="grid-x grid-margin-x grid-padding-x">
+        <div class="large-4 cell">
+          <p class="skillset-icon text-center">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
+            </span>
+          </p>
+          <h3 class="skillset-heading text-center">
+            Agile Methodology
+          </h3>
+          <p class="skillset-description text-center">
+            PM Skill One Description
+          </p>
+        </div>
+        <div class="large-4 cell">
+          <p class="skillset-icon text-center">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
+            </span>
+          </p>
+          <h3 class="skillset-heading text-center">
+            Forecasting
+          </h3>
+          <p class="skillset-description text-center">
+            PM Skill One Description
+          </p>
+        </div>
+        <div class="large-4 cell">
+          <p class="skillset-icon text-center">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
+            </span>
+          </p>
+          <h3 class="skillset-heading text-center">
+            Budgeting
+          </h3>
+          <p class="skillset-description text-center">
+            PM Skill One Description
+          </p>
+        </div>
+        <div class="large-4 cell">
+          <p class="skillset-icon text-center">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
+            </span>
+          </p>
+          <h3 class="skillset-heading text-center">
+            Quality Assurance
+          </h3>
+          <p class="skillset-description text-center">
+            PM Skill One Description
+          </p>
+        </div>
+        <div class="large-4 cell">
+          <p class="skillset-icon text-center">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
+            </span>
+          </p>
+          <h3 class="skillset-heading text-center">
+            Task Management
+          </h3>
+          <p class="skillset-description text-center">
+            PM Skill One Description
+          </p>
+        </div>
+        <div class="large-4 cell">
+          <p class="skillset-icon text-center">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
+            </span>
+          </p>
+          <h3 class="skillset-heading text-center">
+            Documentation
+          </h3>
+          <p class="skillset-description text-center">
+            PM Skill One Description
+          </p>
+        </div>
+        <div class="large-4 cell">
+          <p class="skillset-icon text-center">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
+            </span>
+          </p>
+          <h3 class="skillset-heading text-center">
+            Leadership
+          </h3>
+          <p class="skillset-description text-center">
+            PM Skill One Description
+          </p>
+        </div>
+        <div class="large-4 cell">
+          <p class="skillset-icon text-center">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
+            </span>
+          </p>
+          <h3 class="skillset-heading text-center">
+            Communication
+          </h3>
+          <p class="skillset-description text-center">
+            PM Skill One Description
+          </p>
+        </div>
+        <div class="large-4 cell">
+          <p class="skillset-icon text-center">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
+            </span>
+          </p>
+          <h3 class="skillset-heading text-center">
+            Empathy
+          </h3>
+          <p class="skillset-description text-center">
+            PM Skill One Description
+          </p>
+        </div>
+      </div>
+    </div>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <!-- maps to the frontend-development-skillset section -->
+  <div class="reveal" id="frontendDevelopmentSkillset" data-reveal>
+    <h1 class="text-left">Frontend Development Skills</h1>
+    <p class="lead">Your couch. It is mine.</p>
+    <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+    <div class="grid-container">
+      <div class="grid-x grid-margin-x grid-padding-x">
+        <div class="large-4 cell">
+          <p class="skillset-icon text-center">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-code fa-stack-1x fa-inverse"></i>
+            </span>
+          </p>
+          <h3 class="skillset-heading text-center">
+            Programming Languages
+          </h3>
+          <p class="skillset-description text-center">
+            HTML5, CSS3, JS
+          </p>
+        </div>
+        <div class="large-4 cell">
+          <p class="skillset-icon text-center">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
+            </span>
+          </p>
+          <h3 class="skillset-heading text-center">
+            Javascript Frameworks
+          </h3>
+          <p class="skillset-description text-center">
+            PM Skill One Description
+          </p>
+        </div>
+        <div class="large-4 cell">
+          <p class="skillset-icon text-center">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
+            </span>
+          </p>
+          <h3 class="skillset-heading text-center">
+            Frontend Frameworks
+          </h3>
+          <p class="skillset-description text-center">
+            Bootstrap, Semantic UI, Foundation
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="grid-container">
+      <div class="grid-x grid-margin-x grid-padding-x">
+        <div class="large-4 cell">
+          <p class="skillset-icon text-center">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
+            </span>
+          </p>
+          <h3 class="skillset-heading text-center">
+            PM Skill One Heading
+          </h3>
+          <p class="skillset-description text-center">
+            PM Skill One Description
+          </p>
+        </div>
+        <div class="large-4 cell">
+          <p class="skillset-icon text-center">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
+            </span>
+          </p>
+          <h3 class="skillset-heading text-center">
+            Testing and Debugging
+          </h3>
+          <p class="skillset-description text-center">
+            PM Skill One Description
+          </p>
+        </div>
+        <div class="large-4 cell">
+          <p class="skillset-icon text-center">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
+            </span>
+          </p>
+          <h3 class="skillset-heading text-center">
+            Version Control Systems
+          </h3>
+          <p class="skillset-description text-center">
+            Git, Github, and Bitbucket
+          </p>
+        </div>
+        <div class="large-4 cell">
+          <p class="skillset-icon text-center">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
+            </span>
+          </p>
+          <h3 class="skillset-heading text-center">
+            PM Skill One Heading
+          </h3>
+          <p class="skillset-description text-center">
+            PM Skill One Description
+          </p>
+        </div>
+        <div class="large-4 cell">
+          <p class="skillset-icon text-center">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
+            </span>
+          </p>
+          <h3 class="skillset-heading text-center">
+            PM Skill One Heading
+          </h3>
+          <p class="skillset-description text-center">
+            PM Skill One Description
+          </p>
+        </div>
+        <div class="large-4 cell">
+          <p class="skillset-icon text-center">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
+            </span>
+          </p>
+          <h3 class="skillset-heading text-center">
+            PM Skill One Heading
+          </h3>
+          <p class="skillset-description text-center">
+            PM Skill One Description
+          </p>
+        </div>
+      </div>
+    </div>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+</body>
 </html>
