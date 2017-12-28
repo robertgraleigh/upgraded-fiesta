@@ -113,7 +113,9 @@ $cardDescriptionFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roma
 
 .contact-us {
   @include padding(60px null 60px null);
-  background-color: #ffff00;
+  background-image: url(https://placehold.it/1400x600);
+  background-position: center;
+  background-size: cover;
 }
 
 .get-started {
