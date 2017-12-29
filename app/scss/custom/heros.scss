@@ -1,3 +1,6 @@
+$heroHeadingFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$heroDescriptionFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roman', serif;
+
 @mixin margin($margin) {
   padding: $margin;
 }
@@ -11,6 +14,16 @@
   @include padding(60px null 60px null);
   background-color: #0066CC;
   color: #FCFCFC;
+  & .hero-title {
+    @include margin(null null null null);
+    @include padding(0px null 0px null);
+    font-family: $heroHeadingFontStack;
+    font-size: 60px;
+    text-transform: uppercase;
+    & .dark-gray-border {
+      border-bottom: solid 5px #999999;
+    }
+  }
   & .hero-heading {
     @include margin(null null null null);
     @include padding(0px null 0px null);
