@@ -11,6 +11,48 @@
 </head>
 <body>
 
+  <div class="off-canvas position-left" id="offCanvasPrimaryNav">
+
+    <button class="close-button" aria-label="Close menu" type="button" data-close>
+      <span aria-hidden="true"><i class="fa fa-times"></i></span>
+    </button>
+
+    <ul class="vertical menu">
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="#">Robert's Story</a>
+      </li>
+      <li>
+        <a href="#">Skillset</a>
+      </li>
+      <li>
+        <a href="#">Experience</a>
+      </li>
+      <li>
+        <a href="#">Clients</a>
+      </li>
+      <li>
+        <a href="#">Projects</a>
+      </li>
+      <li>
+        <a href="#">Contact Us</a>
+      </li>
+      <li>
+        <a href="#">Get Started</a>
+      </li>
+    </ul>
+
+  </div>
+
+
+  <!-- off canvas primary navigation -->
+  <div class="off-canvas-content" data-off-canvas-content>
+
   <!-- contact-information section -->
   <section class="contact-information">
     <a id="top"></a>
@@ -135,6 +177,9 @@
           <p class="lead text-left">
             I'm a versatile frontend developer, agile project manager, and <br />technology consultant who lives and works in Portland, OR.
           </p>
+          <li>
+            <button type="button" class="button" data-toggle="offCanvasPrimaryNav">Open Left</button>
+          </li>
           <div class="large button-group">
             <a href="#contact-us" class="white hollow button">Contact Us</a>
             <a href="#get-started" class="white hollow button">Get started</a>
@@ -216,7 +261,7 @@
     <div class="grid-container full">
       <div class="grid-x">
         <div class="large-5 cell">
-          <img src="images/128x128.png" class="float-center" alt="Robert G. Raleigh" />
+          <img src="images/460x310.png" class="section-image float-center" alt="Robert G. Raleigh" />
         </div>
         <div class="large-7 cell">
           <h2 class="section-heading text-left">
@@ -284,25 +329,31 @@
               <ul class="orbit-container">
                 <li class="is-active orbit-slide">
                   <figure class="orbit-figure">
-                    <img class="orbit-image" src="https://placehold.it/1200x600/999?text=Slide-1" alt="Space">
+                    <img class="orbit-image" src="images/460x310.png" alt="Robert G. Raleigh image">
                     <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
                   </figure>
                 </li>
                 <li class="orbit-slide">
                   <figure class="orbit-figure">
-                    <img class="orbit-image" src="https://placehold.it/1200x600/888?text=Slide-2" alt="Space">
+                    <img class="orbit-image" src="images/460x310.png" alt="Space">
                     <figcaption class="orbit-caption">Lets Rocket!</figcaption>
                   </figure>
                 </li>
                 <li class="orbit-slide">
                   <figure class="orbit-figure">
-                    <img class="orbit-image" src="https://placehold.it/1200x600/777?text=Slide-3" alt="Space">
+                    <img class="orbit-image" src="images/460x310.png" alt="Space">
                     <figcaption class="orbit-caption">Encapsulating</figcaption>
                   </figure>
                 </li>
                 <li class="orbit-slide">
                   <figure class="orbit-figure">
-                    <img class="orbit-image" src="https://placehold.it/1200x600/666&text=Slide-4" alt="Space">
+                    <img class="orbit-image" src="images/460x310.png" alt="Space">
+                    <figcaption class="orbit-caption">Outta This World</figcaption>
+                  </figure>
+                </li>
+                <li class="orbit-slide">
+                  <figure class="orbit-figure">
+                    <img class="orbit-image" src="images/460x310.png" alt="Space">
                     <figcaption class="orbit-caption">Outta This World</figcaption>
                   </figure>
                 </li>
@@ -313,6 +364,7 @@
               <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
               <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
               <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+              <button data-slide="4"><span class="show-for-sr">Fifth slide details.</span></button>
             </nav>
           </div>
         </div>
@@ -1056,48 +1108,144 @@
             <span class="blue-border">Clients</span>
           </h2>
           <p class="section-description text-center">
-            I've worked with , including enterprise apps, corporate websites,
-            and e-commerce projects.
+            Wonderful companies and folks I've had the pleasure of working with
           </p>
         </div>
       </div>
     </div>
     <div class="grid-container full">
-      <div class="grid-x">
-        <div class="large-12 cell">
-          <div class="orbit" role="region" aria-label="Favorite Text Ever" data-orbit>
-            <ul class="orbit-container">
-              <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
-              <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button>
-              <li class="is-active orbit-slide">
-                <div class="docs-example-orbit-slide">
-                  <p><strong>This is dodgerblue.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-              </li>
-              <li class="orbit-slide">
-                <div class="docs-example-orbit-slide">
-                  <p><strong>This is rebeccapurple.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-              </li>
-              <li class="orbit-slide">
-                <div class="docs-example-orbit-slide">
-                  <p><strong>This is darkgoldenrod.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-              </li>
-              <li class="orbit-slide">
-                <div class="docs-example-orbit-slide">
-                  <p><strong>This is lightseagreen.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-              </li>
-            </ul>
-            <nav class="orbit-bullets">
-              <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
-              <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
-              <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
-              <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
-            </nav>
-          </div>
-        </div>
+      <div class="orbit" role="region" aria-label="Favorite Text Ever" data-orbit>
+        <ul class="orbit-container">
+          <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
+          <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button>
+          <li class="is-active orbit-slide">
+            <div class="grid-container">
+            <div class="grid-x grid-margin-x grid-padding-x">
+            <div class="large-4 cell">
+              <div class="card">
+                <img src="images/320x240.png" class="card-image"  />
+                <h3 class="card-heading">Hello World Devs</h3>
+              </div>
+            </div>
+            <div class="large-4 cell">
+              <div class="card">
+                <img src="images/320x240.png" class="card-image"  />
+                <h3 class="card-heading">Hello World Devs</h3>
+              </div>
+            </div>
+            <div class="large-4 cell">
+              <div class="card">
+                <img src="images/320x240.png" class="card-image"  />
+                <h3 class="card-heading">Hello World Devs</h3>
+              </div>
+            </div>
+            </div>
+            </div>
+          </li>
+          <li class="orbit-slide">
+            <div class="grid-container">
+            <div class="grid-x grid-margin-x grid-padding-x">
+            <div class="large-4 cell">
+              <div class="card">
+                <img src="images/320x240.png" class="card-image"  />
+                <h3 class="card-heading">Hello World Devs</h3>
+              </div>
+            </div>
+            <div class="large-4 cell">
+              <div class="card">
+                <img src="images/320x240.png" class="card-image"  />
+                <h3 class="card-heading">Hello World Devs</h3>
+              </div>
+            </div>
+            <div class="large-4 cell">
+              <div class="card">
+                <img src="images/320x240.png" class="card-image"  />
+                <h3 class="card-heading">Hello World Devs</h3>
+              </div>
+            </div>
+            </div>
+            </div>
+          </li>
+          <li class="orbit-slide">
+            <div class="grid-container">
+            <div class="grid-x grid-margin-x grid-padding-x">
+            <div class="large-4 cell">
+              <div class="card">
+                <img src="images/320x240.png" class="card-image"  />
+                <h3 class="card-heading">Hello World Devs</h3>
+              </div>
+            </div>
+            <div class="large-4 cell">
+              <div class="card">
+                <img src="images/320x240.png" class="card-image"  />
+                <h3 class="card-heading">Hello World Devs</h3>
+              </div>
+            </div>
+            <div class="large-4 cell">
+              <div class="card">
+                <img src="images/320x240.png" class="card-image"  />
+                <h3 class="card-heading">Hello World Devs</h3>
+              </div>
+            </div>
+            </div>
+            </div>
+          </li>
+          <li class="orbit-slide">
+            <div class="grid-container">
+            <div class="grid-x grid-margin-x grid-padding-x">
+            <div class="large-4 cell">
+              <div class="card">
+                <img src="images/320x240.png" class="card-image"  />
+                <h3 class="card-heading">Hello World Devs</h3>
+              </div>
+            </div>
+            <div class="large-4 cell">
+              <div class="card">
+                <img src="images/320x240.png" class="card-image"  />
+                <h3 class="card-heading">Hello World Devs</h3>
+              </div>
+            </div>
+            <div class="large-4 cell">
+              <div class="card">
+                <img src="images/320x240.png" class="card-image"  />
+                <h3 class="card-heading">Hello World Devs</h3>
+              </div>
+            </div>
+            </div>
+            </div>
+          </li>
+          <li class="orbit-slide">
+            <div class="grid-container">
+            <div class="grid-x grid-margin-x grid-padding-x">
+            <div class="large-4 cell">
+              <div class="card">
+                <img src="images/320x240.png" class="card-image"  />
+                <h3 class="card-heading">Hello World Devs</h3>
+              </div>
+            </div>
+            <div class="large-4 cell">
+              <div class="card">
+                <img src="images/320x240.png" class="card-image"  />
+                <h3 class="card-heading">Hello World Devs</h3>
+              </div>
+            </div>
+            <div class="large-4 cell">
+              <div class="card">
+                <img src="images/320x240.png" class="card-image"  />
+                <h3 class="card-heading">Hello World Devs</h3>
+              </div>
+            </div>
+            </div>
+            </div>
+          </li>
+        </ul>
+        <nav class="orbit-bullets">
+          <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+          <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+          <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+          <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+          <button data-slide="4"><span class="show-for-sr">Fourth slide details.</span></button>
+        </nav>
       </div>
     </div>
   </section>
@@ -1140,41 +1288,138 @@
       </div>
     </div>
     <div class="grid-container full">
-      <div class="grid-x">
-        <div class="large-12 cell">
-          <div class="orbit" role="region" aria-label="Favorite Text Ever" data-orbit>
-            <ul class="orbit-container">
-              <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
-              <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button>
-              <li class="is-active orbit-slide">
-                <div class="docs-example-orbit-slide">
-                  <p><strong>This is dodgerblue.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-              </li>
-              <li class="orbit-slide">
-                <div class="docs-example-orbit-slide">
-                  <p><strong>This is rebeccapurple.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-              </li>
-              <li class="orbit-slide">
-                <div class="docs-example-orbit-slide">
-                  <p><strong>This is darkgoldenrod.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-              </li>
-              <li class="orbit-slide">
-                <div class="docs-example-orbit-slide">
-                  <p><strong>This is lightseagreen.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-              </li>
-            </ul>
-            <nav class="orbit-bullets">
-              <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
-              <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
-              <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
-              <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
-            </nav>
-          </div>
-        </div>
+      <div class="orbit" role="region" aria-label="Favorite Text Ever" data-orbit>
+        <ul class="orbit-container">
+          <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
+          <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button>
+          <li class="is-active orbit-slide">
+            <div class="grid-container">
+            <div class="grid-x grid-margin-x grid-padding-x">
+            <div class="large-4 cell">
+              <div class="card">
+                <img src="images/320x240.png" class="card-image"  />
+                <h3 class="card-heading">Hello World Devs</h3>
+              </div>
+            </div>
+            <div class="large-4 cell">
+              <div class="card">
+                <img src="images/320x240.png" class="card-image"  />
+                <h3 class="card-heading">Hello World Devs</h3>
+              </div>
+            </div>
+            <div class="large-4 cell">
+              <div class="card">
+                <img src="images/320x240.png" class="card-image"  />
+                <h3 class="card-heading">Hello World Devs</h3>
+              </div>
+            </div>
+            </div>
+            </div>
+          </li>
+          <li class="orbit-slide">
+            <div class="grid-container">
+            <div class="grid-x grid-margin-x grid-padding-x">
+            <div class="large-4 cell">
+              <div class="card">
+                <img src="images/320x240.png" class="card-image"  />
+                <h3 class="card-heading">Hello World Devs</h3>
+              </div>
+            </div>
+            <div class="large-4 cell">
+              <div class="card">
+                <img src="images/320x240.png" class="card-image"  />
+                <h3 class="card-heading">Hello World Devs</h3>
+              </div>
+            </div>
+            <div class="large-4 cell">
+              <div class="card">
+                <img src="images/320x240.png" class="card-image"  />
+                <h3 class="card-heading">Hello World Devs</h3>
+              </div>
+            </div>
+            </div>
+            </div>
+          </li>
+          <li class="orbit-slide">
+            <div class="grid-container">
+            <div class="grid-x grid-margin-x grid-padding-x">
+            <div class="large-4 cell">
+              <div class="card">
+                <img src="images/320x240.png" class="card-image"  />
+                <h3 class="card-heading">Hello World Devs</h3>
+              </div>
+            </div>
+            <div class="large-4 cell">
+              <div class="card">
+                <img src="images/320x240.png" class="card-image"  />
+                <h3 class="card-heading">Hello World Devs</h3>
+              </div>
+            </div>
+            <div class="large-4 cell">
+              <div class="card">
+                <img src="images/320x240.png" class="card-image"  />
+                <h3 class="card-heading">Hello World Devs</h3>
+              </div>
+            </div>
+            </div>
+            </div>
+          </li>
+          <li class="orbit-slide">
+            <div class="grid-container">
+            <div class="grid-x grid-margin-x grid-padding-x">
+            <div class="large-4 cell">
+              <div class="card">
+                <img src="images/320x240.png" class="card-image"  />
+                <h3 class="card-heading">Hello World Devs</h3>
+              </div>
+            </div>
+            <div class="large-4 cell">
+              <div class="card">
+                <img src="images/320x240.png" class="card-image"  />
+                <h3 class="card-heading">Hello World Devs</h3>
+              </div>
+            </div>
+            <div class="large-4 cell">
+              <div class="card">
+                <img src="images/320x240.png" class="card-image"  />
+                <h3 class="card-heading">Hello World Devs</h3>
+              </div>
+            </div>
+            </div>
+            </div>
+          </li>
+          <li class="orbit-slide">
+            <div class="grid-container">
+            <div class="grid-x grid-margin-x grid-padding-x">
+            <div class="large-4 cell">
+              <div class="card">
+                <img src="images/320x240.png" class="card-image"  />
+                <h3 class="card-heading">Hello World Devs</h3>
+              </div>
+            </div>
+            <div class="large-4 cell">
+              <div class="card">
+                <img src="images/320x240.png" class="card-image"  />
+                <h3 class="card-heading">Hello World Devs</h3>
+              </div>
+            </div>
+            <div class="large-4 cell">
+              <div class="card">
+                <img src="images/320x240.png" class="card-image"  />
+                <h3 class="card-heading">Hello World Devs</h3>
+              </div>
+            </div>
+            </div>
+            </div>
+          </li>
+        </ul>
+        <nav class="orbit-bullets">
+          <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+          <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+          <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+          <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+          <button data-slide="4"><span class="show-for-sr">Fourth slide details.</span></button>
+        </nav>
       </div>
     </div>
   </section>
@@ -1183,20 +1428,24 @@
   <section class="contact-us">
     <a id="contact-us"></a>
     <div class="grid-container full">
-      <div class="grid-x">
-        <div class="large-offset-6 large-5 cell">
+      <div class="grid-x grid-margin-x grid-padding-x">
+        <div class="large-12 cell">
           <h2 class="section-heading text-center">
             <span class="blue-border">
               Contact Us
             </span>
           </h2>
+        </div>
+        <div class="large-7 cell">
+          <img src="images/pioneer-square-street-signs.jpg" class="thumbnail" alt="Pioneer Square Street Signs" />
+        </div>
+        <div class="large-5 cell">
           <div class="card">
-            <div class="card-section">
               <h3 class="card-heading">Contact Information</h3>
-              <ul class="vertical menu">
+              <ul class="vertical menu no-bullet">
                 <li>
                   <a href="tel:+19715335868">
-                    <span class="fa-stack fa-lg">
+                    <span class="fa-stack fa-blue fa-lg">
                       <i class="fa fa-square-o fa-stack-2x"></i>
                       <i class="fa fa-phone fa-stack-1x"></i>
                     </span>
@@ -1205,8 +1454,8 @@
                 </li>
                 <li>
                   <a href="mailto:robert@robertgraleigh.com">
-                    <span class="fa-stack fa-lg">
-                      <i class="fa fa-square-o fa-stack-2x"></i>
+                    <span class="fa-stack fa-blue fa-lg">
+                      <i class="fa fa-square-o fa-blue fa-stack-2x"></i>
                       <i class="fa fa-envelope fa-stack-1x"></i>
                     </span>
                     robert@robertgraleigh.com
@@ -1214,8 +1463,8 @@
                 </li>
                 <li>
                   <a href="https://www.slack.com" target="_blank">
-                    <span class="fa-stack fa-lg">
-                      <i class="fa fa-square-o fa-stack-2x"></i>
+                    <span class="fa-stack fa-blue fa-lg">
+                      <i class="fa fa-square-o fa-blue fa-stack-2x"></i>
                       <i class="fa fa-slack fa-stack-1x"></i>
                     </span>
                     @RobertGRaleigh
@@ -1223,7 +1472,7 @@
                 </li>
               </ul>
               <h3 class="card-heading text-left">Hours of Operation</h3>
-              <ul class="no-bullet">
+              <ul class="vertical menu no-bullet">
                 <li>
                   <span>Monday: 9:00am PST &mdash; 4:00pm PST</span>
                 </li>
@@ -1256,7 +1505,6 @@
                   Portland, OR 97214 <br />
                 </address>
               </a>
-            </div>
           </div>
         </div>
       </div>
@@ -1767,6 +2015,8 @@
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
+
+</div>
 
 </body>
 </html>
