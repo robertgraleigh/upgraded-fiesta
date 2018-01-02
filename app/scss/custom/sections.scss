@@ -1,3 +1,5 @@
+$headingFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$copyFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roman', serif;
 $cardHeadingFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 $cardDescriptionFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roman', serif;
 
@@ -119,9 +121,13 @@ section {
   @include margin(0px null 0px null);
   @include padding(40px null 40px null);
   background-color: #FCFCFC;
+  color: #222222;
   & .accordion-title {
-    font-size: 21px;
     color: #222222;
+    font-family: $headingFontStack;
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
   }
   & .tabs-title > a {
     color: #222222;
@@ -129,6 +135,16 @@ section {
     font-size: 21px;
     font-weight: bold;
     text-transform: uppercase;
+  }
+  & .accordion-heading {
+    font-family: $headingFontStack;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  & .accordion-copy {
+    font-family: $copyFontStack;
+    font-size: 18px;
   }
 }
 
