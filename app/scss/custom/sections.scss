@@ -136,6 +136,9 @@ section {
   @include margin(0px null 0px null);
   @include padding(20px null 20px null);
   background-color: #222222;
+  background-image: url("images/gray-sand.png");
+  background-repeat:repeat;
+  background-position: center;
   color: #FCFCFC;
   font-size: 18px;
 }
@@ -146,7 +149,7 @@ section {
 }
 
 .clients {
-  
+
 }
 
 .projects {
