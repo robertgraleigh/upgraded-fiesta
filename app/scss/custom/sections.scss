@@ -1,9 +1,4 @@
-$headingFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-$copyFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roman', serif;
-$cardHeadingFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-$cardDescriptionFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roman', serif;
-$contactBarFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-
+// custom mixins
 @mixin margin($margin) {
   padding: $margin;
 }
@@ -11,6 +6,13 @@ $contactBarFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-ser
 @mixin padding($padding) {
   padding: $padding;
 }
+
+// custom section variables
+$headingFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$copyFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roman', serif;
+$cardHeadingFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$cardDescriptionFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roman', serif;
+$contactBarFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 
 #project-management-skillset {
   @include margin(null null null null);
@@ -76,7 +78,7 @@ section {
 .about-robert {
   @include margin(0px null 0px null);
   @include padding(60px null 60px null);
-  background-color: #FCFCFC;
+  background-color: #FFFFFF;
   & h2.section-heading {
     font-size: 54px;
   }
