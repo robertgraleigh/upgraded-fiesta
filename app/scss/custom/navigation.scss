@@ -1,3 +1,4 @@
+// custom mixins
 @mixin margin($margin) {
   padding: $margin;
 }
@@ -6,14 +7,16 @@
   padding: $padding;
 }
 
+// custom navigation variables
 $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Arial', sans-serif;
 
+// maps to the custom primary navigation
 #primary-navigation {
   @include margin(null null null null);
   @include padding(20px null 20px null);
-  background-color: #FCFCFC;
+  background-color: #FFFFFF;
   & ul {
-    background-color: #FCFCFC;
+    background-color: #FFFFFF;
   }
   & ul.menu li a {
     font-family: $navigationFontStack;
@@ -22,7 +25,7 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Arial', sans-serif;
     color: #222222;
     text-transform: uppercase;
     & .blue-border {
-      border-bottom: solid 5px #FCFCFC;
+      border-bottom: solid 5px #FFFFFF;
     }
   }
   & ul.menu li a:hover {
@@ -39,12 +42,13 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Arial', sans-serif;
     }
   }
   & ul.menu li a.button {
-    color: #FCFCFC;
+    color: #FFFFFF;
     text-transform: uppercase;
     text-decoration: none;
   }
 }
 
+// maps to the secondary navigation class
 .secondary-navigation {
   @include margin(null null null null);
   @include padding(40px null 0px null);
@@ -53,7 +57,7 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Arial', sans-serif;
   background-repeat:repeat;
   background-position: center;
   & ul li a {
-    color: #FCFCFC;
+    color: #FFFFFF;
     font-family: $navigationFontStack;
     font-size: 21px;
     font-weight: bold;

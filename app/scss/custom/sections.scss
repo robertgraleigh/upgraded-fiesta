@@ -2,7 +2,6 @@ $headingFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 $copyFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roman', serif;
 $cardHeadingFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 $cardDescriptionFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roman', serif;
-
 $contactBarFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 
 @mixin margin($margin) {
@@ -37,27 +36,36 @@ $contactBarFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-ser
   margin-top: 20px;
 }
 
+.blue-border {
+  border-bottom: solid 5px #0066CC;
+}
+
 section {
   & .section-image {
     margin-top: 20px;
   }
 }
 
+.button {
+  color: #FFFFFF !important;
+  text-transform: uppercase;
+}
+
 .contact-bar {
   @include margin(0px null 0px null);
-  @include padding(20px null 20px null);
+  @include padding(10px null 10px null);
   border-top: solid 2px #999999;
   border-bottom: solid 2px #999999;
   background-image: url("images/sayagata.png");
-  & h2.contact-bar-heading {
+  & .button {
     font-family: $contactBarFontStack;
     font-weight: bold;
-    font-size: 54px;
+    font-size: 21px;
     text-transform: uppercase;
+    margin-top: 20px;
   }
   & h3.contact-bar-heading {
-    @include margin(0px null 0px null);
-    @include padding(0px null 0px null);
+    margin-top: 15px;
     font-family: $contactBarFontStack;
     font-size: 45px;
     font-weight: bold;
@@ -81,40 +89,6 @@ section {
   @include margin(0px null 0px null);
   @include padding(60px null 60px null);
   background-color: #FCFCFC;
-}
-
-.skillset {
-  @include margin(0px null 0px null);
-  @include padding(40px null 40px null);
-  background-color: #666666;
-  & .card {
-    @include margin(0px null 0px null);
-    @include padding(20px null 20px null);
-    background-color: #666666;
-    border: solid 2px #CCCCCC;
-    border-radius: 5px;
-  }
-  & .section-heading {
-    color: #FCFCFC;
-  }
-  & .section-description {
-    color: #FCFCFC;
-  }
-  & .card-heading {
-    font-family: $cardHeadingFontStack;
-    font-weight: bold;
-    font-size: 21px;
-    text-transform: uppercase;
-  }
-  & .card-description {
-    font-family: $cardDescriptionFontStack;
-    font-size: 16px;
-  }
-  & .card-icon {
-    @include margin(0px null 0px null);
-    @include padding(20px null 0px null);
-    font-size: 54px;
-  }
 }
 
 .experience {
@@ -202,8 +176,4 @@ section {
     @include padding(20px null 0px null);
     font-size: 54px;
   }
-}
-
-.blue-border {
-  border-bottom: solid 5px #0066CC;
 }

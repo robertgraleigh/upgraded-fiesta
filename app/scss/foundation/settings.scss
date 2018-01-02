@@ -82,7 +82,7 @@ $black: #000000;
 $white: #FFFFFF;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -141,9 +141,9 @@ $header-styles: (
   small: (
     'h1': ('font-size': 24),
     'h2': ('font-size': 20),
-    'h3': ('font-size': 19),
+    'h3': ('font-size': 21),
     'h4': ('font-size': 18),
-    'h5': ('font-size': 17),
+    'h5': ('font-size': 18),
     'h6': ('font-size': 16),
   ),
   medium: (
@@ -152,6 +152,14 @@ $header-styles: (
     'h3': ('font-size': 31),
     'h4': ('font-size': 25),
     'h5': ('font-size': 20),
+    'h6': ('font-size': 16),
+  ),
+  large: (
+    'h1': ('font-size': 60),
+    'h2': ('font-size': 54),
+    'h3': ('font-size': 30),
+    'h4': ('font-size': 21),
+    'h5': ('font-size': 18),
     'h6': ('font-size': 16),
   ),
 );
@@ -299,6 +307,7 @@ $button-opacity-disabled: 0.25;
 $button-background-hover-lightness: -20%;
 $button-hollow-hover-lightness: -50%;
 $button-transition: background-color 0.25s ease-out, color 0.25s ease-out;
+$button-text-transform: uppercase;
 
 // 12. Button Group
 // ----------------

@@ -45,6 +45,7 @@ $cardDescriptionFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roma
     @include padding(10px null 10px null);
     font-size: 21px;
     font-weight: bold;
+    text-transform: uppercase;
   }
   & a {
     font-weight: bold;
