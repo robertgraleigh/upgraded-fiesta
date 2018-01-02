@@ -1,4 +1,4 @@
-@import 'settings';
+@import 'app/scss/foundation/settings.scss';
 @import 'foundation';
 @include foundation-everything(true);
 @import 'motion-ui';
