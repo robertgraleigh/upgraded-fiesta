@@ -1,6 +1,8 @@
+// custom card variables
 $cardHeadingFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 $cardDescriptionFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roman', serif;
 
+// custom mixins
 @mixin margin($margin) {
   padding: $margin;
 }
@@ -12,7 +14,7 @@ $cardDescriptionFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roma
 .card {
   @include margin(0px null 0px null);
   @include padding(20px null 20px null);
-  background-color: #FCFCFC;
+  background-color: #FFFFFF;
   border: solid 2px #CCCCCC;
   border-radius: 5px;
   & .card-heading {

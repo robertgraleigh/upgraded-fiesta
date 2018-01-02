@@ -14,6 +14,11 @@ $cardHeadingFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-se
 $cardDescriptionFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roman', serif;
 $contactBarFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 
+.skillset {
+  @include margin(null null null null);
+  @include padding(60px null 60px null);
+}
+
 #project-management-skillset {
   @include margin(null null null null);
   @include padding(60px null 60px null);
