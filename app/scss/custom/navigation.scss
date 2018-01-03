@@ -53,11 +53,8 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Arial', sans-serif;
   @include margin(null null null null);
   @include padding(40px null 0px null);
   background-color: #222222;
-  background-image: url("images/gray-sand.png");
-  background-repeat:repeat;
-  background-position: center;
   & ul li a {
-    color: #FFFFFF;
+    color: #CCCCCC;
     font-family: $navigationFontStack;
     font-size: 21px;
     font-weight: bold;

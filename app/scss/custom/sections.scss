@@ -14,25 +14,6 @@ $cardHeadingFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-se
 $cardDescriptionFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roman', serif;
 $contactBarFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 
-.skillset {
-  @include margin(null null null null);
-  @include padding(60px null 60px null);
-}
-
-#project-management-skillset {
-  @include margin(null null null null);
-  @include padding(60px null 60px null);
-  background-color: #666666;
-  height: 60vh;
-}
-
-#frontend-development-skillset {
-  @include margin(null null null null);
-  @include padding(60px null 60px null);
-  background-color: #666666;
-  height: 60vh;
-}
-
 .hero {
   & .hero-icon {
     color: #999999;
@@ -98,6 +79,25 @@ section {
   background-color: #FFFFFF;
 }
 
+.skillset {
+  @include margin(null null null null);
+  @include padding(40px null 40px null);
+}
+
+#project-management-skillset {
+  @include margin(null null null null);
+  @include padding(60px null 60px null);
+  background-color: #666666;
+  height: 60vh;
+}
+
+#frontend-development-skillset {
+  @include margin(null null null null);
+  @include padding(60px null 60px null);
+  background-color: #666666;
+  height: 60vh;
+}
+
 .experience {
   @include margin(0px null 0px null);
   @include padding(40px null 40px null);
@@ -129,28 +129,19 @@ section {
   }
 }
 
-.contact-information {
-  @include margin(0px null 0px null);
-  @include padding(20px null 20px null);
-  background-color: #222222;
-  background-image: url("images/gray-sand.png");
-  background-repeat:repeat;
-  background-position: center;
-  color: #FCFCFC;
-  font-size: 18px;
-}
-
 .experience {
-  @include padding(60px null 60px null);
+  @include padding(40px null 40px null);
   background-color: #FFFFFF;
 }
 
 .clients {
-
+  @include padding(40px null 40px null);
+  background-color: #FFFFFF;
 }
 
 .projects {
-
+  @include padding(40px null 40px null);
+  background-color: #FFFFFF;
 }
 
 .contact-us {
