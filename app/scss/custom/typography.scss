@@ -36,7 +36,7 @@ p {
   @include margin(null null null null);
   @include padding(10px null 0px null);
   font-family: $headingFontStack;
-  font-size: 24px;
+  font-size: 45px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -58,5 +58,5 @@ p {
 }
 
 .grey-border {
-  border-bottom: solid 2px #CCCCCC;
+  border-bottom: solid 5px #CCCCCC;
 }
