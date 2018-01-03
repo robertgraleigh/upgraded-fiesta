@@ -70,12 +70,12 @@ $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #0066CC,
-  secondary: #767676,
+  secondary: #666666,
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
 );
-$light-gray: #999999;
+$light-gray: #CCCCCC;
 $medium-gray: #666666;
 $dark-gray: #222222;
 $black: #000000;
@@ -805,7 +805,7 @@ $tab-margin: 0;
 $tab-background: $white;
 $tab-color: $primary-color;
 $tab-background-active: $light-gray;
-$tab-active-color: $primary-color;
+$tab-active-color: $light-gray;
 $tab-item-font-size: rem-calc(12);
 $tab-item-background-hover: $white;
 $tab-item-padding: 1.25rem 1.5rem;
