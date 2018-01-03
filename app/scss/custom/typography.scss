@@ -32,6 +32,15 @@ p {
   text-transform: uppercase;
 }
 
+.section-subheading {
+  @include margin(null null null null);
+  @include padding(10px null 0px null);
+  font-family: $headingFontStack;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .section-description {
   @include margin(null null null null);
   @include padding(10px null 0px null);
@@ -46,4 +55,8 @@ p {
   font-size: 30px;
   font-weight: bold;
   text-transform: none;
+}
+
+.grey-border {
+  border-bottom: solid 2px #CCCCCC;
 }
