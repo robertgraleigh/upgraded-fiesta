@@ -94,8 +94,40 @@ section {
 }
 
 .skillset {
-  @include margin(null null null null);
+  @include margin(0px null 0px null);
   @include padding(40px null 40px null);
+  background-color: #FFFFFF;
+  color: #222222;
+  & .accordion-title {
+    color: #222222;
+    font-family: $headingFontStack;
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  & .tabs-title > a {
+    color: #222222;
+    font-family: $cardHeadingFontStack;
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  & .accordion-heading {
+    font-family: $headingFontStack;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  & .accordion-copy {
+    font-family: $copyFontStack;
+    font-size: 18px;
+  }
+  & .skillset-icon {
+    @include margin(0px null 0px null);
+    @include padding(20px null 0px null);
+    font-size: 54px;
+    color: #0066CC;
+  }
 }
 
 #project-management-skillset {
