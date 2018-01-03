@@ -25,6 +25,12 @@ $contactBarFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-ser
   margin-top: 20px;
 }
 
+.label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
 .blue-border {
   border-bottom: solid 5px #0066CC;
 }
@@ -53,7 +59,8 @@ section {
     text-transform: uppercase;
     margin-top: 20px;
   }
-  & h3.contact-bar-heading {
+  & .contact-bar-heading {
+    color: #222222;
     margin-top: 15px;
     font-family: $contactBarFontStack;
     font-size: 45px;
@@ -108,7 +115,7 @@ section {
 .experience {
   @include margin(0px null 0px null);
   @include padding(40px null 40px null);
-  background-color: #FCFCFC;
+  background-color: #FFFFFF;
   color: #222222;
   & .accordion-title {
     color: #222222;
@@ -134,11 +141,6 @@ section {
     font-family: $copyFontStack;
     font-size: 18px;
   }
-}
-
-.experience {
-  @include padding(40px null 40px null);
-  background-color: #FFFFFF;
 }
 
 .clients {
