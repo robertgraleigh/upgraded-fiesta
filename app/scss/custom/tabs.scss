@@ -1,11 +1,49 @@
+// custom tabs component font variables
+$tabsHeadingFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$tabscopyFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roman', serif;
+
 .tabs {
   margin: 0;
   border: 2px solid #999999;
   background-color: #FFFFFF;
   list-style-type: none;
 }
+
+.tabs-title > a {
+  color: #222222;
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.tabs-title > a:hover {
+  background-color: #CCCCCC;
+  color: #222222;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.tabs-title > a[aria-selected='true'] {
+  color: #222222;
+}
+
 .tabs-panel {
   background-color: #FFFFFF;
+  border-top: solid 2px #999999;
+}
+
+.tabs-heading {
+  font-family: $tabsHeadingFontStack;
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.tabs-copy {
+  font-family: $tabscopyFontStack;
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: none;
 }
 
 .tabs-content {
