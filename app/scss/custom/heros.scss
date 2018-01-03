@@ -59,14 +59,14 @@ $heroDescriptionFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roma
     color: #999999;
   }
   & a:hover {
-    color: darken(#999999, 20%);
+    color: darken(#999999, 10%);
   }
   & .white .hollow .button {
-    color: #FCFCFC;
+    color: #FFFFFF;
   }
   & a.white.hollow.button {
-    color: #FCFCFC;
-    border: solid 2px #FCFCFC;
+    color: #FFFFFF;
+    border: solid 2px #FFFFFF;
   }
 }
 
