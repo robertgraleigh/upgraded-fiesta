@@ -12,7 +12,7 @@
   border: 2px solid #999999;
   border-top: 0;
   background: #FFFFFF;
-  color: #0a0a0a;
+  color: #222222;
   transition: all 0.5s ease;
 }
 :last-child:not(.is-active) > .accordion-title {
@@ -24,7 +24,7 @@
 }
 .accordion-title {
   background-color: #FFFFFF;
-  color: #1779ba;
+  color: #222222;
   position: relative;
   display: block;
   padding: 1.25rem 1rem;
@@ -37,7 +37,7 @@
   background-color: #FFFFFF;
   border: 2px solid #999999;
   border-bottom: 0;
-  color: #0a0a0a;
+  color: #222222;
   display: none;
   padding: 1rem;
 }
