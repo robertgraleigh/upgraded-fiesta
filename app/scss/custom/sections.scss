@@ -70,8 +70,8 @@ section {
 }
 
 .about-robert {
-  @include margin(0px null 0px null);
-  @include padding(60px null 60px null);
+  @include margin(0px null null null);
+  @include padding(40px null null null);
   background-color: #FFFFFF;
   & h2.section-heading {
     font-size: 54px;
@@ -82,8 +82,8 @@ section {
 }
 
 .roberts-story {
-  @include margin(0px null 0px null);
-  @include padding(60px null 60px null);
+  @include margin(null null null null);
+  @include padding(null null null null);
   background-color: #FFFFFF;
   & .button-group {
     & .secondary.button {
