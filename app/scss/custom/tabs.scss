@@ -60,17 +60,21 @@ $tabscopyFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roman', ser
 :last-child > .accordion-content:last-child {
   border-bottom: 2px solid #999999;
 }
+
 .accordion-title {
   background-color: #FFFFFF;
-  color: #222222;
-  position: relative;
-  display: block;
-  padding: 1.25rem 1rem;
   border: 2px solid #999999;
   border-bottom: 0;
-  font-size: 0.75rem;
-  line-height: 1;
+  color: #222222;
+  display: block;
+  font-family: "Oswald", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  position: relative;
+  padding: 1.25rem 1rem;
+  text-transform: uppercase;
 }
+
 .accordion-content {
   background-color: #FFFFFF;
   border: 2px solid #999999;
