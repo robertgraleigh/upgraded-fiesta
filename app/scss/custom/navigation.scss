@@ -13,7 +13,7 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Arial', sans-serif;
 // maps to the custom primary navigation
 #primary-navigation {
   @include margin(null null null null);
-  @include padding(20px null 20px null);
+  @include padding(15px null 15px null);
   background-color: #FFFFFF;
   & ul {
     background-color: #FFFFFF;
