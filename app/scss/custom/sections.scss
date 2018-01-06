@@ -77,7 +77,7 @@ section {
   & h2.section-heading {
     font-size: 54px;
   }
-  & .section-subheading {
+  & h3.section-subheading {
     @include margin(10px null null null);
     @include padding(0px null null null);
   }
@@ -91,7 +91,10 @@ section {
   @include margin(0px null null null);
   @include padding(0px null null null);
   background-color: #FFFFFF;
-  & .section-subheading {
+  & h2.section-heading {
+    font-size: 54px;
+  }
+  & h3.section-subheading {
     @include margin(10px null null null);
     @include padding(0px null null null);
   }
