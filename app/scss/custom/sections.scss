@@ -237,6 +237,13 @@ section {
   @include padding(null null null null);
 }
 
+// maps to the custom projects section
+.resources {
+  background-color: #FFFFFF;
+  @include margin(40px null null null);
+  @include padding(null null null null);
+}
+
 .contact-us {
   @include padding(20px null 40px null);
   & h2.section-heading {
