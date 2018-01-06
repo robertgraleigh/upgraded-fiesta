@@ -263,9 +263,10 @@ section {
   }
 }
 
+// maps to the custom get started section
 .get-started {
-  @include margin(0px null 0px null);
-  @include padding(40px null 40px null);
+  @include margin(40px null 40px null);
+  @include padding(null null null null);
   & .card {
     background-color: #FFFFFF;
     border: solid 2px #CCCCCC;
