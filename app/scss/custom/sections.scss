@@ -158,11 +158,22 @@ section {
   height: 60vh;
 }
 
+// maps to the custom experience section
 .experience {
-  @include margin(0px null 0px null);
-  @include padding(40px null 40px null);
   background-color: #FFFFFF;
   color: #222222;
+  @include margin(40px null null null);
+  @include padding(null null null null);
+  & .accordion-copy {
+    font-family: $copyFontStack;
+    font-size: 18px;
+  }
+  & .accordion-heading {
+    font-family: $headingFontStack;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
   & .accordion-title {
     color: #222222;
     font-family: $headingFontStack;
@@ -176,16 +187,6 @@ section {
     font-size: 21px;
     font-weight: bold;
     text-transform: uppercase;
-  }
-  & .accordion-heading {
-    font-family: $headingFontStack;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  & .accordion-copy {
-    font-family: $copyFontStack;
-    font-size: 18px;
   }
 }
 
