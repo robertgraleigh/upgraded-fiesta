@@ -223,14 +223,18 @@ section {
   }
 }
 
+// maps to the custom clients section
 .clients {
-  @include padding(40px null 40px null);
   background-color: #FFFFFF;
+  @include margin(40px null null null);
+  @include padding(null null null null);
 }
 
+// maps to the custom projects section
 .projects {
-  @include padding(40px null 40px null);
   background-color: #FFFFFF;
+  @include margin(40px null null null);
+  @include padding(null null null null);
 }
 
 .contact-us {
