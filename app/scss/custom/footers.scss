@@ -16,10 +16,7 @@ $footerDescriptionFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Ro
   font-weight: bold;
 }
 
-.copyright-notice {
-  color: darken(#FCFCFC, 0%);
-}
-
+// maps to the custom primary footer secton
 .primary-footer {
   @include margin(null null null null);
   @include padding(0px null 0px null);
@@ -62,10 +59,11 @@ $footerDescriptionFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Ro
     margin-top: 15px;
   }
   & .copyright-notice {
-    font-family: $footerDescriptionFontStack;
-    font-size: 16px;
     @include margin(0px null null null);
     @include padding(20px null 0px null);
+    color: darken(#FCFCFC, 0%);
+    font-family: $footerDescriptionFontStack;
+    font-size: 16px;
     & a {
       font-family: $footerHeadingFontStack;
       font-size: 16px;
