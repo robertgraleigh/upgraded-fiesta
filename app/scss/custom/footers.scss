@@ -59,8 +59,7 @@ $footerDescriptionFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Ro
     text-transform: underline;
   }
   & img {
-    @include margin(null null null null);
-    @include padding(10px null 0px null);
+    margin-top: 15px;
   }
   & .copyright-notice {
     font-family: $footerDescriptionFontStack;
