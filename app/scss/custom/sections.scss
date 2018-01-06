@@ -244,8 +244,10 @@ section {
   @include padding(null null null null);
 }
 
+// maps to the custom contact us section
 .contact-us {
-  @include padding(20px null 40px null);
+  @include padding(40px null 40px null);
+  @include padding(null null null null);
   & h2.section-heading {
     @include margin(null null null null);
     padding-bottom: 20px;
