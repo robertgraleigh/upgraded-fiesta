@@ -71,3 +71,12 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Arial', sans-serif;
     }
   }
 }
+
+// maps to the subsection navigation
+.subsection-navigation {
+  @include margin(0px null 0px null);
+  @include padding(10px null 10px null);
+  border-top: solid 2px #999999;
+  border-bottom: solid 2px #999999;
+  background-image: url("images/sayagata.png");
+}
