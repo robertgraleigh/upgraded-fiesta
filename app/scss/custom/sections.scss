@@ -223,6 +223,13 @@ section {
   }
 }
 
+// maps to the custom how we work together section
+.how-we-work-together {
+  background-color: #FFFFFF;
+  @include margin(40px null null null);
+  @include padding(null null null null);
+}
+
 // maps to the custom clients section
 .clients {
   background-color: #FFFFFF;
