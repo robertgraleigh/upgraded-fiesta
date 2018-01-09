@@ -48,6 +48,30 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Arial', sans-serif;
   }
 }
 
+#contact-info-bar {
+  background-color: #222222;
+  & .menu {
+    background-color: #222222;
+  }
+  & .menu-text {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+    font-size: 21px;
+    text-transform: uppercase;
+  }
+}
+
+.title-bar {
+  background-color: #FFFFFF;
+  & .menu-icon {
+    color: #222222 !important;
+  }
+  & .title-bar-title {
+    color: #222222;
+  }
+}
+
 // maps to the secondary navigation class
 .secondary-navigation {
   @include margin(null null null null);
