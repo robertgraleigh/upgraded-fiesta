@@ -119,7 +119,8 @@ section {
 
 // maps to the custom ideal roles section
 .ideal-roles {
-
+  @include margin(40px null null null);
+  @include padding(40px null null null);
 }
 
 // maps to the custom skillset section
