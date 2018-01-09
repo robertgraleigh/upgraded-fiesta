@@ -15,6 +15,7 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Arial', sans-serif;
   @include margin(null null null null);
   @include padding(15px null 15px null);
   background-color: #FFFFFF;
+  border-bottom: solid 2px #CCCCCC;
   & ul {
     background-color: #FFFFFF;
   }
