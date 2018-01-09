@@ -88,8 +88,8 @@ section {
 
 // maps to the custom rober's story section
 .roberts-story {
-  @include margin(0px null null null);
-  @include padding(0px null null null);
+  @include margin(null null null null);
+  @include padding(40px null null null);
   background-color: #FFFFFF;
   & h2.section-heading {
     font-size: 54px;
@@ -106,9 +106,36 @@ section {
   }
 }
 
+// maps to the custom rober's story section
+.roberts-story {
+  @include margin(null null null null);
+  @include padding(40px null null null);
+  background-color: #FFFFFF;
+  & h2.section-heading {
+    font-size: 54px;
+  }
+  & h3.section-subheading {
+    @include margin(10px null null null);
+    @include padding(0px null null null);
+  }
+  & .button-group {
+    & .secondary.button {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+}
+
+// maps to the custom ideal roles section
+.ideal-roles {
+  @include margin(0px null null null);
+  @include padding(40px null null null);
+}
+
+// maps to the custom values section
 .values {
-  @include margin(40px null null null);
-  @include padding(0px null null null);
+  @include margin(0px null null null);
+  @include padding(40px null null null);
 }
 
 // maps to the custom skillset section
@@ -195,6 +222,27 @@ section {
   }
 }
 
+// maps to the custom how we work together section
+.how-we-work-together {
+  background-color: #FFFFFF;
+  @include margin(40px null null null);
+  @include padding(null null null null);
+}
+
+// maps to the custom clients section
+.clients {
+  background-color: #FFFFFF;
+  @include margin(40px null null null);
+  @include padding(null null null null);
+}
+
+// maps to the custom projects section
+.projects {
+  background-color: #FFFFFF;
+  @include margin(40px null null null);
+  @include padding(null null null null);
+}
+
 // maps to the custom resources section
 .resources {
   background-color: #FFFFFF;
@@ -226,34 +274,6 @@ section {
     font-weight: bold;
     text-transform: uppercase;
   }
-}
-
-// maps to the custom how we work together section
-.how-we-work-together {
-  background-color: #FFFFFF;
-  @include margin(40px null null null);
-  @include padding(null null null null);
-}
-
-// maps to the custom clients section
-.clients {
-  background-color: #FFFFFF;
-  @include margin(40px null null null);
-  @include padding(null null null null);
-}
-
-// maps to the custom projects section
-.projects {
-  background-color: #FFFFFF;
-  @include margin(40px null null null);
-  @include padding(null null null null);
-}
-
-// maps to the custom resources section
-.resources {
-  background-color: #FFFFFF;
-  @include margin(40px null null null);
-  @include padding(null null null null);
 }
 
 // maps to the custom contact us section
