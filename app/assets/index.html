@@ -11,95 +11,105 @@
 </head>
 <body>
   <a id="top"></a>
-  <!-- customized primary navigation class -->
-  <nav id="primary-navigation" class="top-bar">
-    <div class="top-bar-left">
-      <ul class="dropdown menu" data-dropdown-menu>
-        <li class="menu-text">
-          <a href="index.html">
-            <span class="blue-border">Home</span>
-          </a>
-        </li>
-        <li class="menu-text">
-          <a href="#about-robert" data-smooth-scroll>
-            About
-          </a>
-          <ul class="menu" data-dropdown-menu>
+
+    <div data-sticky-container>
+    <div data-sticky data-options="marginTop:0;">
+
+      <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+        <div class="title-bar-title">Menu</div>
+      </div>
+
+      <div class="top-bar" id="primary-navigation">
+        <div class="top-bar-left">
+        <ul class="vertical medium-horizontal dropdown menu" data-responsive-menu="accordion medium-dropdown">
+          <li class="menu-text">
+            <a href="index.html">
+              <span class="blue-border">Home</span>
+            </a>
+          </li>
+          <li class="menu-text">
+            <a href="#about-robert" data-smooth-scroll>
+              About
+            </a>
+            <ul class="menu vertical nested" data-dropdown-menu>
+              <li>
+                <a href="#about-robert" data-smooth-scroll>About Robert</a>
+              </li>
+              <li>
+                <a href="#roberts-story" data-smooth-scroll>Robert's Story</a>
+              </li>
+              <li>
+                <a href="#ideal-roles" data-smooth-scroll>Ideal Roles</a>
+              </li>
+              <li>
+                <a href="#skillset" data-smooth-scroll>Skillset</a>
+              </li>
+              <li>
+                <a href="#experience" data-smooth-scroll>Experience</a>
+              </li>
+              <li>
+                <a href="#values" data-smooth-scroll>Values</a>
+              </li>
+              <li>
+                <a href="#contact-us" data-smooth-scroll>Contact Us</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-text">
+            <a href="#how-we-work-together" data-smooth-scroll>
+              <span class="blue-border">
+                How We Work
+              </span>
+            </a>
+          </li>
+          <li class="menu-text">
+            <a href="#clients" data-smooth-scroll>
+              <span class="blue-border">
+                Clients
+              </span>
+            </a>
+          </li>
+          <li class="menu-text">
+            <a href="#projects" data-smooth-scroll>
+              <span class="blue-border">
+                Projects
+              </span>
+            </a>
+          </li>
+          <li class="menu-text">
+            <a href="#resources" data-smooth-scroll>
+              <span class="blue-border">
+                Resources
+              </span>
+            </a>
+          </li>
+          <li class="menu-text">
+            <a href="#blog" data-smooth-scroll disabled>
+              <span class="blue-border">
+                Blog
+              </span>
+            </a>
+          </li>
+        </ul>
+        </div>
+        <div class="top-bar-right">
+          <ul class="horizontal menu">
             <li>
-              <a href="#about-robert" data-smooth-scroll>About Robert</a>
+              <a href="#contact-us" class="secondary large button" data-smooth-scroll>
+                Contact Us
+              </a>
             </li>
             <li>
-              <a href="#roberts-story" data-smooth-scroll>Robert's Story</a>
-            </li>
-            <li>
-              <a href="#ideal-roles" data-smooth-scroll>Ideal Roles</a>
-            </li>
-            <li>
-              <a href="#skillset" data-smooth-scroll>Skillset</a>
-            </li>
-            <li>
-              <a href="#experience" data-smooth-scroll>Experience</a>
-            </li>
-            <li>
-              <a href="#values" data-smooth-scroll>Values</a>
-            </li>
-            <li>
-              <a href="#contact-us" data-smooth-scroll>Contact Us</a>
+              <a href="#get-started" class="primary large button" data-smooth-scroll>
+                Get Started
+              </a>
             </li>
           </ul>
-        </li>
-        <li class="menu-text">
-          <a href="#how-we-work-together" data-smooth-scroll>
-            <span class="blue-border">
-              How We Work
-            </span>
-          </a>
-        </li>
-        <li class="menu-text">
-          <a href="#clients" data-smooth-scroll>
-            <span class="blue-border">
-              Clients
-            </span>
-          </a>
-        </li>
-        <li class="menu-text">
-          <a href="#projects" data-smooth-scroll>
-            <span class="blue-border">
-              Projects
-            </span>
-          </a>
-        </li>
-        <li class="menu-text">
-          <a href="#resources" data-smooth-scroll>
-            <span class="blue-border">
-              Resources
-            </span>
-          </a>
-        </li>
-        <li class="menu-text">
-          <a href="#blog" data-smooth-scroll disabled>
-            <span class="blue-border">
-              Blog
-            </span>
-          </a>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
-    <div class="top-bar-right">
-      <ul class="horizontal menu">
-        <li>
-          <a href="#contact-us" class="secondary large button" data-smooth-scroll>
-            Contact Us
-          </a>
-        </li>
-        <li>
-          <a href="#get-started" class="primary large button" data-smooth-scroll>
-            Get Started
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  </div>
 
   <!-- custom hero class -->
   <header class="hero">
