@@ -298,8 +298,8 @@ section {
 .contact-bar {
   @include margin(0px null 0px null);
   @include padding(10px null 10px null);
-  border-top: solid 2px #999999;
-  border-bottom: solid 2px #999999;
+  border-top: solid 2px #CCCCCC;
+  border-bottom: solid 2px #CCCCCC;
   background-image: url("images/sayagata.png");
   & .button {
     font-family: $contactBarFontStack;
