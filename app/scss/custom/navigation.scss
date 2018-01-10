@@ -16,6 +16,9 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Arial', sans-serif;
   @include padding(15px null 15px null);
   background-color: #FFFFFF;
   border-bottom: solid 2px #CCCCCC;
+  position: sticky;
+  top: calc(-100% + 120px);
+  z-index: 2;
   & ul {
     background-color: #FFFFFF;
   }
@@ -117,4 +120,11 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Arial', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
   }
+}
+
+.offset {
+  display: block;
+  height: 115px; /*same height as header*/
+  margin-top: -115px; /*same height as header*/
+  visibility: hidden;
 }
