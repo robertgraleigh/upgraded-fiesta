@@ -128,3 +128,17 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Arial', sans-serif;
   margin-top: -115px; /*same height as header*/
   visibility: hidden;
 }
+
+.title-bar {
+  height: 60px;
+  @include margin(null null null null);
+  @include padding(25px 5px 5px 5px);
+  & .title-bar-title {
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+  }
+  & button.hollow.secondary {
+    color: #222222 !important;
+  }
+}
