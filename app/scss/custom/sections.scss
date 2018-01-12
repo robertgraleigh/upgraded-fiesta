@@ -251,6 +251,14 @@ section {
     font-weight: bold;
     text-transform: uppercase;
   }
+  & .accordion-copy a {
+    color: #222222;
+    text-decoration: none;
+  }
+  & .accordion-copy a:hover {
+    color: #222222;
+    text-decoration: underline;
+  }
 }
 
 // maps to the custom blog section
