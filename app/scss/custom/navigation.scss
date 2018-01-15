@@ -100,28 +100,6 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Arial', sans-serif;
   }
 }
 
-// maps to the subsection navigation
-.subsection-nav {
-  @include margin(0px null 0px null);
-  @include padding(10px null 10px null);
-  border-top: solid 2px #CCCCCC;
-  border-bottom: solid 2px #CCCCCC;
-  background-image: url("images/sayagata.png");
-  & h3 {
-    color: #222222;
-    margin-top: 15px;
-    font-family: "Oswald", sans-serif;
-    font-size: 45px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  & .menu a {
-    font-size: 21px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-}
-
 .offset {
   display: block;
   height: 115px; /*same height as header*/
