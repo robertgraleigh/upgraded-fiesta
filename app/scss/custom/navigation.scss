@@ -150,6 +150,9 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Arial', sans-serif;
   }
 }
 
+// off canvas navigation
+
+// position left
 .position-left {
   background-color: #FFFFFF;
   & .menu a {
@@ -161,5 +164,24 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Arial', sans-serif;
   }
   & .menu a:active{
     text-decoration: underline;
+  }
+}
+
+// position right
+.position-right {
+  background-color: #222222;
+  & .menu a {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  & .menu a:hover {
+    text-decoration: underline !important;
+  }
+  & .menu a:active{
+    text-decoration: underline;
+  }
+  & .menu .menu-text {
+    color: #FFFFFF;
+    text-transform: uppercase;
   }
 }
