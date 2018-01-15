@@ -152,4 +152,14 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Arial', sans-serif;
 
 .position-left {
   background-color: #FFFFFF;
+  & .menu a {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  & .menu a:hover {
+    text-decoration: underline !important;
+  }
+  & .menu a:active{
+    text-decoration: underline;
+  }
 }
