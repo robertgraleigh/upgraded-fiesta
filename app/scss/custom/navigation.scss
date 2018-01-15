@@ -10,6 +10,8 @@
 // custom navigation variables
 $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Arial', sans-serif;
 
+// PRIMARY NAV COMPONENT
+
 // maps to the custom primary navigation
 #primary-navigation {
   @include margin(null null null null);
@@ -76,6 +78,8 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Arial', sans-serif;
   }
 }
 
+// SECONDARY NAV COMPONENT
+
 // maps to the secondary navigation class
 .secondary-navigation {
   @include margin(null null null null);
@@ -107,6 +111,8 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Arial', sans-serif;
   visibility: hidden;
 }
 
+// TITLE BAR COMPONENT
+
 .title-bar {
   border-bottom: solid 2px #CCCCCC;
   height: 100px;
@@ -123,12 +129,12 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Arial', sans-serif;
       color: #222222 !important;
     }
   }
-  & button.hollow.secondary {
-    color: #222222 !important;
+  & button {
+    font-weight: bold;
   }
 }
 
-// off canvas navigation
+// OFF CANVAS NAV COMPONENT
 
 // position left
 .position-left {
