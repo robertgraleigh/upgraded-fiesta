@@ -119,6 +119,9 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Arial', sans-serif;
   @include margin(null null null null);
   @include padding(25px 5px 5px 5px);
   & .title-bar-title {
+    @media screen and (min-width: 40em) {
+      font-size: 32px !important;
+    }
   @include padding(5px 5px 25px 0px);
     color: #222222 !important;
     font-family: $navigationFontStack;
