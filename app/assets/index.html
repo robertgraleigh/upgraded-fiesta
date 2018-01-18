@@ -19,7 +19,17 @@
   gtag('config', 'UA-112642793-1');
 </script>
 
+<!-- emailjs api dependencies -->
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+<!-- maps to the emailjs user -->
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_0Dw6WvmgkOZtq21DUlGGk");
+   })();
+</script>
 </head>
+
 <body class="index">
   <a id="top"></a>
 
@@ -3152,6 +3162,42 @@
     </div>
   </section>
 
+  <!-- custom send note form -->
+  <!-- sends form to the emailjs api -->
+  <section class="send-note-form">
+    <a id="send-note"></a>
+    <div class="grid-container">
+      <div class="grid-x grid-margin-x grid-padding-x">
+        <form id="myform" method="post">
+          <div class="large-12 cell">
+            <label>First Name:</label>
+            <input type="text" name="first_name" placeholder="First Name" />
+          </div>
+          <div class="large-12 cell">
+            <label>Last Name:</label>
+            <input type="text" name="last_name" placeholder="Last Name" />
+          </div>
+          <div class="large-12 cell">
+            <label>Mobile Phone:</label>
+            <input type="tel" name="telephone" placeholder="xxx-xxx-xxxx"/>
+          </div>
+          <div class="large-12 cell">
+            <label>Email Address:</label>
+            <input type="email" name="email" placeholder="email@email.com"/>
+          </div>
+          <div class="large-12 cell">
+            <label>What we need to know:</label>
+            <textarea rows="6" type="text" name="message_html">
+            </textarea>
+          </div>
+          <button class="expanded primary button">
+            Send note
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
   <!-- custom secondary navigation class -->
   <nav class="secondary-navigation">
     <ul class="horizontal menu align-center">
@@ -3273,430 +3319,5 @@
       </div>
     </div>
   </footer>
-
-  <!-- maps to the project-management-skillset section -->
-  <div class="reveal" id="projectManagementSkillset" data-options="close_on_background_click:false;close_on_esc:false;" data-reveal>
-    <h1 class="text-left">Awesome. I Have It.</h1>
-    <p class="lead">Your couch. It is mine.</p>
-    <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
-    <div class="grid-container full">
-      <div class="grid-x">
-        <div class="large-4 cell">
-          <p class="skillset-icon text-center">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-            </span>
-          </p>
-          <h3 class="skillset-heading text-center">
-            Agile Methodology
-          </h3>
-          <p class="skillset-description text-center">
-            PM Skill One Description
-          </p>
-        </div>
-        <div class="large-4 cell">
-          <p class="skillset-icon text-center">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-            </span>
-          </p>
-          <h3 class="skillset-heading text-center">
-            Forecasting
-          </h3>
-          <p class="skillset-description text-center">
-            PM Skill One Description
-          </p>
-        </div>
-        <div class="large-4 cell">
-          <p class="skillset-icon text-center">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-            </span>
-          </p>
-          <h3 class="skillset-heading text-center">
-            Budgeting
-          </h3>
-          <p class="skillset-description text-center">
-            PM Skill One Description
-          </p>
-        </div>
-        <div class="large-4 cell">
-          <p class="skillset-icon text-center">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-            </span>
-          </p>
-          <h3 class="skillset-heading text-center">
-            Quality Assurance
-          </h3>
-          <p class="skillset-description text-center">
-            PM Skill One Description
-          </p>
-        </div>
-        <div class="large-4 cell">
-          <p class="skillset-icon text-center">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-            </span>
-          </p>
-          <h3 class="skillset-heading text-center">
-            Task Management
-          </h3>
-          <p class="skillset-description text-center">
-            PM Skill One Description
-          </p>
-        </div>
-        <div class="large-4 cell">
-          <p class="skillset-icon text-center">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-            </span>
-          </p>
-          <h3 class="skillset-heading text-center">
-            Documentation
-          </h3>
-          <p class="skillset-description text-center">
-            PM Skill One Description
-          </p>
-        </div>
-        <div class="large-4 cell">
-          <p class="skillset-icon text-center">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-            </span>
-          </p>
-          <h3 class="skillset-heading text-center">
-            Leadership
-          </h3>
-          <p class="skillset-description text-center">
-            PM Skill One Description
-          </p>
-        </div>
-        <div class="large-4 cell">
-          <p class="skillset-icon text-center">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-            </span>
-          </p>
-          <h3 class="skillset-heading text-center">
-            Communication
-          </h3>
-          <p class="skillset-description text-center">
-            PM Skill One Description
-          </p>
-        </div>
-        <div class="large-4 cell">
-          <p class="skillset-icon text-center">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-            </span>
-          </p>
-          <h3 class="skillset-heading text-center">
-            Empathy
-          </h3>
-          <p class="skillset-description text-center">
-            PM Skill One Description
-          </p>
-        </div>
-      </div>
-    </div>
-    <button class="close-button" data-close aria-label="Close modal" type="button">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-
-  <!-- maps to the frontend-development-skillset section -->
-  <div class="reveal" id="frontendDevelopmentSkillset" data-options="close_on_background_click:false;close_on_esc:false;" data-reveal>
-    <h1 class="text-left">Frontend Development Skills</h1>
-    <p class="lead">Your couch. It is mine.</p>
-    <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
-    <div class="grid-container">
-      <div class="grid-x">
-        <div class="large-4 cell">
-          <p class="skillset-icon text-center">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-code fa-stack-1x fa-inverse"></i>
-            </span>
-          </p>
-          <h3 class="skillset-heading text-center">
-            Programming Languages
-          </h3>
-          <p class="skillset-description text-center">
-            HTML5, CSS3, JS
-          </p>
-        </div>
-        <div class="large-4 cell">
-          <p class="skillset-icon text-center">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-            </span>
-          </p>
-          <h3 class="skillset-heading text-center">
-            Javascript Frameworks
-          </h3>
-          <p class="skillset-description text-center">
-            PM Skill One Description
-          </p>
-        </div>
-        <div class="large-4 cell">
-          <p class="skillset-icon text-center">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-            </span>
-          </p>
-          <h3 class="skillset-heading text-center">
-            Frontend Frameworks
-          </h3>
-          <p class="skillset-description text-center">
-            Bootstrap, Semantic UI, Foundation
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="grid-container">
-      <div class="grid-x">
-        <div class="large-4 cell">
-          <p class="skillset-icon text-center">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-            </span>
-          </p>
-          <h3 class="skillset-heading text-center">
-            PM Skill One Heading
-          </h3>
-          <p class="skillset-description text-center">
-            PM Skill One Description
-          </p>
-        </div>
-        <div class="large-4 cell">
-          <p class="skillset-icon text-center">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-            </span>
-          </p>
-          <h3 class="skillset-heading text-center">
-            Testing and Debugging
-          </h3>
-          <p class="skillset-description text-center">
-            PM Skill One Description
-          </p>
-        </div>
-        <div class="large-4 cell">
-          <p class="skillset-icon text-center">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-            </span>
-          </p>
-          <h3 class="skillset-heading text-center">
-            Version Control Systems
-          </h3>
-          <p class="skillset-description text-center">
-            Git, Github, and Bitbucket
-          </p>
-        </div>
-        <div class="large-4 cell">
-          <p class="skillset-icon text-center">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-            </span>
-          </p>
-          <h3 class="skillset-heading text-center">
-            PM Skill One Heading
-          </h3>
-          <p class="skillset-description text-center">
-            PM Skill One Description
-          </p>
-        </div>
-        <div class="large-4 cell">
-          <p class="skillset-icon text-center">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-            </span>
-          </p>
-          <h3 class="skillset-heading text-center">
-            PM Skill One Heading
-          </h3>
-          <p class="skillset-description text-center">
-            PM Skill One Description
-          </p>
-        </div>
-        <div class="large-4 cell">
-          <p class="skillset-icon text-center">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-            </span>
-          </p>
-          <h3 class="skillset-heading text-center">
-            PM Skill One Heading
-          </h3>
-          <p class="skillset-description text-center">
-            PM Skill One Description
-          </p>
-        </div>
-      </div>
-    </div>
-    <button class="close-button" data-close aria-label="Close modal" type="button">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-
-  <!-- maps to the project-management-skillset section -->
-  <div class="reveal" id="technologySkillset" data-options="close_on_background_click:false;close_on_esc:false;" data-reveal>
-    <h1 class="text-left">Awesome. I Have It.</h1>
-    <p class="lead">Your couch. It is mine.</p>
-    <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
-    <div class="grid-container full">
-      <div class="grid-x">
-        <div class="large-4 cell">
-          <p class="skillset-icon text-center">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-            </span>
-          </p>
-          <h3 class="skillset-heading text-center">
-            Agile Methodology
-          </h3>
-          <p class="skillset-description text-center">
-            PM Skill One Description
-          </p>
-        </div>
-        <div class="large-4 cell">
-          <p class="skillset-icon text-center">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-            </span>
-          </p>
-          <h3 class="skillset-heading text-center">
-            Forecasting
-          </h3>
-          <p class="skillset-description text-center">
-            PM Skill One Description
-          </p>
-        </div>
-        <div class="large-4 cell">
-          <p class="skillset-icon text-center">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-            </span>
-          </p>
-          <h3 class="skillset-heading text-center">
-            Budgeting
-          </h3>
-          <p class="skillset-description text-center">
-            PM Skill One Description
-          </p>
-        </div>
-        <div class="large-4 cell">
-          <p class="skillset-icon text-center">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-            </span>
-          </p>
-          <h3 class="skillset-heading text-center">
-            Quality Assurance
-          </h3>
-          <p class="skillset-description text-center">
-            PM Skill One Description
-          </p>
-        </div>
-        <div class="large-4 cell">
-          <p class="skillset-icon text-center">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-            </span>
-          </p>
-          <h3 class="skillset-heading text-center">
-            Task Management
-          </h3>
-          <p class="skillset-description text-center">
-            PM Skill One Description
-          </p>
-        </div>
-        <div class="large-4 cell">
-          <p class="skillset-icon text-center">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-            </span>
-          </p>
-          <h3 class="skillset-heading text-center">
-            Documentation
-          </h3>
-          <p class="skillset-description text-center">
-            PM Skill One Description
-          </p>
-        </div>
-        <div class="large-4 cell">
-          <p class="skillset-icon text-center">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-            </span>
-          </p>
-          <h3 class="skillset-heading text-center">
-            Leadership
-          </h3>
-          <p class="skillset-description text-center">
-            PM Skill One Description
-          </p>
-        </div>
-        <div class="large-4 cell">
-          <p class="skillset-icon text-center">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-            </span>
-          </p>
-          <h3 class="skillset-heading text-center">
-            Communication
-          </h3>
-          <p class="skillset-description text-center">
-            PM Skill One Description
-          </p>
-        </div>
-        <div class="large-4 cell">
-          <p class="skillset-icon text-center">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
-            </span>
-          </p>
-          <h3 class="skillset-heading text-center">
-            Empathy
-          </h3>
-          <p class="skillset-description text-center">
-            PM Skill One Description
-          </p>
-        </div>
-      </div>
-    </div>
-    <button class="close-button" data-close aria-label="Close modal" type="button">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-
 </body>
 </html>
