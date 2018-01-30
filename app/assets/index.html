@@ -23,23 +23,48 @@
 <body class="index">
   <a id="top"></a>
 
-  <div data-sticky-container>
-    <div data-sticky data-options="marginTop:0;">
-      <div class="title-bar">
+  <!-- This demo uses float grid but you can use flex grid too -->
+  <div data-sticky-container data-options="marginTop:0;">
+    <div data-sticky>
+      <div class="title-bar" data-responsive-toggle="example-animated-menu" data-hide-for="large">
         <div class="title-bar-left">
           <button type="button" class="primary button" data-toggle="leftOverlay">
             <i class="fa fa-bars"></i> Menu
           </button>
         </div>
         <div class="title-bar-title">
-          <a href="index.html">
-            Robert G. Raleigh
-          </a>
+          Home
         </div>
         <div class="title-bar-right">
           <button type="button" class="secondary button" data-toggle="rightOverlay">
-            Contact <i class="fa fa-bars"></i>
+                        <i class="fa fa-comments"></i> Contact
           </button>
+        </div>
+      </div>
+
+      <div class="top-bar" id="example-animated-menu">
+        <div class="top-bar-left">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li class="menu-text">Robert G. Raleigh</li>
+            <li>
+              <a href="#">About</a>
+              <ul class="menu vertical">
+                <li><a href="#">One</a></li>
+                <li><a href="#">Two</a></li>
+                <li><a href="#">Three</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Clients</a></li>
+            <li><a href="#">Projects</a></li>
+          </ul>
+        </div>
+        <div class="top-bar-right">
+          <ul class="menu">
+            <li><a href="#" class="secondary button">Contact</a></li>
+            <li><a href="#" class="primary button">Get Started</a></li>
+          </ul>
         </div>
       </div>
     </div>
