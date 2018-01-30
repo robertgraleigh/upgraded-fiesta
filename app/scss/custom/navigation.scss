@@ -13,14 +13,11 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Arial', sans-serif;
 // PRIMARY NAV COMPONENT
 
 // maps to the custom primary navigation
-#primary-navigation {
+#primary-nav {
   @include margin(null null null null);
   @include padding(15px null 15px null);
   background-color: #FFFFFF;
   border-bottom: solid 2px #CCCCCC;
-  position: sticky;
-  top: calc(-100% + 120px);
-  z-index: 2;
   & ul {
     background-color: #FFFFFF;
   }
@@ -33,11 +30,17 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Arial', sans-serif;
     & .blue-border {
       border-bottom: solid 5px #FFFFFF;
     }
+    & .grey-border {
+      border-bottom: solid 5px #FFFFFF;      
+    }
   }
   & ul.menu li a:hover {
     color: darken(#222222, 20%);
     & .blue-border {
       border-bottom: solid 5px #0066CC;
+    }
+    & .grey-border {
+      border-bottom: solid 5px #999999;
     }
   }
   & ul.menu li a:active {

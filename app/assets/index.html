@@ -24,9 +24,9 @@
   <a id="top"></a>
 
   <!-- This demo uses float grid but you can use flex grid too -->
-  <div data-sticky-container data-options="marginTop:0;">
-    <div data-sticky>
-      <div class="title-bar" data-responsive-toggle="example-animated-menu" data-hide-for="large">
+  <div data-sticky-container>
+    <div data-sticky data-options="marginTop:0;">
+      <div class="title-bar" data-responsive-toggle="primary-nav" data-hide-for="large">
         <div class="title-bar-left">
           <button type="button" class="primary button" data-toggle="leftOverlay">
             <i class="fa fa-bars"></i> Menu
@@ -37,27 +37,64 @@
         </div>
         <div class="title-bar-right">
           <button type="button" class="secondary button" data-toggle="rightOverlay">
-                        <i class="fa fa-comments"></i> Contact
+            <i class="fa fa-comments"></i> Contact
           </button>
         </div>
       </div>
 
-      <div class="top-bar" id="example-animated-menu">
+      <div class="top-bar" id="primary-nav">
         <div class="top-bar-left">
           <ul class="dropdown menu" data-dropdown-menu>
-            <li class="menu-text">Robert G. Raleigh</li>
             <li>
-              <a href="#">About</a>
+              <a href="index.html" class="menu-text">
+                <span class="blue-border">Robert G. Raleigh</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="menu-text">About</a>
               <ul class="menu vertical">
-                <li><a href="#">One</a></li>
-                <li><a href="#">Two</a></li>
-                <li><a href="#">Three</a></li>
+                <li>
+                  <a href="#about-robert" data-smooth-scroll>
+                    <span class="blue-border">About Robert</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#roberts-story" data-smooth-scroll>
+                    <span class="grey-border">Robert's Story</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#how-we-work" data-smooth-scroll>
+                  <span class="grey-border">How We Work</span></a></li>
+                <li>
+                  <a href="#experience" data-smooth-scroll>
+                  <span class="grey-border">Experience</span></a></li>
+                <li>
+                  <a href="#skillset" data-smooth-scroll>
+                  <span class="grey-border">Skillset</span></a></li>
+                <li>
+                  <a href="#values" data-smooth-scroll>
+                  <span class="grey-border">Values</span></a></li>
               </ul>
             </li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Clients</a></li>
-            <li><a href="#">Projects</a></li>
+            <li>
+              <a href="#" data-smooth-scroll>
+                <span class="blue-border">Products</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-smooth-scroll>
+                <span class="blue-border">Services</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-smooth-scroll>
+              <span class="blue-border">Clients</span></a></li>
+            <li>
+              <a href="#" data-smooth-scroll>
+                <span class="blue-border">Projects</span>
+              </a>
+            </li>
           </ul>
         </div>
         <div class="top-bar-right">
