@@ -18,16 +18,6 @@
 
   gtag('config', 'UA-112642793-1');
 </script>
-
-<!-- emailjs api dependencies -->
-<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-
-<!-- maps to the emailjs user -->
-<script type="text/javascript">
-   (function(){
-      emailjs.init("user_0Dw6WvmgkOZtq21DUlGGk");
-   })();
-</script>
 </head>
 
 <body class="index">
@@ -50,6 +40,51 @@
           <button type="button" class="secondary button" data-toggle="rightOverlay">
             Contact <i class="fa fa-bars"></i>
           </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="off-canvas position-top is-closed" id="sendNote" data-off-canvas>
+    <div class="grid-container">
+      <div class="grid-x grid-margin-x grid-padding-x">
+        <div class="large-12 cell">
+          <h2 class="text-left">Send Me a Note</h2>
+        </div>
+      </div>
+    </div>
+    <div class="grid-container">
+      <div class="grid-x grid-margin-x grid-padding-x">
+        <div class="large-12 cell">
+          <form id="myform" onsubmit="window.emailjs.sendForm('default_service', 'send_note_form', this); return false;" method="post">
+            <div class="grid-container">
+              <div class="grid-x grid-margin-x grid-padding-x">
+                <div class="large-12 cell">
+                  <label>Name</label>
+                  <input type="text" name="name" placeholder="Name" />
+                </div>
+                <div class="large-12 cell">
+                  <label>Email</label>
+                  <input type="email" name="email" placeholder="Email Address" />
+                </div>
+                <div class="large-12 cell">
+                  <label>Phone</label>
+                  <input type="tel" name="phone" placeholder="xxx-xxx-xxxx" />
+                </div>
+                <div class="large-12 cell">
+                  <label>Message</label>
+                  <textarea rows="7" cols="12" type="text" name="message" placeholder="Type your message here">
+
+                  </textarea>
+                </div>
+                <div class="large-12 cell">
+                  <button class="expanded primary button">
+                    Send note
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
@@ -3153,47 +3188,11 @@
             <p class="card-description text-center">
             Fill me in with some more project details and the challenges you're facing.
             </p>
-            <a href="" class="secondary expanded button">
-              Get started
-            </a>
+            <button type="button" class="button" data-toggle="sendNote">
+              Send a note
+            </button>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- custom send note form -->
-  <!-- sends form to the emailjs api -->
-  <section class="send-note-form">
-    <a id="send-note"></a>
-    <div class="grid-container">
-      <div class="grid-x grid-margin-x grid-padding-x">
-        <form id="myform" method="post">
-          <div class="large-12 cell">
-            <label>First Name:</label>
-            <input type="text" name="first_name" placeholder="First Name" />
-          </div>
-          <div class="large-12 cell">
-            <label>Last Name:</label>
-            <input type="text" name="last_name" placeholder="Last Name" />
-          </div>
-          <div class="large-12 cell">
-            <label>Mobile Phone:</label>
-            <input type="tel" name="telephone" placeholder="xxx-xxx-xxxx"/>
-          </div>
-          <div class="large-12 cell">
-            <label>Email Address:</label>
-            <input type="email" name="email" placeholder="email@email.com"/>
-          </div>
-          <div class="large-12 cell">
-            <label>What we need to know:</label>
-            <textarea rows="6" type="text" name="message_html">
-            </textarea>
-          </div>
-          <button class="expanded primary button">
-            Send note
-          </button>
-        </form>
       </div>
     </div>
   </section>
@@ -3319,5 +3318,12 @@
       </div>
     </div>
   </footer>
+
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_0Dw6WvmgkOZtq21DUlGGk");
+   })();
+</script>
 </body>
 </html>
