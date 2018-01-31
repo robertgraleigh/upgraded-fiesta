@@ -46,7 +46,7 @@ p {
   @include margin(null null null null);
   @include padding(10px null 0px null);
   font-family: $descriptionFontStack;
-  font-size: 24px;
+  font-size: 1rem;
   font-weight: normal;
   text-transform: none;
 }
