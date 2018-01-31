@@ -1,3 +1,4 @@
+// filename: navigation.scss
 // custom mixins
 @mixin margin($margin) {
   padding: $margin;
@@ -31,7 +32,7 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Arial', sans-serif;
       border-bottom: solid 5px #FFFFFF;
     }
     & .grey-border {
-      border-bottom: solid 5px #FFFFFF;      
+      border-bottom: solid 5px #FFFFFF;
     }
   }
   & ul.menu li a:hover {

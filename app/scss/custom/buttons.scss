@@ -1,0 +1,12 @@
+// filename: buttons.scss
+// customized buttons
+
+$buttonFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+
+.button {
+  font-family: $buttonFontStack;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #FFFFFF !important;
+  text-transform: uppercase;
+}

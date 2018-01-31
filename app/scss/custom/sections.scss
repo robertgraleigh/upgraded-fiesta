@@ -1,3 +1,5 @@
+// filename: sections.scss
+
 // custom mixins
 @mixin margin($margin) {
   padding: $margin;
@@ -7,7 +9,7 @@
   padding: $padding;
 }
 
-// custom section variables
+// custom sections variables
 $headingFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 $copyFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roman', serif;
 $cardHeadingFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
@@ -41,10 +43,7 @@ section {
   }
 }
 
-.button {
-  color: #FFFFFF !important;
-  text-transform: uppercase;
-}
+
 
 #project-management-skillset {
   @include margin(null null null null);

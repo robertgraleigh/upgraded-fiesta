@@ -1,3 +1,6 @@
+// filename: main.scss
+
+// import scss files into app
 @import 'app/scss/foundation/settings.scss';
 @import 'foundation';
 @include foundation-everything(true);
