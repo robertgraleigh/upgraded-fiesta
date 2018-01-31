@@ -26,6 +26,7 @@
   <!-- data sticky container holds responsive menus -->
   <div data-sticky-container>
     <div data-sticky data-options="marginTop:0;">
+
       <div class="title-bar" data-responsive-toggle="primary-nav" data-hide-for="large">
         <div class="title-bar-left">
           <button type="button" class="primary button" data-toggle="leftOverlay">
@@ -81,6 +82,7 @@
             </li>
           </ul>
         </div>
+
         <div class="top-bar-right">
           <ul class="menu">
             <li>
@@ -100,53 +102,8 @@
     </div><!-- end of data sticky -->
   </div><!-- end of sticky container -->
 
-  <div class="off-canvas position-top is-closed" id="sendNote" data-off-canvas>
-    <div class="grid-container">
-      <div class="grid-x grid-margin-x grid-padding-x">
-        <div class="large-12 cell">
-          <h2 class="text-left">Send Me a Note</h2>
-        </div>
-      </div>
-    </div>
-    <div class="grid-container">
-      <div class="grid-x grid-margin-x grid-padding-x">
-        <div class="large-12 cell">
-          <form id="myform" onsubmit="window.emailjs.sendForm('default_service', 'send_note_form', this); return false;" method="post">
-            <div class="grid-container">
-              <div class="grid-x grid-margin-x grid-padding-x">
-                <div class="large-12 cell">
-                  <label>Name</label>
-                  <input type="text" name="name" placeholder="Name" />
-                </div>
-                <div class="large-12 cell">
-                  <label>Email</label>
-                  <input type="email" name="email" placeholder="Email Address" />
-                </div>
-                <div class="large-12 cell">
-                  <label>Phone</label>
-                  <input type="tel" name="phone" placeholder="xxx-xxx-xxxx" />
-                </div>
-                <div class="large-12 cell">
-                  <label>Message</label>
-                  <textarea rows="7" cols="12" name="message" placeholder="Type your message here">
-
-                  </textarea>
-                </div>
-                <div class="large-12 cell">
-                  <button class="expanded primary button">
-                    Send note
-                  </button>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- off canvas left overlay menu -->
-  <div class="off-canvas position-left is-closed" id="leftOverlay" data-off-canvas>
+  <div class="off-canvas position-left is-closed" id="leftOverlay" data-transition="overlay" data-off-canvas>
     <ul class="vertical menu">
       <li>
         <a href="index.html">
@@ -197,7 +154,7 @@
   </div>
 
   <!-- off canvas right overlay menu-->
-  <div class="off-canvas position-right is-closed" data-transition="overlap" id="rightOverlay" data-off-canvas>
+  <div class="off-canvas position-right is-closed" data-transition="overlay" id="rightOverlay" data-off-canvas>
     <ul class="vertical menu">
       <li class="menu-text">
         Contact Info
@@ -518,6 +475,10 @@
               </a>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="grid-container">
+        <div class="grid-x grid-margin-x grid-padding-x">
           <div class="large-6 cell">
             <div class="callout">
               <h3 class="">Complex Static Website</h3>
@@ -591,6 +552,10 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="grid-container">
+        <div class="grid-x grid-margin-x grid-padding-x">
           <div class="large-6 cell">
             <div class="callout">
               <div class="media-object">
@@ -648,6 +613,10 @@
               </a>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="grid-container">
+        <div class="grid-x grid-margin-x grid-padding-x">
           <div class="large-6 cell">
             <div class="callout">
               <h3 class="">Simple E-Commerce</h3>
@@ -1643,469 +1612,6 @@
         </div>
       </div>
     </footer>
-
-  </div>
-
-    <!-- custom projects reveal modal -->
-    <div class="large reveal" id="projectsModal" data-reveal>
-
-      <div class="title-bar">
-        <h2 class="title-bar-title">Projects I've Worked On</h2>
-        <div class="title-bar-right">
-          <button class="close-button" data-close aria-label="Close Modal" type="button">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-      </div>
-
-      <div class="grid-container">
-        <div class="grid-x grid-margin-x grid-padding-x">
-          <div class="small-12 medium-6 large-4 cell">
-            <div class="card">
-              <img src="images/iqcu.png" class="thumbnail card-image" alt="iQCU" />
-              <h3 class="card-heading">iQCU</h3>
-              <ul class="menu no-bullet">
-                <li class="secondary label">Enterprise App</li>
-              </ul>
-              <a href="https://www.iqcu.com" class="primary button expanded" target="_blank">Visit website</a>
-            </div>
-          </div>
-          <div class="small-12 medium-6 large-4 cell">
-            <div class="card">
-              <img src="images/the-house-plan-company.png" class="thumbnail card-image" alt="The House Plan Company" />
-              <h3 class="card-heading">The House Plan Company</h3>
-              <ul class="menu no-bullet">
-                <li class="secondary label">Enterprise App</li>
-              </ul>
-              <a href="https://dev.thehouseplancompany.com" class="primary button expanded" target="_blank">Visit website</a>
-            </div>
-          </div>
-          <div class="small-12 medium-6 large-4 cell">
-            <div class="card">
-              <img src="images/bask-media-planner.png" class="thumbnail card-image" alt="BASK Media Planner" />
-              <h3 class="card-heading">BASK Media Planner</h3>
-              <ul class="menu no-bullet">
-                <li class="secondary label">Enterprise App</li>
-              </ul>
-              <a href="https://www.baskdigital.com" class="primary button expanded" target="_blank">Visit website</a>
-            </div>
-          </div>
-          <div class="small-12 medium-6 large-4 cell">
-            <div class="card">
-              <img src="images/collage.png" class="thumbnail card-image" alt="Collage" />
-              <h3 class="card-heading">Collage</h3>
-              <ul class="menu no-bullet">
-                <li class="secondary label">E-Commerce</li>
-              </ul>
-              <a href="http://www.collagepdx.com" class="primary button expanded" target="_blank">Visit website</a>
-            </div>
-          </div>
-          <div class="small-12 medium-6 large-4 cell">
-            <div class="card">
-              <img src="images/epic-people.png" class="thumbnail card-image" alt="EPIC People" />
-              <h3 class="card-heading">EPIC People</h3>
-              <ul class="menu no-bullet">
-                <li class="secondary label">CMS Website</li>
-              </ul>
-              <a href="https://www.epicpeople.org/" class="primary button expanded" target="_blank">Visit website</a>
-            </div>
-          </div>
-          <div class="small-12 medium-6 large-4 cell">
-            <div class="card">
-              <img src="images/willamette-angel-conference.png" class="thumbnail card-image" alt="Willamette Angel Conference" />
-              <h3 class="card-heading">Willamette Angel Conference</h3>
-              <ul class="menu no-bullet">
-                <li class="secondary label">CMS Website</li>
-              </ul>
-              <a href="http://www.willametteconference.com/" class="primary button expanded" target="_blank">Visit website</a>
-            </div>
-          </div>
-          <div class="small-12 medium-6 large-4 cell">
-            <div class="card">
-              <img src="images/associated-designs.png" class="thumbnail card-image" alt="Associated Designs" />
-              <h3 class="card-heading">Associated Designs</h3>
-              <ul class="menu no-bullet">
-                <li class="secondary label">Enterprise App</li>
-              </ul>
-              <a href="http://associateddesigns.com/" class="primary button expanded" target="_blank">Visit website</a>
-            </div>
-          </div>
-          <div class="small-12 medium-6 large-4 cell">
-            <div class="card">
-              <img src="images/cambia-grove.png" class="thumbnail card-image" alt="Cambia Grove" />
-              <h3 class="card-heading">Cambia Grove</h3>
-              <ul class="menu no-bullet">
-                <li class="secondary label">CMS Website</li>
-              </ul>
-              <a href="https://www.cambiagrove.com" class="primary button expanded" target="_blank">Visit website</a>
-            </div>
-          </div>
-          <div class="small-12 medium-6 large-4 cell">
-            <div class="card">
-              <img src="images/willamette-innovators.png" class="thumbnail card-image" alt="Willamette Innovator's" />
-              <h3 class="card-heading">Willamette Innovator's </h3>
-              <ul class="menu no-bullet">
-                <li class="secondary label">CMS Website</li>
-              </ul>
-              <a href="https://www.willametteinnovators.com/" class="primary button expanded" target="_blank">Visit website</a>
-            </div>
-          </div>
-          <div class="small-12 medium-6 large-4 cell">
-            <div class="card">
-              <img src="images/artistic-caststone.png" class="thumbnail card-image" alt="Artistic Caststone" />
-              <h3 class="card-heading">Artistic Caststone</h3>
-              <ul class="menu no-bullet">
-                <li class="secondary label">Enterprise App</li>
-              </ul>
-              <a href="http://artistic-caststone.com/" class="primary button expanded" target="_blank">Visit website</a>
-            </div>
-          </div>
-          <div class="small-12 medium-6 large-4 cell">
-            <div class="card">
-              <img src="images/solar-4-schools.png" class="thumbnail card-image" alt="Solar 4 Schools"  />
-              <h3 class="card-heading">Solar 4 Schools</h3>
-              <ul class="menu no-bullet">
-                <li class="secondary label">Enterprise App</li>
-              </ul>
-              <a href="https://www.solar4rschools.org/" class="primary button expanded" target="_blank">Visit website</a>
-            </div>
-          </div>
-          <div class="small-12 medium-6 large-4 cell">
-            <div class="card">
-              <img src="images/hispanic-metropolitan-chamber.png" class="thumbnail card-image" alt="Hispanic Metropolitan Chamber"  />
-              <h3 class="card-heading">Hispanic Metro Chamber</h3>
-              <ul class="menu no-bullet">
-                <li class="secondary label">Enterprise App</li>
-              </ul>
-              <a href="http://hmccoregon.com" class="primary button expanded" target="_blank">Visit website</a>
-            </div>
-          </div>
-          <div class="small-12 medium-6 large-4 cell">
-            <div class="card">
-              <img src="images/corvallis-chamber-of-commerce.png" class="thumbnail card-image" alt="Corvallis Chamber of Commerce"  />
-              <h3 class="card-heading">Corvallis Chamber</h3>
-              <ul class="menu no-bullet">
-                <li class="secondary label">Enterprise App</li>
-              </ul>
-              <a href="http://www.corvallischamber.com/" class="primary button expanded" target="_blank">Visit website</a>
-            </div>
-          </div>
-          <div class="small-12 medium-6 large-4 cell">
-            <div class="card">
-              <img src="images/proud-ground.png" class="thumbnail card-image" alt="Proud Ground" />
-              <h3 class="card-heading">Proud Ground</h3>
-              <ul class="menu no-bullet">
-                <li class="secondary label">CMS Website</li>
-              </ul>
-              <a href="http://www.proudground.org" class="primary button expanded" target="_blank">Visit website</a>
-            </div>
-          </div>
-          <div class="small-12 medium-6 large-4 cell">
-            <div class="card">
-              <img src="images/david-douglas-school-district.png" class="thumbnail card-image" alt="David Douglas School District" />
-              <h3 class="card-heading">David Douglas SD</h3>
-              <ul class="menu no-bullet">
-                <li class="secondary label">Product Development</li>
-              </ul>
-              <a href="https://www.ddouglas.k12.or.us" class="primary button expanded" target="_blank">Visit website</a>
-            </div>
-          </div>
-          <div class="small-12 medium-6 large-4 cell">
-            <div class="card">
-              <img src="images/red-software.png" class="thumbnail card-image" alt="RED Software"  />
-              <h3 class="card-heading">NW Realty Sign</h3>
-              <ul class="menu no-bullet">
-                <li class="secondary label">Enterprise App</li>
-              </ul>
-              <a href="https://nwrealtysign.com/" class="primary button expanded" target="_blank">Visit website</a>
-            </div>
-          </div>
-          <div class="small-12 medium-6 large-4 cell">
-            <div class="card">
-              <img src="images/dorado-sound.png" class="thumbnail card-image" alt="Dorado Sound" />
-              <h3 class="card-heading">Dorado Sound</h3>
-              <ul class="menu no-bullet">
-                <li class="secondary label">CMS Website</li>
-              </ul>
-              <a href="http://www.doradosound.com" class="primary button expanded" target="_blank">Visit website</a>
-            </div>
-          </div>
-            <div class="small-12 medium-6 large-4 cell">
-            <div class="card">
-              <img src="images/standard-home-inspections.png" class="thumbnail card-image" alt="Standard Home Inspections" />
-              <h3 class="card-heading">Standard Home Inspectors</h3>
-              <ul class="menu no-bullet">
-                <li class="secondary label">Consulting</li>
-              </ul>
-              <a href="http://www.standard-home-inspections.com/" class="primary button expanded" target="_blank">Visit website</a>
-            </div>
-          </div>
-          <div class="small-12 medium-6 large-4 cell">
-            <div class="card">
-              <img src="images/win-expo.png" class="thumbnail card-image" alt="Corvallis Chamber of Commerce"  />
-              <h3 class="card-heading">WIN Expo</h3>
-              <ul class="menu no-bullet">
-                <li class="secondary label">Consulting</li>
-              </ul>
-              <a href="https://www.willametteinnovators.com/event/2017-win-expo-free-admission/" class="primary button expanded" target="_blank">Visit website</a>
-            </div>
-          </div>
-          <div class="small-12 medium-6 large-4 cell">
-            <div class="card">
-              <img src="images/solidcraft-countertops.png" class="thumbnail card-image" alt="Solidcraft Countertops" />
-              <h3 class="card-heading">Solidcraft Countertops</h3>
-              <ul class="menu no-bullet">
-                <li class="secondary label">CMS Website</li>
-              </ul>
-              <a href="http://solidcraftcounters.blogspot.com/" class="primary button expanded" target="_blank">Visit website</a>
-            </div>
-          </div>
-          <div class="small-12 medium-6 large-4 cell">
-            <div class="card">
-              <img src="images/blood-and-bergamot.png" class="thumbnail card-image" alt="Blood and Bergamot" />
-              <h3 class="card-heading">Blood and Bergamot</h3>
-              <ul class="menu no-bullet">
-                <li class="secondary label">Product Development</li>
-              </ul>
-              <a href="http://bloodandbergamot.github.io/" class="primary button expanded" target="_blank">Visit website</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- custom clients reveal modal -->
-    <div class="large reveal" id="clientsModal" data-reveal>
-
-      <div class="title-bar">
-        <h2 class="title-bar-title">Clients I've Worked With</h2>
-        <div class="title-bar-right">
-          <button class="close-button" data-close aria-label="Close Modal" type="button">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-      </div>
-
-      <!-- clients modal section -->
-      <div class="clients">
-        <div class="grid-container">
-          <div class="grid-x grid-margin-x grid-padding-x">
-            <div class="small-12 medium-6 large-4 cell">
-              <div class="card">
-                <img src="images/hello-world-devs.png" class="thumbnail card-image" alt="Hello World Devs" />
-                <h3 class="card-heading">Hello World Devs</h3>
-                <ul class="menu no-bullet">
-                  <li class="secondary label">Software Development</li>
-                </ul>
-                <a href="http://www.helloworlddevs.com" class="primary button expanded" target="_blank">Visit website</a>
-              </div>
-            </div>
-            <div class="small-12 medium-6 large-4 cell">
-              <div class="card">
-                <img src="images/eroi.png" class="thumbnail card-image" alt="eROI" />
-                <h3 class="card-heading">eROI</h3>
-                <ul class="menu no-bullet">
-                  <li class="secondary label">Digital Agency</li>
-                </ul>
-                <a href="http://www.eroi.com" class="primary button expanded" target="_blank">Visit website</a>
-              </div>
-            </div>
-            <div class="small-12 medium-6 large-4 cell">
-              <div class="card">
-                <img src="images/tyson-steele.png" class="thumbnail card-image" alt="Tyson Steele" />
-                <h3 class="card-heading">Tyson Steele</h3>
-                <ul class="menu no-bullet">
-                  <li class="secondary label">Digital Marketing</li>
-                </ul>
-                <a href="http://www.tysonsteele.com" class="primary button expanded" target="_blank">Visit website</a>
-              </div>
-            </div>
-            <div class="small-12 medium-6 large-4 cell">
-              <div class="card">
-                <img src="images/metal-toad.png" class="thumbnail card-image" alt="Metal Toad" />
-                <h3 class="card-heading">Metal Toad</h3>
-                <ul class="menu no-bullet">
-                  <li class="secondary label">Software Engineering</li>
-                </ul>
-                <a href="http://www.metaltoad.com" class="primary button expanded" target="_blank">Visit website</a>
-              </div>
-            </div>
-            <div class="small-12 medium-6 large-4 cell">
-              <div class="card">
-                <img src="images/bask-digital-media.png" class="thumbnail card-image" alt="BASK Digital Media" />
-                <h3 class="card-heading">BASK Digital Media</h3>
-                <ul class="menu no-bullet">
-                  <li class="secondary label">Digital Marketing</li>
-                </ul>
-                <a href="http://www.baskdigital.com" class="primary button expanded" target="_blank">Visit website</a>
-              </div>
-            </div>
-            <div class="small-12 medium-6 large-4 cell">
-              <div class="card">
-                <img src="images/supply.png" class="thumbnail card-image" alt="Supply" />
-                <h3 class="card-heading">Supply</h3>
-                <ul class="menu no-bullet">
-                  <li class="secondary label">Digital Agency</li>
-                </ul>
-                <a href="http://www.workwithsupply.com" class="primary button expanded" target="_blank">Visit website</a>
-              </div>
-            </div>
-            <div class="small-12 medium-6 large-4 cell">
-              <div class="card">
-                <img src="images/david-douglas-school-district.png" class="thumbnail card-image" alt="David Douglas School District" />
-                <h3 class="card-heading">David Douglas SD</h3>
-                <ul class="menu no-bullet">
-                  <li class="secondary label">School District</li>
-                </ul>
-                <a href="https://www.ddouglas.k12.or.us/" class="primary button expanded" target="_blank">Visit website</a>
-              </div>
-            </div>
-            <div class="small-12 medium-6 large-4 cell">
-              <div class="card">
-                <img src="images/collage.png" class="thumbnail card-image" alt="Collage" />
-                <h3 class="card-heading">Collage</h3>
-                <ul class="menu no-bullet">
-                  <li class="secondary label">Arts and Crafts</li>
-                </ul>
-                <a href="http://www.collagepdx.com" class="primary button expanded" target="_blank">Visit website</a>
-              </div>
-            </div>
-            <div class="small-12 medium-6 large-4 cell">
-              <div class="card">
-                <img src="images/hispanic-metropolitan-chamber.png" class="thumbnail card-image" alt="Hispanic Metropolitan Chamber" />
-                <h3 class="card-heading">Hispanic Metro Chamber</h3>
-                <ul class="menu no-bullet">
-                  <li class="secondary label">Association</li>
-                </ul>
-                <a href="http://www.hmccoregon.com/" class="primary button expanded" target="_blank">Visit website</a>
-              </div>
-            </div>
-            <div class="small-12 medium-6 large-4 cell">
-              <div class="card">
-                <img src="images/impact-nw.png" class="thumbnail card-image" alt="Impact NW" />
-                <h3 class="card-heading">Impact NW</h3>
-                <ul class="menu no-bullet">
-                  <li class="secondary label">Nonprofit Agency</li>
-                </ul>
-                <a href="https://www.impactnw.org" class="primary button expanded" target="_blank">Visit website</a>
-              </div>
-            </div>
-            <div class="small-12 medium-6 large-4 cell">
-              <div class="card">
-                <img src="images/iqcu.png" class="thumbnail card-image" alt="iQCU" />
-                <h3 class="card-heading">iQCU</h3>
-                <ul class="menu no-bullet">
-                  <li class="secondary label">Credit Union</li>
-                </ul>
-                <a href="https://www.iqcu.com/" class="primary button expanded" target="_blank">Visit website</a>
-              </div>
-            </div>
-            <div class="small-12 medium-6 large-4 cell">
-              <div class="card">
-                <img src="images/united-way-columbia-willamette.png" class="thumbnail card-image" alt="United Way Columbia Willamette" />
-                <h3 class="card-heading">United Way PDX </h3>
-                <ul class="menu no-bullet">
-                  <li class="secondary label">Nonprofit Agency</li>
-                </ul>
-                <a href="https://www.unitedway-pdx.org/" class="primary button expanded" target="_blank">Visit website</a>
-              </div>
-            </div>
-            <div class="small-12 medium-6 large-4 cell">
-              <div class="card">
-                <img src="images/bonneville-environmental-foundation.png" class="thumbnail card-image" alt="Bonneville Environmental Foundation"  />
-                <h3 class="card-heading">BEF</h3>
-                <ul class="menu no-bullet">
-                  <li class="secondary label">Foundation</li>
-                </ul>
-                <a href="http://www.b-e-f.org/" class="primary button expanded" target="_blank">Visit website</a>
-              </div>
-            </div>
-            <div class="small-12 medium-6 large-4 cell">
-              <div class="card">
-                <img src="images/cambia-grove.png" class="thumbnail card-image" alt="Cambia Grove" />
-                <h3 class="card-heading">Cambia Grove</h3>
-                <ul class="menu no-bullet">
-                  <li class="secondary label">Healthcare</li>
-                </ul>
-                <a href="https://www.cambiagrove.com/" class="primary button expanded" target="_blank">Visit website</a>
-              </div>
-            </div>
-            <div class="small-12 medium-6 large-4 cell">
-              <div class="card">
-                <img src="images/technology-association-of-oregon.png" class="thumbnail card-image" alt="Technology Association of Oregon" />
-                <h3 class="card-heading">TAO</h3>
-                <ul class="menu no-bullet">
-                  <li class="secondary label">Association</li>
-                </ul>
-                <a href="http://www.techoregon.org/" class="primary button expanded" target="_blank">Visit website</a>
-              </div>
-            </div>
-            <div class="small-12 medium-6 large-4 cell">
-              <div class="card">
-                <img src="images/bonneville-environmental-foundation.png" class="thumbnail card-image" alt="Bonneville Environmental Foundation"  />
-                <h3 class="card-heading">Linn-Benton Chamber</h3>
-                <ul class="menu no-bullet">
-                  <li class="secondary label">Economic Development</li>
-                </ul>
-                <a href="http://www.b-e-f.org/" class="primary button expanded" target="_blank">Visit website</a>
-              </div>
-            </div>
-            <div class="small-12 medium-6 large-4 cell">
-              <div class="card">
-                <img src="images/survivance.png" class="thumbnail card-image" alt="Survivance" />
-                <h3 class="card-heading">Survivance</h3>
-                <ul class="menu no-bullet">
-                  <li class="secondary label">Gaming</li>
-                </ul>
-                <a href="https://www.cambiagrove.com/" class="primary button expanded" target="_blank">Visit website</a>
-              </div>
-            </div>
-            <div class="small-12 medium-6 large-4 cell">
-              <div class="card">
-                <img src="images/beckon-call.png" class="thumbnail card-image" alt="Beckon Call Windows" />
-                <h3 class="card-heading">Beckon Call Windows </h3>
-                <ul class="menu no-bullet">
-                  <li class="secondary label">Cleaning</li>
-                </ul>
-                <a href="http://www.techoregon.org/" class="primary button expanded" target="_blank">Visit website</a>
-              </div>
-            </div>
-            <div class="small-12 medium-6 large-4 cell">
-              <div class="card">
-                <img src="images/stained-glass-overlay-pdx.png" class="thumbnail card-image" alt="Stained Glass Overlay PDX"  />
-                <h3 class="card-heading">Stained Glass Overlay</h3>
-                <ul class="menu no-bullet">
-                  <li class="secondary label">Home Decor</li>
-                </ul>
-                <a href="http://www.stainedglassoverlay.com//" class="primary button expanded disabled" target="_blank">Visit website</a>
-              </div>
-            </div>
-            <div class="small-12 medium-6 large-4 cell">
-              <div class="card">
-                <img src="images/dorado-sound.png" class="thumbnail card-image" alt="Dorado Sound" />
-                <h3 class="card-heading">Dorado Sound</h3>
-                <ul class="menu no-bullet">
-                  <li class="secondary label">Healthcare</li>
-                </ul>
-                <a href="https://www.doradosound.com/" class="primary button expanded" target="_blank">Visit website</a>
-              </div>
-            </div>
-            <div class="small-12 medium-6 large-4 cell">
-              <div class="card">
-                <img src="images/shilo-rune.png" class="thumbnail card-image" alt="Shilo Rune" />
-                <h3 class="card-heading">Shilo Rune</h3>
-                <ul class="menu no-bullet">
-                  <li class="secondary label">Digital Agency</li>
-                </ul>
-                <a href="http://www.shilorune.com/" class="primary button expanded" target="_blank">Visit website</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
 
     <!-- customized more robert g raleigh modal -->
     <div class="large reveal" id="moreAboutRobertModal" data-reveal>
@@ -3441,6 +2947,520 @@
       </div>
 
     </div><!-- end of more about robert g raleigh section -->
+
+    <!-- custom projects reveal modal -->
+    <div class="large reveal" id="projectsModal" data-reveal>
+
+      <div class="title-bar">
+        <h2 class="title-bar-title">Projects I've Worked On</h2>
+        <div class="title-bar-right">
+          <button class="close-button" data-close aria-label="Close Modal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-x grid-margin-x grid-padding-x">
+          <div class="small-12 medium-6 large-4 cell">
+            <div class="card">
+              <img src="images/iqcu.png" class="thumbnail card-image" alt="iQCU" />
+              <h3 class="card-heading">iQCU</h3>
+              <ul class="menu no-bullet">
+                <li class="secondary label">Enterprise App</li>
+              </ul>
+              <a href="https://www.iqcu.com" class="primary button expanded" target="_blank">Visit website</a>
+            </div>
+          </div>
+          <div class="small-12 medium-6 large-4 cell">
+            <div class="card">
+              <img src="images/the-house-plan-company.png" class="thumbnail card-image" alt="The House Plan Company" />
+              <h3 class="card-heading">The House Plan Company</h3>
+              <ul class="menu no-bullet">
+                <li class="secondary label">Enterprise App</li>
+              </ul>
+              <a href="https://dev.thehouseplancompany.com" class="primary button expanded" target="_blank">Visit website</a>
+            </div>
+          </div>
+          <div class="small-12 medium-6 large-4 cell">
+            <div class="card">
+              <img src="images/bask-media-planner.png" class="thumbnail card-image" alt="BASK Media Planner" />
+              <h3 class="card-heading">BASK Media Planner</h3>
+              <ul class="menu no-bullet">
+                <li class="secondary label">Enterprise App</li>
+              </ul>
+              <a href="https://www.baskdigital.com" class="primary button expanded" target="_blank">Visit website</a>
+            </div>
+          </div>
+          <div class="small-12 medium-6 large-4 cell">
+            <div class="card">
+              <img src="images/collage.png" class="thumbnail card-image" alt="Collage" />
+              <h3 class="card-heading">Collage</h3>
+              <ul class="menu no-bullet">
+                <li class="secondary label">E-Commerce</li>
+              </ul>
+              <a href="http://www.collagepdx.com" class="primary button expanded" target="_blank">Visit website</a>
+            </div>
+          </div>
+          <div class="small-12 medium-6 large-4 cell">
+            <div class="card">
+              <img src="images/epic-people.png" class="thumbnail card-image" alt="EPIC People" />
+              <h3 class="card-heading">EPIC People</h3>
+              <ul class="menu no-bullet">
+                <li class="secondary label">CMS Website</li>
+              </ul>
+              <a href="https://www.epicpeople.org/" class="primary button expanded" target="_blank">Visit website</a>
+            </div>
+          </div>
+          <div class="small-12 medium-6 large-4 cell">
+            <div class="card">
+              <img src="images/willamette-angel-conference.png" class="thumbnail card-image" alt="Willamette Angel Conference" />
+              <h3 class="card-heading">Willamette Angel Conference</h3>
+              <ul class="menu no-bullet">
+                <li class="secondary label">CMS Website</li>
+              </ul>
+              <a href="http://www.willametteconference.com/" class="primary button expanded" target="_blank">Visit website</a>
+            </div>
+          </div>
+          <div class="small-12 medium-6 large-4 cell">
+            <div class="card">
+              <img src="images/associated-designs.png" class="thumbnail card-image" alt="Associated Designs" />
+              <h3 class="card-heading">Associated Designs</h3>
+              <ul class="menu no-bullet">
+                <li class="secondary label">Enterprise App</li>
+              </ul>
+              <a href="http://associateddesigns.com/" class="primary button expanded" target="_blank">Visit website</a>
+            </div>
+          </div>
+          <div class="small-12 medium-6 large-4 cell">
+            <div class="card">
+              <img src="images/cambia-grove.png" class="thumbnail card-image" alt="Cambia Grove" />
+              <h3 class="card-heading">Cambia Grove</h3>
+              <ul class="menu no-bullet">
+                <li class="secondary label">CMS Website</li>
+              </ul>
+              <a href="https://www.cambiagrove.com" class="primary button expanded" target="_blank">Visit website</a>
+            </div>
+          </div>
+          <div class="small-12 medium-6 large-4 cell">
+            <div class="card">
+              <img src="images/willamette-innovators.png" class="thumbnail card-image" alt="Willamette Innovator's" />
+              <h3 class="card-heading">Willamette Innovator's </h3>
+              <ul class="menu no-bullet">
+                <li class="secondary label">CMS Website</li>
+              </ul>
+              <a href="https://www.willametteinnovators.com/" class="primary button expanded" target="_blank">Visit website</a>
+            </div>
+          </div>
+          <div class="small-12 medium-6 large-4 cell">
+            <div class="card">
+              <img src="images/artistic-caststone.png" class="thumbnail card-image" alt="Artistic Caststone" />
+              <h3 class="card-heading">Artistic Caststone</h3>
+              <ul class="menu no-bullet">
+                <li class="secondary label">Enterprise App</li>
+              </ul>
+              <a href="http://artistic-caststone.com/" class="primary button expanded" target="_blank">Visit website</a>
+            </div>
+          </div>
+          <div class="small-12 medium-6 large-4 cell">
+            <div class="card">
+              <img src="images/solar-4-schools.png" class="thumbnail card-image" alt="Solar 4 Schools"  />
+              <h3 class="card-heading">Solar 4 Schools</h3>
+              <ul class="menu no-bullet">
+                <li class="secondary label">Enterprise App</li>
+              </ul>
+              <a href="https://www.solar4rschools.org/" class="primary button expanded" target="_blank">Visit website</a>
+            </div>
+          </div>
+          <div class="small-12 medium-6 large-4 cell">
+            <div class="card">
+              <img src="images/hispanic-metropolitan-chamber.png" class="thumbnail card-image" alt="Hispanic Metropolitan Chamber"  />
+              <h3 class="card-heading">Hispanic Metro Chamber</h3>
+              <ul class="menu no-bullet">
+                <li class="secondary label">Enterprise App</li>
+              </ul>
+              <a href="http://hmccoregon.com" class="primary button expanded" target="_blank">Visit website</a>
+            </div>
+          </div>
+          <div class="small-12 medium-6 large-4 cell">
+            <div class="card">
+              <img src="images/corvallis-chamber-of-commerce.png" class="thumbnail card-image" alt="Corvallis Chamber of Commerce"  />
+              <h3 class="card-heading">Corvallis Chamber</h3>
+              <ul class="menu no-bullet">
+                <li class="secondary label">Enterprise App</li>
+              </ul>
+              <a href="http://www.corvallischamber.com/" class="primary button expanded" target="_blank">Visit website</a>
+            </div>
+          </div>
+          <div class="small-12 medium-6 large-4 cell">
+            <div class="card">
+              <img src="images/proud-ground.png" class="thumbnail card-image" alt="Proud Ground" />
+              <h3 class="card-heading">Proud Ground</h3>
+              <ul class="menu no-bullet">
+                <li class="secondary label">CMS Website</li>
+              </ul>
+              <a href="http://www.proudground.org" class="primary button expanded" target="_blank">Visit website</a>
+            </div>
+          </div>
+          <div class="small-12 medium-6 large-4 cell">
+            <div class="card">
+              <img src="images/david-douglas-school-district.png" class="thumbnail card-image" alt="David Douglas School District" />
+              <h3 class="card-heading">David Douglas SD</h3>
+              <ul class="menu no-bullet">
+                <li class="secondary label">Product Development</li>
+              </ul>
+              <a href="https://www.ddouglas.k12.or.us" class="primary button expanded" target="_blank">Visit website</a>
+            </div>
+          </div>
+          <div class="small-12 medium-6 large-4 cell">
+            <div class="card">
+              <img src="images/red-software.png" class="thumbnail card-image" alt="RED Software"  />
+              <h3 class="card-heading">NW Realty Sign</h3>
+              <ul class="menu no-bullet">
+                <li class="secondary label">Enterprise App</li>
+              </ul>
+              <a href="https://nwrealtysign.com/" class="primary button expanded" target="_blank">Visit website</a>
+            </div>
+          </div>
+          <div class="small-12 medium-6 large-4 cell">
+            <div class="card">
+              <img src="images/dorado-sound.png" class="thumbnail card-image" alt="Dorado Sound" />
+              <h3 class="card-heading">Dorado Sound</h3>
+              <ul class="menu no-bullet">
+                <li class="secondary label">CMS Website</li>
+              </ul>
+              <a href="http://www.doradosound.com" class="primary button expanded" target="_blank">Visit website</a>
+            </div>
+          </div>
+            <div class="small-12 medium-6 large-4 cell">
+            <div class="card">
+              <img src="images/standard-home-inspections.png" class="thumbnail card-image" alt="Standard Home Inspections" />
+              <h3 class="card-heading">Standard Home Inspectors</h3>
+              <ul class="menu no-bullet">
+                <li class="secondary label">Consulting</li>
+              </ul>
+              <a href="http://www.standard-home-inspections.com/" class="primary button expanded" target="_blank">Visit website</a>
+            </div>
+          </div>
+          <div class="small-12 medium-6 large-4 cell">
+            <div class="card">
+              <img src="images/win-expo.png" class="thumbnail card-image" alt="Corvallis Chamber of Commerce"  />
+              <h3 class="card-heading">WIN Expo</h3>
+              <ul class="menu no-bullet">
+                <li class="secondary label">Consulting</li>
+              </ul>
+              <a href="https://www.willametteinnovators.com/event/2017-win-expo-free-admission/" class="primary button expanded" target="_blank">Visit website</a>
+            </div>
+          </div>
+          <div class="small-12 medium-6 large-4 cell">
+            <div class="card">
+              <img src="images/solidcraft-countertops.png" class="thumbnail card-image" alt="Solidcraft Countertops" />
+              <h3 class="card-heading">Solidcraft Countertops</h3>
+              <ul class="menu no-bullet">
+                <li class="secondary label">CMS Website</li>
+              </ul>
+              <a href="http://solidcraftcounters.blogspot.com/" class="primary button expanded" target="_blank">Visit website</a>
+            </div>
+          </div>
+          <div class="small-12 medium-6 large-4 cell">
+            <div class="card">
+              <img src="images/blood-and-bergamot.png" class="thumbnail card-image" alt="Blood and Bergamot" />
+              <h3 class="card-heading">Blood and Bergamot</h3>
+              <ul class="menu no-bullet">
+                <li class="secondary label">Product Development</li>
+              </ul>
+              <a href="http://bloodandbergamot.github.io/" class="primary button expanded" target="_blank">Visit website</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- custom clients reveal modal -->
+    <div class="large reveal" id="clientsModal" data-reveal>
+
+      <div class="title-bar">
+        <h2 class="title-bar-title">Clients I've Worked With</h2>
+        <div class="title-bar-right">
+          <button class="close-button" data-close aria-label="Close Modal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- clients modal section -->
+      <div class="clients">
+        <div class="grid-container">
+          <div class="grid-x grid-margin-x grid-padding-x">
+            <div class="small-12 medium-6 large-4 cell">
+              <div class="card">
+                <img src="images/hello-world-devs.png" class="thumbnail card-image" alt="Hello World Devs" />
+                <h3 class="card-heading">Hello World Devs</h3>
+                <ul class="menu no-bullet">
+                  <li class="secondary label">Software Development</li>
+                </ul>
+                <a href="http://www.helloworlddevs.com" class="primary button expanded" target="_blank">Visit website</a>
+              </div>
+            </div>
+            <div class="small-12 medium-6 large-4 cell">
+              <div class="card">
+                <img src="images/eroi.png" class="thumbnail card-image" alt="eROI" />
+                <h3 class="card-heading">eROI</h3>
+                <ul class="menu no-bullet">
+                  <li class="secondary label">Digital Agency</li>
+                </ul>
+                <a href="http://www.eroi.com" class="primary button expanded" target="_blank">Visit website</a>
+              </div>
+            </div>
+            <div class="small-12 medium-6 large-4 cell">
+              <div class="card">
+                <img src="images/tyson-steele.png" class="thumbnail card-image" alt="Tyson Steele" />
+                <h3 class="card-heading">Tyson Steele</h3>
+                <ul class="menu no-bullet">
+                  <li class="secondary label">Digital Marketing</li>
+                </ul>
+                <a href="http://www.tysonsteele.com" class="primary button expanded" target="_blank">Visit website</a>
+              </div>
+            </div>
+            <div class="small-12 medium-6 large-4 cell">
+              <div class="card">
+                <img src="images/metal-toad.png" class="thumbnail card-image" alt="Metal Toad" />
+                <h3 class="card-heading">Metal Toad</h3>
+                <ul class="menu no-bullet">
+                  <li class="secondary label">Software Engineering</li>
+                </ul>
+                <a href="http://www.metaltoad.com" class="primary button expanded" target="_blank">Visit website</a>
+              </div>
+            </div>
+            <div class="small-12 medium-6 large-4 cell">
+              <div class="card">
+                <img src="images/bask-digital-media.png" class="thumbnail card-image" alt="BASK Digital Media" />
+                <h3 class="card-heading">BASK Digital Media</h3>
+                <ul class="menu no-bullet">
+                  <li class="secondary label">Digital Marketing</li>
+                </ul>
+                <a href="http://www.baskdigital.com" class="primary button expanded" target="_blank">Visit website</a>
+              </div>
+            </div>
+            <div class="small-12 medium-6 large-4 cell">
+              <div class="card">
+                <img src="images/supply.png" class="thumbnail card-image" alt="Supply" />
+                <h3 class="card-heading">Supply</h3>
+                <ul class="menu no-bullet">
+                  <li class="secondary label">Digital Agency</li>
+                </ul>
+                <a href="http://www.workwithsupply.com" class="primary button expanded" target="_blank">Visit website</a>
+              </div>
+            </div>
+            <div class="small-12 medium-6 large-4 cell">
+              <div class="card">
+                <img src="images/david-douglas-school-district.png" class="thumbnail card-image" alt="David Douglas School District" />
+                <h3 class="card-heading">David Douglas SD</h3>
+                <ul class="menu no-bullet">
+                  <li class="secondary label">School District</li>
+                </ul>
+                <a href="https://www.ddouglas.k12.or.us/" class="primary button expanded" target="_blank">Visit website</a>
+              </div>
+            </div>
+            <div class="small-12 medium-6 large-4 cell">
+              <div class="card">
+                <img src="images/collage.png" class="thumbnail card-image" alt="Collage" />
+                <h3 class="card-heading">Collage</h3>
+                <ul class="menu no-bullet">
+                  <li class="secondary label">Arts and Crafts</li>
+                </ul>
+                <a href="http://www.collagepdx.com" class="primary button expanded" target="_blank">Visit website</a>
+              </div>
+            </div>
+            <div class="small-12 medium-6 large-4 cell">
+              <div class="card">
+                <img src="images/hispanic-metropolitan-chamber.png" class="thumbnail card-image" alt="Hispanic Metropolitan Chamber" />
+                <h3 class="card-heading">Hispanic Metro Chamber</h3>
+                <ul class="menu no-bullet">
+                  <li class="secondary label">Association</li>
+                </ul>
+                <a href="http://www.hmccoregon.com/" class="primary button expanded" target="_blank">Visit website</a>
+              </div>
+            </div>
+            <div class="small-12 medium-6 large-4 cell">
+              <div class="card">
+                <img src="images/impact-nw.png" class="thumbnail card-image" alt="Impact NW" />
+                <h3 class="card-heading">Impact NW</h3>
+                <ul class="menu no-bullet">
+                  <li class="secondary label">Nonprofit Agency</li>
+                </ul>
+                <a href="https://www.impactnw.org" class="primary button expanded" target="_blank">Visit website</a>
+              </div>
+            </div>
+            <div class="small-12 medium-6 large-4 cell">
+              <div class="card">
+                <img src="images/iqcu.png" class="thumbnail card-image" alt="iQCU" />
+                <h3 class="card-heading">iQCU</h3>
+                <ul class="menu no-bullet">
+                  <li class="secondary label">Credit Union</li>
+                </ul>
+                <a href="https://www.iqcu.com/" class="primary button expanded" target="_blank">Visit website</a>
+              </div>
+            </div>
+            <div class="small-12 medium-6 large-4 cell">
+              <div class="card">
+                <img src="images/united-way-columbia-willamette.png" class="thumbnail card-image" alt="United Way Columbia Willamette" />
+                <h3 class="card-heading">United Way PDX </h3>
+                <ul class="menu no-bullet">
+                  <li class="secondary label">Nonprofit Agency</li>
+                </ul>
+                <a href="https://www.unitedway-pdx.org/" class="primary button expanded" target="_blank">Visit website</a>
+              </div>
+            </div>
+            <div class="small-12 medium-6 large-4 cell">
+              <div class="card">
+                <img src="images/bonneville-environmental-foundation.png" class="thumbnail card-image" alt="Bonneville Environmental Foundation"  />
+                <h3 class="card-heading">BEF</h3>
+                <ul class="menu no-bullet">
+                  <li class="secondary label">Foundation</li>
+                </ul>
+                <a href="http://www.b-e-f.org/" class="primary button expanded" target="_blank">Visit website</a>
+              </div>
+            </div>
+            <div class="small-12 medium-6 large-4 cell">
+              <div class="card">
+                <img src="images/cambia-grove.png" class="thumbnail card-image" alt="Cambia Grove" />
+                <h3 class="card-heading">Cambia Grove</h3>
+                <ul class="menu no-bullet">
+                  <li class="secondary label">Healthcare</li>
+                </ul>
+                <a href="https://www.cambiagrove.com/" class="primary button expanded" target="_blank">Visit website</a>
+              </div>
+            </div>
+            <div class="small-12 medium-6 large-4 cell">
+              <div class="card">
+                <img src="images/technology-association-of-oregon.png" class="thumbnail card-image" alt="Technology Association of Oregon" />
+                <h3 class="card-heading">TAO</h3>
+                <ul class="menu no-bullet">
+                  <li class="secondary label">Association</li>
+                </ul>
+                <a href="http://www.techoregon.org/" class="primary button expanded" target="_blank">Visit website</a>
+              </div>
+            </div>
+            <div class="small-12 medium-6 large-4 cell">
+              <div class="card">
+                <img src="images/bonneville-environmental-foundation.png" class="thumbnail card-image" alt="Bonneville Environmental Foundation"  />
+                <h3 class="card-heading">Linn-Benton Chamber</h3>
+                <ul class="menu no-bullet">
+                  <li class="secondary label">Economic Development</li>
+                </ul>
+                <a href="http://www.b-e-f.org/" class="primary button expanded" target="_blank">Visit website</a>
+              </div>
+            </div>
+            <div class="small-12 medium-6 large-4 cell">
+              <div class="card">
+                <img src="images/survivance.png" class="thumbnail card-image" alt="Survivance" />
+                <h3 class="card-heading">Survivance</h3>
+                <ul class="menu no-bullet">
+                  <li class="secondary label">Gaming</li>
+                </ul>
+                <a href="https://www.cambiagrove.com/" class="primary button expanded" target="_blank">Visit website</a>
+              </div>
+            </div>
+            <div class="small-12 medium-6 large-4 cell">
+              <div class="card">
+                <img src="images/beckon-call.png" class="thumbnail card-image" alt="Beckon Call Windows" />
+                <h3 class="card-heading">Beckon Call Windows </h3>
+                <ul class="menu no-bullet">
+                  <li class="secondary label">Cleaning</li>
+                </ul>
+                <a href="http://www.techoregon.org/" class="primary button expanded" target="_blank">Visit website</a>
+              </div>
+            </div>
+            <div class="small-12 medium-6 large-4 cell">
+              <div class="card">
+                <img src="images/stained-glass-overlay-pdx.png" class="thumbnail card-image" alt="Stained Glass Overlay PDX"  />
+                <h3 class="card-heading">Stained Glass Overlay</h3>
+                <ul class="menu no-bullet">
+                  <li class="secondary label">Home Decor</li>
+                </ul>
+                <a href="http://www.stainedglassoverlay.com//" class="primary button expanded disabled" target="_blank">Visit website</a>
+              </div>
+            </div>
+            <div class="small-12 medium-6 large-4 cell">
+              <div class="card">
+                <img src="images/dorado-sound.png" class="thumbnail card-image" alt="Dorado Sound" />
+                <h3 class="card-heading">Dorado Sound</h3>
+                <ul class="menu no-bullet">
+                  <li class="secondary label">Healthcare</li>
+                </ul>
+                <a href="https://www.doradosound.com/" class="primary button expanded" target="_blank">Visit website</a>
+              </div>
+            </div>
+            <div class="small-12 medium-6 large-4 cell">
+              <div class="card">
+                <img src="images/shilo-rune.png" class="thumbnail card-image" alt="Shilo Rune" />
+                <h3 class="card-heading">Shilo Rune</h3>
+                <ul class="menu no-bullet">
+                  <li class="secondary label">Digital Agency</li>
+                </ul>
+                <a href="http://www.shilorune.com/" class="primary button expanded" target="_blank">Visit website</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- customized send note modal -->
+    <div class="large reveal" id="sendNote" data-reveal>
+      <div class="title-bar">
+        <div class="title-bar-left">
+
+        </div>
+        <h2 class="title-bar-title">Send Me a Note</h2>
+        <div class="title-bar-right">
+          <button class="close-button" data-close aria-label="Close Modal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-x grid-margin-x grid-padding-x">
+          <div class="large-12 cell">
+            <form id="myform" onsubmit="window.emailjs.sendForm('default_service', 'send_note_form', this); return false;" method="post">
+              <div class="grid-container">
+                <div class="grid-x grid-margin-x grid-padding-x">
+                  <div class="large-12 cell">
+                    <label>Name</label>
+                    <input type="text" name="name" placeholder="Name" />
+                  </div>
+                  <div class="large-12 cell">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="Email Address" />
+                  </div>
+                  <div class="large-12 cell">
+                    <label>Phone</label>
+                    <input type="tel" name="phone" placeholder="xxx-xxx-xxxx" />
+                  </div>
+                  <div class="large-12 cell">
+                    <label>Message</label>
+                    <textarea rows="7" cols="12" name="message" placeholder="Type your message here">
+
+                    </textarea>
+                  </div>
+                  <div class="large-12 cell">
+                    <button class="expanded primary button">
+                      Send note
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- close pusher -->
 
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
