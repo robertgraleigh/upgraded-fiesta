@@ -41,13 +41,15 @@ $contactBarFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-ser
   border-bottom: solid 5px #0066CC;
 }
 
+.super-secret-agent {
+  background-color: #CCCCCC;
+}
+
 section {
   & .section-image {
     margin-top: 20px;
   }
 }
-
-
 
 #project-management-skillset {
   @include margin(null null null null);
@@ -63,15 +65,19 @@ section {
   height: 60vh;
 }
 
+
+
 // maps to the custom about robert section
 .about-robert {
   @include margin(40px null null null);
   @include padding(null nulll null null);
   background-color: #FFFFFF;
   & h2.section-heading {
-    font-size: 54px;
+    font-size: 3.375rem;
   }
+
   & h3.section-subheading {
+    font-size: 3.375rem;
     @include margin(10px null null null);
     @include padding(0px null null null);
   }
@@ -120,149 +126,9 @@ section {
   }
 }
 
-// maps to the custom ideal roles section
-.ideal-roles {
-  @include margin(40px null null null);
-  @include padding(40px null null null);
-}
 
-// maps to the custom skillset section
-.skillset {
-  background-color: #FFFFFF;
-  color: #222222;
-  @include margin(40px null null null);
-  @include padding(null null null null);
-  & .accordion-title {
-    color: #222222;
-    font-family: $headingFontStack;
-    font-size: 21px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  & .accordion-copy {
-    font-family: $copyFontStack;
-    font-size: 18px;
-  }
-  & .accordion-heading {
-    font-family: $headingFontStack;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  & .tabs-title > a {
-    color: #222222;
-    font-family: $cardHeadingFontStack;
-    font-size: 21px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  & .skillset-icon {
-    @include margin(0px null 0px null);
-    @include padding(20px null 0px null);
-    font-size: 54px;
-    color: #0066CC;
-  }
-}
 
-// maps to the custom experience section
-.experience {
-  background-color: #FFFFFF;
-  color: #222222;
-  @include margin(40px null null null);
-  @include padding(null null null null);
-  & .accordion-copy {
-    font-family: $copyFontStack;
-    font-size: 18px;
-  }
-  & .accordion-heading {
-    font-family: $headingFontStack;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  & .accordion-title {
-    color: #222222;
-    font-family: $headingFontStack;
-    font-size: 21px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  & .tabs-title > a {
-    color: #222222;
-    font-family: $cardHeadingFontStack;
-    font-size: 21px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-}
 
-// maps to the custom values section
-.values {
-  @include margin(0px null null null);
-  @include padding(40px null null null);
-}
-
-// maps to the custom services section
-.services {
-  background-color: #FFFFFF;
-  @include margin(40px null null null);
-  @include padding(null null null null);
-}
-
-// maps to the custom clients section
-.clients {
-  background-color: #FFFFFF;
-  @include margin(40px null null null);
-  @include padding(null null null null);
-}
-
-// maps to the custom projects section
-.projects {
-  background-color: #FFFFFF;
-  @include margin(40px null null null);
-  @include padding(null null null null);
-}
-
-// maps to the custom resources section
-.resources {
-  background-color: #FFFFFF;
-  color: #222222;
-  @include margin(40px null null null);
-  @include padding(null null null null);
-  & .accordion-copy {
-    font-family: $copyFontStack;
-    font-size: 18px;
-  }
-  & .accordion-heading {
-    font-family: $headingFontStack;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  & .accordion-title {
-    background-color: #FFFFFF;
-    color: #222222;
-    font-family: $headingFontStack;
-    font-size: 21px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  & .tabs-title > a {
-    color: #222222;
-    font-family: $cardHeadingFontStack;
-    font-size: 21px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  & .accordion-copy a {
-    color: #222222;
-    text-decoration: none;
-  }
-  & .accordion-copy a:hover {
-    color: #222222;
-    text-decoration: underline;
-  }
-}
 
 // maps to the custom blog section
 .blog {

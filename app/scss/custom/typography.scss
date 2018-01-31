@@ -18,7 +18,36 @@ $dark-gray: #222222;
 $headingFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 $descriptionFontStack: 'Merriweather', 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roman', serif;
 
-p {
+.header {
+  font-family: $headingFontStack;
+  font-weight: bold;
+  text-transform: uppercase !important;
+}
+
+h1.heading {
+  font-size: 5.063rem;
+  font-weight: bold;
+  text-transform: uppercase !important;
+}
+
+h2.heading {
+  font-size: 3.375rem;
+  font-weight: bold;
+  text-transform: uppercase !important;
+}
+h3.heading {
+  font-size: 2.25rem;
+  font-weight: bold;
+  text-transform: uppercase !important;
+}
+h4.heading, h5.heading, h6.heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase !important;
+}
+
+p.copy {
+  font-size: 1rem;
   @include margin(10px null null null);
   @include padding(0px null 0px null);
 }

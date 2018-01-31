@@ -70,20 +70,20 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #0066CC,
-  secondary: #666666,
+  primary: #000000,
+  secondary: #333333,
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
 );
 $light-gray: #CCCCCC;
 $medium-gray: #666666;
-$dark-gray: #222222;
+$dark-gray: #333333;
 $black: #000000;
 $white: #FFFFFF;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$body-font-family: 'Merriweather', 'Garamond', 'Times New Roman', serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -131,7 +131,7 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: $body-font-family;
+$header-font-family: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
@@ -235,10 +235,10 @@ $accordion-background: $white;
 $accordion-plusminus: true;
 $accordion-title-font-size: rem-calc(12);
 $accordion-item-color: $primary-color;
-$accordion-item-background-hover: $light-gray;
+$accordion-item-background-hover: $dark-gray;
 $accordion-item-padding: 1.25rem 1rem;
 $accordion-content-background: $white;
-$accordion-content-border: 1px solid $light-gray;
+$accordion-content-border: 1px solid $dark-gray;
 $accordion-content-color: $body-font-color;
 $accordion-content-padding: 1rem;
 
