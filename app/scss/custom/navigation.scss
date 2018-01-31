@@ -18,7 +18,7 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Arial', sans-serif;
   @include margin(null null null null);
   @include padding(15px null 15px null);
   background-color: #FFFFFF;
-  border-bottom: solid 2px #CCCCCC;
+  border-bottom: solid 5px #222222;
   & ul {
     background-color: #FFFFFF;
   }
@@ -38,17 +38,17 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Arial', sans-serif;
   & ul.menu li a:hover {
     color: darken(#222222, 20%);
     & .blue-border {
-      border-bottom: solid 5px #0066CC;
+      border-bottom: solid 5px #3399ff;
     }
     & .grey-border {
-      border-bottom: solid 5px #999999;
+      border-bottom: solid 5px #222222;
     }
   }
   & ul.menu li a:active {
     color: darken(#222222, 20%);
     text-decoration: none;
     & .blue-border {
-      border-bottom: solid 5px #0066CC;
+      border-bottom: solid 5px #3399FF;
     }
   }
   & ul.menu li a.button {

@@ -13,7 +13,7 @@ $heroDescriptionFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roma
 .hero {
   @include margin(null null null null);
   @include padding(60px null 60px null);
-  background-color: #0066CC;
+  background-color: #3399ff;
   color: #FCFCFC;
   & .hero-title {
     @include margin(null null null null);
