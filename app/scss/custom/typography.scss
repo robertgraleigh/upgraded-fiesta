@@ -18,13 +18,14 @@ $dark-gray: #222222;
 $headingFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 $descriptionFontStack: 'Merriweather', 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roman', serif;
 
-.header {
+.heading {
   font-family: $headingFontStack;
   font-weight: bold;
   text-transform: uppercase !important;
 }
 
 h1.heading {
+  font-family: $headingFontStack;
   font-size: 5.063rem;
   font-weight: bold;
   text-transform: uppercase !important;
@@ -32,17 +33,20 @@ h1.heading {
 }
 
 h2.heading {
+  font-family: $headingFontStack;
   font-size: 3.375rem;
   font-weight: bold;
   text-transform: uppercase !important;
-  margin-bottom: 40px;  
+  margin-bottom: 40px;
 }
 h3.heading {
+  font-family: $headingFontStack;
   font-size: 2.25rem;
   font-weight: bold;
   text-transform: uppercase !important;
 }
 h4.heading, h5.heading, h6.heading {
+  font-family: $headingFontStack;
   font-size: 1.5rem;
   font-weight: bold;
   text-transform: uppercase !important;
