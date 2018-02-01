@@ -115,6 +115,20 @@ $breakpoints: (
 $print-breakpoint: large;
 $breakpoint-classes: (small medium large xlarge xxlarge);
 
+.no-js {
+  @include breakpoint(small only) {
+    .top-bar {
+      display: none;
+    }
+  }
+
+  @include breakpoint(medium) {
+    .title-bar {
+      display: none;
+    }
+  }
+}
+
 // 3. The Grid
 // -----------
 

@@ -21,12 +21,6 @@ $labelFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   height: 90%;
 }
 
-section {
-  & .section-image {
-    margin-top: 20px;
-  }
-}
-
 // maps to the custom about robert section
 section.about-robert {
   @include margin(40px null null null);
