@@ -17,36 +17,20 @@ $cardDescriptionFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roma
 $contactBarFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 $labelFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 
-.hero {
-  & .hero-icon {
-    color: #999999;
-  }
-
-}
-
-.callout {
-  border: solid 2px #CCCCCC;
-}
-
-.orbit {
-  margin-top: 20px;
-}
-
-.label {
-  font-family: $labelFontStack;
-  font-weight: bold;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
-
-.blue-border {
-  border-bottom: solid 5px #3399FF;
+#sendNote {
+  height: 90%;
 }
 
 section {
   & .section-image {
     margin-top: 20px;
   }
+}
+
+// maps to the custom about robert section
+section.about-robert {
+  @include margin(40px null null null);
+  @include padding(null nulll null null);
 }
 
 section.how-we-work {
@@ -59,126 +43,13 @@ section.products {
   @include padding(60px null 60px null);
 }
 
-.callout-quote {
-  font-family: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-  font-size: 2.0rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.full-time-pm-example.callout {
-  background-image: url('http://fillmurray.com/g/655/540');
-  display: block;
-  background-size: cover;
-}
-
-.part-time-pm-example.callout {
-  background-image: url('http://fillmurray.com/g/600/650');
-}
-
-.full-time-janitor-example.callout {
-  background-image: url('http://fillmurray.com/g/600/650');
-}
-
-.part-time-janitor-example {
-  background-image: url('http://fillmurray.com/g/600/650');
-}
-
-.super-secret-agent-example {
-  background-image: url('http://fillmurray.com/g/600/650');
-}
-
-// maps to the custom about robert section
-.about-robert {
-  @include margin(40px null null null);
-  @include padding(null nulll null null);
-  background-color: #FFFFFF;
-  & h2.section-heading {
-    font-size: 3.375rem;
-  }
-
-  & h3.section-subheading {
-    font-size: 3.375rem;
-    @include margin(10px null null null);
-    @include padding(0px null null null);
-  }
-  & .lead {
-    font-size: 30px;
-  }
-}
-
-// maps to the custom rober's story section
-.roberts-story {
+section.services {
   @include margin(null null null null);
-  @include padding(40px null null null);
-  background-color: #FFFFFF;
-  & h2.section-heading {
-    font-size: 54px;
-  }
-  & h3.section-subheading {
-    @include margin(10px null null null);
-    @include padding(0px null null null);
-  }
-  & .button-group {
-    & .secondary.button {
-      font-size: 18px;
-      font-weight: bold;
-    }
-  }
-}
-
-// maps to the custom rober's story section
-.roberts-story {
-  @include margin(null null null null);
-  @include padding(40px null null null);
-  background-color: #FFFFFF;
-  & h2.section-heading {
-    font-size: 54px;
-  }
-  & h3.section-subheading {
-    @include margin(10px null null null);
-    @include padding(0px null null null);
-  }
-  & .button-group {
-    & .secondary.button {
-      font-size: 18px;
-      font-weight: bold;
-    }
-  }
-}
-
-
-
-
-
-// maps to the custom blog section
-.blog {
-  background-color: #FFFFFF;
-  @include margin(null null null null);
-  @include padding(null null null null);
-}
-
-// maps to the custom contact us section
-.contact-us {
-  @include padding(40px null 40px null);
-  @include padding(null null null null);
-  & h2.section-heading {
-    @include margin(null null null null);
-    padding-bottom: 20px;
-  }
-  & img {
-    @include margin(null null null null);
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
-  }
-  & .menu a{
-    @include margin(null null null null);
-    @include padding(0px);
-  }
+  @include padding(60px null 60px null);
 }
 
 // maps to the custom get started section
-.get-started {
+section.get-started {
   @include margin(40px null 40px null);
   @include padding(null null null null);
   & .card {
@@ -194,7 +65,7 @@ section.products {
 }
 
 // maps to the custom contact bar class
-.contact-bar {
+section.contact-bar {
   @include margin(0px null 0px null);
   @include padding(10px null 10px null);
   border-top: solid 2px #CCCCCC;
@@ -217,6 +88,60 @@ section.products {
   }
 }
 
-#sendNote {
-  height: 90%;
+// maps to the custom blog section
+section.blog {
+  background-color: #FFFFFF;
+  @include margin(null null null null);
+  @include padding(null null null null);
+}
+
+// maps to the custom contact us section
+section.contact-us {
+  @include padding(40px null 40px null);
+  @include padding(null null null null);
+  & h2.section-heading {
+    @include margin(null null null null);
+    padding-bottom: 20px;
+  }
+  & img {
+    @include margin(null null null null);
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+  }
+  & .menu a{
+    @include margin(null null null null);
+    @include padding(0px);
+  }
+}
+
+.hero {
+  & .hero-icon {
+    color: #999999;
+  }
+}
+
+.callout {
+  border: solid 2px #CCCCCC;
+}
+
+.orbit {
+  margin-top: 20px;
+}
+
+.label {
+  font-family: $labelFontStack;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.blue-border {
+  border-bottom: solid 5px #3399FF;
+}
+
+.callout-quote {
+  font-family: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-size: 2.0rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
