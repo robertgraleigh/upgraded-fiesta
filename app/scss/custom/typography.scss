@@ -20,14 +20,14 @@ $descriptionFontStack: 'Merriweather', 'EB Garamond', 'Garamond', 'Georgia', 'Ti
 
 .heading {
   font-family: $headingFontStack;
-  font-weight: bold;
+  font-weight: bold !important;
   text-transform: uppercase !important;
 }
 
 h1.heading {
   font-family: $headingFontStack;
   font-size: 5.063rem;
-  font-weight: bold;
+  font-weight: bold !important;
   text-transform: uppercase !important;
   margin-bottom: 20px;
 }
@@ -35,20 +35,20 @@ h1.heading {
 h2.heading {
   font-family: $headingFontStack;
   font-size: 3.375rem;
-  font-weight: bold;
+  font-weight: bold !important;
   text-transform: uppercase !important;
   margin-bottom: 40px;
 }
 h3.heading {
   font-family: $headingFontStack;
   font-size: 2.25rem;
-  font-weight: bold;
+  font-weight: bold !important;
   text-transform: uppercase !important;
 }
 h4.heading, h5.heading, h6.heading {
   font-family: $headingFontStack;
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: bold !important;
   text-transform: uppercase !important;
 }
 
