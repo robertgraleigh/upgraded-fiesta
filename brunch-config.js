@@ -30,6 +30,15 @@ exports.plugins = {
       precision: 8
     }
   },
+  imagemin: {
+    plugins: {
+      'imagemin-gifsicle': true,
+      'imagemin-jpegtran': true,
+      'imagemin-optipng': true,
+      'imagemin-svgo': true
+    },
+    pattern: /\.(gif|jpg|jpeg|jpe|jif|jfif|jfi|png|svg|svgz)$/
+  },
   copycat: {
     verbose: true,
     onlyChanged: true,
