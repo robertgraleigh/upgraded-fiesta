@@ -9,7 +9,7 @@
 }
 
 // custom navigation variables
-$navigationFontStack: 'Oswald', 'Helvetica Neue', 'Arial', sans-serif;
+$navigationFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 
 // PRIMARY NAV COMPONENT
 
@@ -159,6 +159,12 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Arial', sans-serif;
   }
 }
 
+.position-left .menu a {
+  text-transform: uppercase;
+  font-family: $navigationFontStack;
+  font-weight: bold;
+}
+
 // position right
 .position-right {
   background-color: #222222;
@@ -172,8 +178,16 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Arial', sans-serif;
   & .menu a:active{
     text-decoration: underline;
   }
-  & .menu .menu-text {
+  & .menu li.menu-text {
     color: #FFFFFF;
+    font-family: $navigationFontStack;
+    font-weight: bold;
     text-transform: uppercase;
   }
+}
+
+.position-right .menu a {
+  text-transform: uppercase;
+  font-family: $navigationFontStack;
+  font-weight: bold;
 }

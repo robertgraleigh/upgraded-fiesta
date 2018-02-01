@@ -15,6 +15,7 @@ $copyFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roman', serif;
 $cardHeadingFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 $cardDescriptionFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roman', serif;
 $contactBarFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$labelFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 
 .hero {
   & .hero-icon {
@@ -32,17 +33,14 @@ $contactBarFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-ser
 }
 
 .label {
+  font-family: $labelFontStack;
   font-weight: bold;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
 
 .blue-border {
-  border-bottom: solid 5px #0066CC;
-}
-
-.super-secret-agent {
-  background-color: #CCCCCC;
+  border-bottom: solid 5px #3399FF;
 }
 
 section {
@@ -51,18 +49,14 @@ section {
   }
 }
 
-#project-management-skillset {
+section.how-we-work {
   @include margin(null null null null);
   @include padding(60px null 60px null);
-  background-color: #666666;
-  height: 60vh;
 }
 
-#frontend-development-skillset {
+section.products {
   @include margin(null null null null);
   @include padding(60px null 60px null);
-  background-color: #666666;
-  height: 60vh;
 }
 
 .callout-quote {
