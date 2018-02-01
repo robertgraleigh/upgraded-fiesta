@@ -21,6 +21,10 @@ $labelFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   height: 90%;
 }
 
+.pattern {
+  background-image: url('images/assets/images/sayagata.png');
+}
+
 // maps to the custom about robert section
 section.about-robert {
   @include margin(40px null null null);
