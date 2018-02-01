@@ -1,6 +1,6 @@
 // filename: heros.scss
-$heroHeadingFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-$heroDescriptionFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roman', serif;
+$headingFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$descriptionFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roman', serif;
 
 @mixin margin($margin) {
   padding: $margin;
@@ -15,11 +15,11 @@ $heroDescriptionFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roma
   @include padding(60px null 60px null);
   background-color: #222222;
   color: #FCFCFC;
-  & .hero-title {
+  & h1.heading {
     @include margin(null null null null);
     @include padding(0px null 0px null);
-    font-family: $heroHeadingFontStack;
-    font-size: 60px;
+    font-family: $headingFontStack;
+    font-size: 5.063rem;
     text-transform: uppercase;
     & .dark-gray-border {
       border-bottom: solid 5px #999999;
@@ -34,15 +34,14 @@ $heroDescriptionFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roma
   & .hero-subheading {
     @include margin(null null null null);
     @include padding(0px null 0px null);
+    font-family: $descriptionFontStack;
     font-size: 16px;
     text-transform: uppercase;
   }
-  & .hero-description {
-    font-size: 16px;
-  }
-  & .lead {
+  & p.lead {
     @include margin(null null null null);
     @include padding(40px null 0px null);
+    font-family: $descriptionFontStack;
     font-size: 30px;
   }
   & .hero-icon {
@@ -69,12 +68,4 @@ $heroDescriptionFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roma
     color: #FFFFFF;
     border: solid 2px #FFFFFF;
   }
-}
-
-.single-column-hero {
-  @include margin(null null null null);
-  @include padding(80px null 80px null);
-  background-color: #000000;
-  color: #999999;
-  height: 60vh;
 }
