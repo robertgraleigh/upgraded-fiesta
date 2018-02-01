@@ -39,6 +39,14 @@ exports.plugins = {
     },
     pattern: /\.(gif|jpg|jpeg|jpe|jif|jfif|jfi|png|svg|svgz)$/
   },
+  uglify: {
+    mangle: true,
+    compress: {
+      global_defs: {
+        DEBUG: false
+      }
+    }
+  },
   copycat: {
     verbose: true,
     onlyChanged: true,
