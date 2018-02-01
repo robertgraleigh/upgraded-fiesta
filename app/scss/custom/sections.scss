@@ -65,7 +65,34 @@ section {
   height: 60vh;
 }
 
+.callout-quote {
+  font-family: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-size: 2.0rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 
+.full-time-pm-example.callout {
+  background-image: url('http://fillmurray.com/g/655/540');
+  display: block;
+  background-size: cover;
+}
+
+.part-time-pm-example.callout {
+  background-image: url('http://fillmurray.com/g/600/650');
+}
+
+.full-time-janitor-example.callout {
+  background-image: url('http://fillmurray.com/g/600/650');
+}
+
+.part-time-janitor-example {
+  background-image: url('http://fillmurray.com/g/600/650');
+}
+
+.super-secret-agent-example {
+  background-image: url('http://fillmurray.com/g/600/650');
+}
 
 // maps to the custom about robert section
 .about-robert {
