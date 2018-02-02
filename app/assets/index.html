@@ -1523,9 +1523,9 @@
               <p class="card-description text-center">
                 Let's grab a fresh cup of coffee, and discuss your new project or opportunity.
               </p>
-              <a href="mailto:robert@robertgraleigh.com?subject=Let's Get Coffee" class="primary expanded button">
-                Let's Get Coffee
-              </a>
+              <button type="button" class="primary button" data-toggle="getCoffee">
+                Schedule a Time
+              </button>
             </div>
           </div>
           <div class="small-12 large-4 cell">
@@ -3475,6 +3475,32 @@
 
     </div>
 
+    <!-- customized get coffee modal -->
+    <div class="medium reveal" id="getCoffee" data-reveal>
+      <div class="title-bar">
+        <div class="title-bar-left">
+
+        </div>
+        <h2 class="title-bar-title">Let's Get Coffee</h2>
+        <div class="title-bar-right">
+          <button class="close-button" data-close aria-label="Close Modal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-x grid-margin-x grid-padding-x">
+          <div class="large-12 cell">
+            <div class="cognito">
+              <script src="https://services.cognitoforms.com/s/XNyxVSo1ckOAdueWy2w8wQ"></script>
+              <script>Cognito.load("forms", { id: "2" });</script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- customized send note modal -->
     <div class="medium reveal" id="sendNote" data-reveal>
       <div class="title-bar">
@@ -3493,8 +3519,8 @@
         <div class="grid-x grid-margin-x grid-padding-x">
           <div class="large-12 cell">
             <div class="cognito">
-              <script src="https://services.cognitoforms.com/s/XNyxVSo1ckOAdueWy2w8wQ"></script>
-              <script>Cognito.load("forms", { id: "1" });</script>
+            <script src="https://services.cognitoforms.com/s/XNyxVSo1ckOAdueWy2w8wQ"></script>
+            <script>Cognito.load("forms", { id: "1" });</script>
             </div>
           </div>
         </div>
@@ -3502,13 +3528,6 @@
     </div>
 
   </div><!-- close pusher -->
-
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-       (function(){
-          emailjs.init("user_0Dw6WvmgkOZtq21DUlGGk");
-       })();
-    </script>
 
   </body>
 </html>
