@@ -33,23 +33,38 @@ section.about-robert {
 
 section.how-we-work {
   @include margin(null null null null);
-  @include padding(60px null 60px null);
+  @include padding(20px null 20px null);
 }
 
 section.products {
   @include margin(null null null null);
-  @include padding(60px null 60px null);
+  @include padding(20px null 20px null);
 }
 
 section.services {
   @include margin(null null null null);
-  @include padding(60px null 60px null);
+  @include padding(20px null 20px null);
+}
+
+section.clients {
+  @include margin(null null null null);
+  @include padding(20px null 20px null);
+}
+
+section.projects {
+  @include margin(null null null null);
+  @include padding(20px null 20px null);
+}
+
+section.contact {
+  @include margin(null null null null);
+  @include padding(20px null 20px null);
 }
 
 // maps to the custom get started section
 section.get-started {
-  @include margin(40px null 40px null);
-  @include padding(null null null null);
+  @include margin(null null null null);
+  @include padding(20px null 20px null);
   & .card {
     background-color: #FFFFFF;
     border: solid 2px #CCCCCC;
@@ -120,10 +135,6 @@ section.contact-us {
 
 .callout {
   border: solid 2px #CCCCCC;
-}
-
-.orbit {
-  margin-top: 20px;
 }
 
 .label {
