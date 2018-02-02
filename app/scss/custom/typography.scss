@@ -17,6 +17,10 @@ $dark-gray: #222222;
 $headingFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 $descriptionFontStack: 'Merriweather', 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roman', serif;
 
+html {
+  font-size: 16px;
+}
+
 .heading {
   font-family: $headingFontStack;
   font-weight: bold !important;
@@ -52,7 +56,7 @@ h4.heading, h5.heading, h6.heading {
 }
 
 p.copy {
-  font-size: 1rem;
+  font-size: 16px;
   @include margin(10px null null null);
   @include padding(0px null 0px null);
 }
