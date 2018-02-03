@@ -1,5 +1,5 @@
 // import the necessary google fonts
-@import url('https://fonts.googleapis.com/css?family=Merriweather|Oswald');
+@import url('https://fonts.googleapis.com/css?family=Raleway|Oswald');
 
 @mixin margin($margin) {
   padding: $margin;
@@ -15,7 +15,7 @@ $blue: #0066CC;
 $dark-gray: #222222;
 
 $headingFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-$descriptionFontStack: 'Merriweather', 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roman', serif;
+$copyFontStack: 'Raleway', 'Garamond', 'Georgia', 'Times New Roman', serif;
 
 html {
   font-size: 16px;
@@ -56,7 +56,10 @@ h4.heading, h5.heading, h6.heading {
 }
 
 p.copy {
-  font-size: 16px;
+  color: #333333;
+  font-family: $copyFontStack;
+  font-size: 1rem;
+  font-weight: 600;
   @include margin(10px null null null);
   @include padding(0px null 0px null);
 }
@@ -71,28 +74,10 @@ p.copy {
   text-transform: uppercase;
 }
 
-.section-subheading {
-  @include margin(null null null null);
-  @include padding(10px null 0px null);
-  font-family: $headingFontStack;
-  font-size: 45px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.section-description {
-  @include margin(null null null null);
-  @include padding(10px null 0px null);
-  font-family: $descriptionFontStack;
-  font-size: 1rem;
-  font-weight: normal;
-  text-transform: none;
-}
-
 .lead {
-  font-family: $descriptionFontStack;
+  font-family: $copyFontStack;
   font-size: 30px;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: none;
 }
 

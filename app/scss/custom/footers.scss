@@ -1,7 +1,7 @@
 // filename: footers.scss
 // custom footer variables
-$footerHeadingFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-$footerDescriptionFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roman', serif;
+$headingFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$copyFontStack: 'Raleway', 'Garamond', 'Georgia', 'Times New Roman', serif;
 
 // custom mixins
 @mixin margin($margin) {
@@ -12,7 +12,7 @@ $footerDescriptionFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Ro
   padding: $padding;
 }
 
-.footer-heading {
+.heading {
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -23,36 +23,38 @@ $footerDescriptionFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Ro
   @include padding(0px null 0px null);
   background-color: #222222;
   color: #CCCCCC;
-  & h1.footer-heading {
-    font-family: $footerHeadingFontStack;
+  & h1.heading {
+    font-family: $headingFontStack;
     font-size: 54px;
   }
-  & h2.footer-heading {
-    font-family: $footerHeadingFontStack;
+  & h2.heading {
+    font-family: $headingFontStack;
     font-size: 36px;
   }
-  & h3.footer-heading {
+  & h3.heading {
     @include margin(null null null null);
     @include padding(5px null 0px null);
-    font-family: $footerHeadingFontStack;
+    font-family: $headingFontStack;
     font-size: 24px;
   }
-  & h4.footer-heading {
-    font-family: $footerHeadingFontStack;
+  & h4.heading {
+    font-family: $headingFontStack;
     font-size: 21px;
   }
-  & p.footer-description {
-    font-family: $footerDescriptionFontStack;
-    font-size: 18px;
+  & p.copy {
+    color: #CCCCCC;
+    font-family: $copyFontStack;
+    font-size: 1rem;
     @include margin(null null null null);
     @include padding(0px null 0px null);
   }
   & a {
-    font-size: 16px;
+    font-family: $copyFontStack;
+    font-size: 1rem;
     font-weight: bold;
   }
   & a:hover {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     text-transform: underline;
   }
@@ -63,11 +65,11 @@ $footerDescriptionFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Ro
     @include margin(0px null null null);
     @include padding(20px null 0px null);
     color: darken(#FCFCFC, 0%);
-    font-family: $footerDescriptionFontStack;
+    font-family: $copyFontStack;
     font-size: 16px;
     & a {
-      font-family: $footerHeadingFontStack;
-      font-size: 16px;
+      font-family: $headingFontStack;
+      font-size: 1rem;
     }
   }
 }
