@@ -1,10 +1,11 @@
 // filename: main.scss
 
 // import scss files into app
-@import 'foundation';
 @import 'settings/settings';
+@import 'util/util';
+@import 'foundation';
 @include foundation-everything(true);
-@import "font-awesome";
-@import 'app/scss/custom/custom';
 @import 'motion-ui';
 @include motion-ui-transitions;
+@import "font-awesome";
+@import 'app/scss/custom/custom';

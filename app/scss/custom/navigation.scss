@@ -61,7 +61,7 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-ser
 // SECONDARY NAV COMPONENT /////////////////////////////////////////////////////
 
 // maps to the secondary navigation class
-#secondary-nav {
+.secondary-nav {
   @include margin(null null null null);
   @include padding(40px null 0px null);
   background-color: #222222;
