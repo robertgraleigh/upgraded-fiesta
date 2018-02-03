@@ -79,7 +79,7 @@ section.get-started {
 
 // maps to the custom contact bar class
 section.contact-bar {
-  @include margin(0px null 0px null);
+  @include margin(null null null null);
   @include padding(10px null 10px null);
   border-top: solid 2px #CCCCCC;
   border-bottom: solid 2px #CCCCCC;
@@ -124,12 +124,6 @@ section.contact-us {
   & .menu a{
     @include margin(null null null null);
     @include padding(0px);
-  }
-}
-
-.hero {
-  & .hero-icon {
-    color: #999999;
   }
 }
 
