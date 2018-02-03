@@ -2,7 +2,7 @@
 
 // import scss files into app
 @import 'foundation';
-@import 'app/scss/foundation/settings.scss';
+@import 'settings/settings';
 @include foundation-everything(true);
 @import "font-awesome";
 @import 'app/scss/custom/custom';

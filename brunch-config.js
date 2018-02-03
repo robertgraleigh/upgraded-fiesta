@@ -23,7 +23,6 @@ exports.plugins = {
     options: {
       includePaths: [
         'node_modules/foundation-sites/scss',
-        'app/scss/foundation/settings',
         'node_modules/motion-ui/src',
         'node_modules/font-awesome/scss',
         'app/scss/custom'
