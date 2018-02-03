@@ -12,12 +12,7 @@ $copyFontStack: 'Source Serif Pro', 'Garamond', 'Georgia', 'Times New Roman', se
   padding: $padding;
 }
 
-.heading {
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-// maps to the custom primary footer secton
+// maps to the custom primary footer section
 .primary-footer {
   @include margin(null null null null);
   @include padding(0px null 0px null);
@@ -25,25 +20,27 @@ $copyFontStack: 'Source Serif Pro', 'Garamond', 'Georgia', 'Times New Roman', se
   color: #CCCCCC;
   & h1.heading {
     font-family: $headingFontStack;
-    font-size: 54px;
+    font-size: 4.236em;
   }
   & h2.heading {
     font-family: $headingFontStack;
-    font-size: 36px;
+    font-size: 2.618em;
   }
   & h3.heading {
     @include margin(null null null null);
     @include padding(5px null 0px null);
     font-family: $headingFontStack;
-    font-size: 24px;
+    font-size: 1.618em;
+
   }
   & h4.heading {
     font-family: $headingFontStack;
-    font-size: 21px;
+    font-size: 1.618em;
   }
   & p.copy {
     color: #CCCCCC;
     font-family: $copyFontStack;
+    font-size: 16px;
     font-size: 1rem;
     @include margin(null null null null);
     @include padding(0px null 0px null);
@@ -61,15 +58,13 @@ $copyFontStack: 'Source Serif Pro', 'Garamond', 'Georgia', 'Times New Roman', se
   & img {
     margin-top: 15px;
   }
-  & .copyright-notice {
+  & p.copyright-notice {
     @include margin(0px null null null);
     @include padding(20px null 0px null);
-    color: darken(#FCFCFC, 0%);
+    color: #CCCCCC;
     font-family: $copyFontStack;
     font-size: 16px;
-    & a {
-      font-family: $copyFontStack;
-      font-size: 1rem;
-    }
+    font-size: 1rem;
+    font-weight: bold;
   }
 }
