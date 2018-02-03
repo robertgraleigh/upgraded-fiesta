@@ -1,7 +1,7 @@
 // filename: footers.scss
 // custom footer variables
 $headingFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-$copyFontStack: 'Raleway', 'Garamond', 'Georgia', 'Times New Roman', serif;
+$copyFontStack: 'Source Serif Pro', 'Garamond', 'Georgia', 'Times New Roman', serif;
 
 // custom mixins
 @mixin margin($margin) {
@@ -68,7 +68,7 @@ $copyFontStack: 'Raleway', 'Garamond', 'Georgia', 'Times New Roman', serif;
     font-family: $copyFontStack;
     font-size: 16px;
     & a {
-      font-family: $headingFontStack;
+      font-family: $copyFontStack;
       font-size: 1rem;
     }
   }

@@ -1,5 +1,5 @@
 // import the necessary google fonts
-@import url('https://fonts.googleapis.com/css?family=Raleway|Oswald');
+@import url('https://fonts.googleapis.com/css?family=Oswald|Source+Serif+Pro');
 
 @mixin margin($margin) {
   padding: $margin;
@@ -15,7 +15,7 @@ $blue: #0066CC;
 $dark-gray: #222222;
 
 $headingFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-$copyFontStack: 'Raleway', 'Garamond', 'Georgia', 'Times New Roman', serif;
+$copyFontStack: 'Source Serif Pro', 'Garamond', 'Georgia', 'Times New Roman', serif;
 
 html {
   font-size: 16px;
