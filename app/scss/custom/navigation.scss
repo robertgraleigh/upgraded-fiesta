@@ -74,6 +74,7 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-ser
 
 .title-bar {
   background-color: #FFFFFF;
+  border-bottom: solid 5px #3399FF;
   & .menu-icon {
     color: #222222 !important;
   }
@@ -120,7 +121,6 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-ser
 
 .title-bar {
   border-bottom: solid 2px #CCCCCC;
-  height: 100px;
   @include margin(null null null null);
   @include padding(25px 5px 5px 5px);
   & .title-bar-title {

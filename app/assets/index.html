@@ -78,6 +78,28 @@
       </ul>
     </div><!-- closes the off canvas left menu -------------------------------->
 
+    <!-- data sticky container holds the sticky title bar menu ------------------>
+    <div data-sticky-container>
+      <div data-sticky data-options="marginTop:0;">
+
+        <div class="title-bar" data-responsive-toggle="primary-nav" data-hide-for="large">
+          <div class="title-bar-left">
+            <button type="button" class="primary button" data-toggle="leftOverlay">
+              <i class="fa fa-bars"></i> Menu
+            </button>
+          </div>
+          <div class="title-bar-title">
+            Home
+          </div>
+          <div class="title-bar-right">
+            <button type="button" class="secondary button" data-toggle="rightOverlay">
+              <i class="fa fa-comments"></i> Contact
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- off canvas right overlay menu----------------------------------------->
     <div class="off-canvas position-right" id="rightOverlay" data-off-canvas data-transition="overlap">
       <ul class="vertical menu">
@@ -127,29 +149,6 @@
     </div><!-- closes the off canvas right menu ------------------------------->
 
   </div><!-- closes the off canvas wrapper ------------------------------------>
-
-
-  <!-- data sticky container holds the sticky title bar menu ------------------>
-  <div data-sticky-container>
-    <div data-sticky data-options="marginTop:0;">
-
-      <div class="title-bar" data-responsive-toggle="primary-nav" data-hide-for="large">
-        <div class="title-bar-left">
-          <button type="button" class="primary button" data-toggle="leftOverlay">
-            <i class="fa fa-bars"></i> Menu
-          </button>
-        </div>
-        <div class="title-bar-title">
-          Home
-        </div>
-        <div class="title-bar-right">
-          <button type="button" class="secondary button" data-toggle="rightOverlay">
-            <i class="fa fa-comments"></i> Contact
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- off canvas content class holds the page contents  ---------------------->
   <div class="off-canvas-content" data-off-canvas-content>
@@ -235,7 +234,7 @@
       </div><!-- end of sticky container ---------------------------------------->
 
       <!-- custom hero class -->
-      <header class="primary-header">
+      <header class="hero">
         <div class="grid-container">
           <div class="grid-x grid-margin-x">
             <div class="small-12 medium-12 large-12 cell">
