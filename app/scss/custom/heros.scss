@@ -10,6 +10,8 @@ $copyFontStack: 'Source Sans Pro', 'Garamond', 'Georgia', 'Times New Roman', ser
   padding: $padding;
 }
 
+ // @include breakpoint(medium only) { };
+
 .hero {
   @include margin(null null null null);
   @include padding(60px null 60px null);
