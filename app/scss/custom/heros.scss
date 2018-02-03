@@ -1,6 +1,6 @@
 // filename: heros.scss
 $headingFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-$descriptionFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roman', serif;
+$copyFontStack: 'Source Sans Pro', 'Garamond', 'Georgia', 'Times New Roman', serif;
 
 @mixin margin($margin) {
   padding: $margin;
@@ -19,30 +19,20 @@ $descriptionFontStack: 'EB Garamond', 'Garamond', 'Georgia', 'Times New Roman', 
     @include margin(null null null null);
     @include padding(0px null 0px null);
     font-family: $headingFontStack;
-    font-size: 5.063rem;
+    font-size: 4.236em;
     text-transform: uppercase;
     & .dark-gray-border {
       border-bottom: solid 5px #3399FF;
     }
   }
-  & .hero-heading {
-    @include margin(null null null null);
-    @include padding(0px null 0px null);
-    font-size: 45px;
-    text-transform: uppercase;
-  }
-  & .hero-subheading {
-    @include margin(null null null null);
-    @include padding(0px null 0px null);
-    font-family: $descriptionFontStack;
-    font-size: 16px;
-    text-transform: uppercase;
-  }
   & p.lead {
     @include margin(null null null null);
     @include padding(40px null 0px null);
-    font-family: $descriptionFontStack;
+    font-family: $copyFontStack;
     font-size: 30px;
+  }
+  & p.copy {
+    font-family: $copyFontStack;
   }
   & .header-arrow-icon {
     @include margin(null null null null);

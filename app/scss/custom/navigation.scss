@@ -11,7 +11,7 @@
 // custom navigation variables
 $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 
-// PRIMARY NAV COMPONENT
+// PRIMARY NAV COMPONENT ///////////////////////////////////////////////////////
 
 // maps to the custom primary navigation
 #primary-nav {
@@ -23,10 +23,10 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-ser
     background-color: #FFFFFF;
   }
   & ul.menu li a {
-    font-family: $navigationFontStack;
-    font-size: 21px;
-    font-weight: bold;
     color: #222222;
+    font-family: $navigationFontStack;
+    font-size: 1.618em;
+    font-weight: bold;
     text-transform: uppercase;
     & .blue-border {
       border-bottom: solid 5px #FFFFFF;
@@ -58,6 +58,34 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-ser
   }
 }
 
+// SECONDARY NAV COMPONENT /////////////////////////////////////////////////////
+
+// maps to the secondary navigation class
+#secondary-nav {
+  @include margin(null null null null);
+  @include padding(40px null 0px null);
+  background-color: #222222;
+  border-top: solid 5px #3399FF;
+  border-bottom: none;
+  & ul li a {
+    color: #CCCCCC;
+    font-family: $navigationFontStack;
+    font-size: 21px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    & .blue-border {
+      border-bottom: none;
+    }
+  }
+  & ul li a:hover {
+    text-decoration: none;
+    & .blue-border {
+      border-bottom: solid 5px #3399FF;
+    }
+  }
+}
+
 #contact-info-bar {
   background-color: #222222;
   & .menu {
@@ -83,33 +111,6 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-ser
   }
 }
 
-// SECONDARY NAV COMPONENT
-
-// maps to the secondary navigation class
-#secondary-nav {
-  @include margin(null null null null);
-  @include padding(40px null 0px null);
-  background-color: #222222;
-  border-top: solid 5px #3399FF;
-  & ul li a {
-    color: #CCCCCC;
-    font-family: $navigationFontStack;
-    font-size: 21px;
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: uppercase;
-    & .blue-border {
-      border-bottom: none;
-    }
-  }
-  & ul li a:hover {
-    text-decoration: none;
-    & .blue-border {
-      border-bottom: solid 5px #3399FF;
-    }
-  }
-}
-
 .offset {
   display: block;
   height: 115px; /*same height as header*/
@@ -117,7 +118,7 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-ser
   visibility: hidden;
 }
 
-// TITLE BAR COMPONENT
+// TITLE BAR COMPONENT /////////////////////////////////////////////////////////
 
 .title-bar {
   border-bottom: solid 2px #CCCCCC;
@@ -142,9 +143,9 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-ser
   }
 }
 
-// OFF CANVAS NAV COMPONENT
+// OFF CANVAS NAV COMPONENT ////////////////////////////////////////////////////
 
-// position left
+// position left off canvas menu
 .position-left {
   background-color: #FFFFFF;
   & .menu a {
@@ -165,7 +166,7 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-ser
   font-weight: bold;
 }
 
-// position right
+// position right off canvas menu
 .position-right {
   background-color: #222222;
   & .menu a {
