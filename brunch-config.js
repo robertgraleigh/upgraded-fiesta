@@ -27,6 +27,7 @@ exports.plugins = {
         'node_modules/font-awesome/scss',
         'app/scss/custom'
       ],
+      allowCache: false,
       precision: 8
     }
   },
