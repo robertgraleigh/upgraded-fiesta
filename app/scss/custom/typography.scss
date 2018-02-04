@@ -55,6 +55,13 @@ h4.heading, h5.heading, h6.heading {
   text-transform: uppercase !important;
 }
 
+p.lead {
+  font-family: $copyFontStack;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: none;
+}
+
 p.copy {
   color: #333333;
   font-family: $copyFontStack;
@@ -62,6 +69,11 @@ p.copy {
   font-weight: 600;
   @include margin(10px null null null);
   @include padding(0px null 0px null);
+}
+
+li.copy {
+  font-family: $copyFontStack;
+  font-weight: 600;
 }
 
 .section-heading {
@@ -72,13 +84,6 @@ p.copy {
   font-size: 54px;
   font-weight: bold;
   text-transform: uppercase;
-}
-
-.lead {
-  font-family: $copyFontStack;
-  font-size: 30px;
-  font-weight: 500;
-  text-transform: none;
 }
 
 .grey-border {
