@@ -1,7 +1,10 @@
 // filename: heros.scss
+
+// TYPOGRAPHY VARIABLES
 $headingFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 $copyFontStack: 'Source Sans Pro', 'Garamond', 'Georgia', 'Times New Roman', serif;
 
+// TYPOGRAPHY MIXINS
 @mixin margin($margin) {
   padding: $margin;
 }
@@ -10,8 +13,7 @@ $copyFontStack: 'Source Sans Pro', 'Garamond', 'Georgia', 'Times New Roman', ser
   padding: $padding;
 }
 
- // @include breakpoint(medium only) { };
-
+// CUSTOM HERO CLASS SECTION
 .hero {
   @include margin(null null null null);
   @include padding(60px null 60px null);
@@ -23,15 +25,15 @@ $copyFontStack: 'Source Sans Pro', 'Garamond', 'Georgia', 'Times New Roman', ser
     font-family: $headingFontStack;
     font-size: 4.236em;
     text-transform: uppercase;
-    & .dark-gray-border {
+  }
+  & .dark-gray-border {
       border-bottom: solid 5px #3399FF;
-    }
   }
   & p.lead {
     @include margin(null null null null);
     @include padding(40px null 0px null);
     font-family: $copyFontStack;
-    font-size: 30px;
+    font-size: 1.25em;
   }
   & p.copy {
     font-family: $copyFontStack;
