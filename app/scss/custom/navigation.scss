@@ -100,15 +100,8 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-ser
   }
 }
 
-.title-bar {
-  background-color: #FFFFFF;
-  border-bottom: solid 5px #3399FF;
-  & .menu-icon {
-    color: #222222 !important;
-  }
-  & .title-bar-title {
-    color: #222222;
-  }
+.sticky {
+    z-index: 5;
 }
 
 .offset {
@@ -121,10 +114,13 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-ser
 // TITLE BAR COMPONENT /////////////////////////////////////////////////////////
 
 .title-bar {
+  background-color: #FFFFFF;
+  border-bottom: solid 5px #3399FF;
   border-bottom: solid 2px #CCCCCC;
   @include margin(null null null null);
   @include padding(25px 5px 5px 5px);
   & .title-bar-title {
+    color: #222222;
     @media screen and (min-width: 40em) {
       font-size: 32px !important;
     }
@@ -140,6 +136,9 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-ser
   }
   & button {
     font-weight: bold;
+  }
+  & .menu-icon {
+    color: #222222 !important;
   }
 }
 
