@@ -23,7 +23,6 @@ footer {
   background-color: #222222;
   border: none;
   color: #CCCCCC;
-
   & h1.heading {
     font-family: $headingFontStack;
     font-size: 4.236em;
@@ -37,7 +36,6 @@ footer {
     @include padding(5px null 0px null);
     font-family: $headingFontStack;
     font-size: 1.618em;
-
   }
   & h4.heading {
     font-family: $headingFontStack;
@@ -53,7 +51,7 @@ footer {
   }
   & a {
     font-family: $copyFontStack;
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: bold;
   }
   & a:hover {
