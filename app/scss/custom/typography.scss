@@ -19,9 +19,11 @@ $copyFontStack: 'Source Serif Pro', 'Garamond', 'Georgia', 'Times New Roman', se
 
 html {
   font-size: 16px;
+  font-size: 1em;
 }
 
 body {
+  font-size: 16px;
   font-size: 1em;
 }
 
@@ -31,14 +33,8 @@ body {
   text-transform: uppercase !important;
 }
 
-.section-heading {
-  color: #222222;
-  @include margin(null null 20px null);
-  @include padding(0px null 0px null);
-  font-family: $headingFontStack;
-  font-size: 54px;
-  font-weight: bold;
-  text-transform: uppercase;
+.blue-border {
+  border-bottom: solid 5px #3399FF;
 }
 
 .grey-border {
@@ -49,149 +45,6 @@ body {
   font-weight: bold;
 }
 
-/*------------------------------------------
-  Responsive Grid Media Queries - 1280, 1024, 768, 480
-   1280-1024   - desktop (default grid)
-   1024-768    - tablet landscape
-   768-480     - tablet
-   480-less    - phone landscape & smaller
---------------------------------------------*/
-@media all and (min-width: 1024px) and (max-width: 1280px) {
-
-  h1.heading {
-    font-family: $headingFontStack;
-    font-size: 5.063rem;
-    font-weight: bold !important;
-    text-transform: uppercase !important;
-    margin-bottom: 20px;
-  }
-
-  h2.heading {
-    font-family: $headingFontStack;
-    font-size: 3.375rem;
-    font-weight: bold !important;
-    text-transform: uppercase !important;
-    margin-bottom: 40px;
-  }
-  h3.heading {
-    font-family: $headingFontStack;
-    font-size: 2.25rem;
-    font-weight: bold !important;
-    text-transform: uppercase !important;
-  }
-  h4.heading, h5.heading, h6.heading {
-    font-family: $headingFontStack;
-    font-size: 1.5rem;
-    font-weight: bold !important;
-    text-transform: uppercase !important;
-  }
-
-  p.lead {
-    font-family: $copyFontStack;
-    font-size: 1.25em;
-    font-weight: 600;
-    text-transform: none;
-  }
-
-  p.copy {
-    color: #333333;
-    font-family: $copyFontStack;
-    font-size: 1rem;
-    font-weight: 600;
-    @include margin(10px null null null);
-    @include padding(0px null 0px null);
-  }
-
-  li.copy {
-    font-family: $copyFontStack;
-    font-weight: 600;
-  }
+.uppercase {
+  text-transform: uppercase;
 }
-
-@media all and (min-width: 1024px) and (max-width: 1440px) {
-
-    h1.heading {
-      font-size: 6.854em;
-    }
-    h2.heading {
-      font-size: 4.236em;
-    }
-    h3.heading {
-      font-size: 2.618em;
-    }
-    h4.heading {
-      font-size: 1.61875em;
-    }
-    h5.heading {
-      font-size: 1.61875em;
-    }
-    h6.heading {
-      font-size: 1.61875em;
-    }
-  }
-
-@media all and (min-width: 768px) and (max-width: 1024px) {
-
-    h1.heading {
-      font-size: 4.854em;
-    }
-    h2.heading {
-      font-size: 3.236em;
-    }
-    h3.heading {
-      font-size: 2.618em;
-    }
-    h4.heading {
-      font-size: 1.61875em;
-    }
-    h5.heading {
-      font-size: 1.61875em;
-    }
-    h6.heading {
-      font-size: 1.61875em;
-    }
-  }
-
-@media all and (min-width: 480px) and (max-width: 768px) {
-
-    h1.heading {
-      font-size: 6.854em;
-    }
-    h2.heading {
-      font-size: 4.236em;
-    }
-    h3.heading {
-      font-size: 2.618em;
-    }
-    h4.heading {
-      font-size: 1.61875em;
-    }
-    h5.heading {
-      font-size: 1.61875em;
-    }
-    h6.heading {
-      font-size: 1.61875em;
-    }
-  }
-
-@media all and (max-width: 480px) {
-
-    h1.heading {
-      font-size: 3.157em;
-    }
-    h2.heading {
-      font-size: 2.369em;
-    }
-    h3.heading {
-      font-size: 1.777em;
-    }
-    h4.heading {
-      font-size: 1.33em;
-    }
-    h5.heading {
-      font-size: 1.33em;
-    }
-    h6.heading {
-      font-size: 1.33em;
-    }
-  }

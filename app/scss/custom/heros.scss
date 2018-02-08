@@ -22,9 +22,6 @@ $copyFontStack: 'Source Sans Pro', 'Garamond', 'Georgia', 'Times New Roman', ser
     font-family: $headingFontStack;
     text-transform: uppercase;
   }
-  & .dark-gray-border {
-    border-bottom: solid 5px #3399FF;
-  }
   & p.lead {
     font-family: $copyFontStack;
   }

@@ -27,7 +27,10 @@ $labelFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 
 // maps to the custom about robert section
 section.about-robert {
-  
+  padding-top: 20px;
+  & h2.heading {
+    padding-bottom: 10px;
+  }
 }
 
 section.how-we-work {
@@ -121,20 +124,16 @@ section.contact-us {
   border: solid 2px #CCCCCC;
 }
 
-.label {
-  font-family: $labelFontStack;
-  font-weight: bold;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
-
-.blue-border {
-  border-bottom: solid 5px #3399FF;
-}
-
 .callout-quote {
   font-family: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-size: 2.0rem;
   font-weight: bold;
+  text-transform: uppercase;
+}
+
+.label {
+  font-family: $labelFontStack;
+  font-weight: bold;
+  margin-bottom: 10px;
   text-transform: uppercase;
 }
