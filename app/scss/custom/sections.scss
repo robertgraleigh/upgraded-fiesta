@@ -34,26 +34,45 @@ section.about-robert {
 }
 
 section.how-we-work {
-
+  padding-top: 20px;
+  & h2.heading {
+    padding-bottom: 10px;
+  }
 }
 
 section.products {
-
+  padding-top: 20px;
+  & h2.heading {
+    padding-bottom: 10px;
+  }
 }
 
 section.services {
-
+  padding-top: 20px;
+  & h2.heading {
+    padding-bottom: 10px;
+  }
 }
 
 section.clients {
-
+  padding-top: 20px;
+  & h2.heading {
+    padding-bottom: 10px;
+  }
 }
 
 section.projects {
-
+  padding-top: 20px;
+  & h2.heading {
+    padding-bottom: 10px;
+  }
 }
 
 section.contact-us {
+  padding-top: 20px;
+  & h2.heading {
+    padding-bottom: 10px;
+  }
 }
 
 // maps to the custom get started section
