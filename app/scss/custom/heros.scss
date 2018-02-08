@@ -18,7 +18,7 @@ $copyFontStack: 'Source Sans Pro', 'Garamond', 'Georgia', 'Times New Roman', ser
   @include margin(null null null null);
   @include padding(60px null 60px null);
   background-color: #222222;
-  color: #FCFCFC;
+  color: #CCCCCC;
   & h1.heading {
     @include margin(null null null null);
     @include padding(0px null 0px null);
@@ -27,7 +27,7 @@ $copyFontStack: 'Source Sans Pro', 'Garamond', 'Georgia', 'Times New Roman', ser
     text-transform: uppercase;
   }
   & .dark-gray-border {
-      border-bottom: solid 5px #3399FF;
+    border-bottom: solid 5px #3399FF;
   }
   & p.lead {
     @include margin(null null null null);
@@ -50,11 +50,8 @@ $copyFontStack: 'Source Sans Pro', 'Garamond', 'Georgia', 'Times New Roman', ser
   & a:hover {
     color: darken(#999999, 10%);
   }
-  & .white .hollow .button {
-    color: #FFFFFF;
-  }
-  & a.white.hollow.button {
-    color: #FFFFFF;
-    border: solid 2px #FFFFFF;
+  & .white.hollow.button {
+    color: #CCCCCC !important;
+    border: solid 2px #CCCCCC;
   }
 }
