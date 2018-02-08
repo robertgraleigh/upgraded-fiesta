@@ -18,8 +18,6 @@ footer {
 
 // maps to the custom primary footer section
 .primary-footer {
-  @include margin(null null null null);
-  @include padding(0px null 0px null);
   background-color: #222222;
   border: none;
   color: #CCCCCC;

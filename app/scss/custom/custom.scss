@@ -1,12 +1,11 @@
 // filename: custom.scss
 
 // import custom scss files
+@import 'buttons';
+@import 'cards';
+@import 'footers';
 @import 'heros';
 @import 'navigation';
-@import 'typography';
 @import 'sections';
-@import 'footers';
-@import 'cards';
 @import 'tabs';
-@import 'buttons';
-@import 'media';
+@import 'typography';

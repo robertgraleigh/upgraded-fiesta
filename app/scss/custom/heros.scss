@@ -15,25 +15,18 @@ $copyFontStack: 'Source Sans Pro', 'Garamond', 'Georgia', 'Times New Roman', ser
 
 // CUSTOM HERO CLASS SECTION
 .hero {
-  @include margin(null null null null);
-  @include padding(60px null 60px null);
+  padding-top: 20px;
   background-color: #222222;
   color: #CCCCCC;
   & h1.heading {
-    @include margin(null null null null);
-    @include padding(0px null 0px null);
     font-family: $headingFontStack;
-    font-size: 4.236em;
     text-transform: uppercase;
   }
   & .dark-gray-border {
     border-bottom: solid 5px #3399FF;
   }
   & p.lead {
-    @include margin(null null null null);
-    @include padding(40px null 0px null);
     font-family: $copyFontStack;
-    font-size: 1.25em;
   }
   & p.copy {
     font-family: $copyFontStack;
