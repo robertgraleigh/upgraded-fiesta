@@ -68,6 +68,13 @@ section.projects {
   }
 }
 
+section.services {
+  padding-top: 20px;
+  & h2.heading {
+    padding-bottom: 10px;
+  }
+}
+
 section.contact-us {
   padding-top: 20px;
   & h2.heading {
