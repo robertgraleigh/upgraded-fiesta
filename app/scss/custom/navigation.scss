@@ -37,7 +37,7 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-ser
   }
   & ul.menu li a:hover {
     color: darken(#222222, 20%);
-    text-decoration: underline;    
+    text-decoration: none;    
     & .blue-border {
       border-bottom: solid 5px #3399ff;
     }
