@@ -11,7 +11,7 @@
 // custom navigation variables
 $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 
-// PRIMARY NAV COMPONENT ///////////////////////////////////////////////////////
+/* PRIMARY NAV COMPONENT //////////////////////////////////////////////////// */
 
 // maps to the custom primary navigation
 #primary-nav {
@@ -37,7 +37,7 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-ser
   }
   & ul.menu li a:hover {
     color: darken(#222222, 20%);
-    text-decoration: none;    
+    text-decoration: none;
     & .blue-border {
       border-bottom: solid 5px #3399ff;
     }
@@ -47,7 +47,7 @@ $navigationFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-ser
   }
   & ul.menu li a:active {
     color: darken(#222222, 20%);
-    text-decoration: underline;
+    text-decoration: none;
     & .blue-border {
       border-bottom: solid 5px #3399FF;
     }
