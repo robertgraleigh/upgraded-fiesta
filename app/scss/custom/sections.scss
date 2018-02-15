@@ -25,63 +25,6 @@ $labelFontStack: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   background-image: url('images/assets/images/sayagata.png');
 }
 
-// maps to the custom about robert section
-section.about-robert {
-  padding-top: 20px;
-  & h2.heading {
-    padding-bottom: 10px;
-  }
-}
-
-section.how-we-work {
-  padding-top: 20px;
-  & h2.heading {
-    padding-bottom: 10px;
-  }
-}
-
-section.products {
-  padding-top: 20px;
-  & h2.heading {
-    padding-bottom: 10px;
-  }
-}
-
-section.services {
-  padding-top: 20px;
-  & h2.heading {
-    padding-bottom: 10px;
-  }
-}
-
-section.clients {
-  padding-top: 20px;
-  & h2.heading {
-    padding-bottom: 10px;
-  }
-}
-
-section.projects {
-  padding-top: 20px;
-  & h2.heading {
-    padding-bottom: 10px;
-  }
-}
-
-section.services {
-  padding-top: 20px;
-  & h2.heading {
-    padding-bottom: 10px;
-  }
-}
-
-section.contact-us {
-  padding-top: 20px;
-  & h2.heading {
-    padding-bottom: 10px;
-  }
-}
-
 // maps to the custom get started section
 section.get-started {
   & .card {
@@ -98,8 +41,6 @@ section.get-started {
 
 // maps to the custom contact bar class
 section.contact-bar {
-  @include margin(null null null null);
-  @include padding(10px null 10px null);
   border-top: solid 2px #CCCCCC;
   border-bottom: solid 2px #CCCCCC;
   background-image: url("images/sayagata.png");
@@ -120,23 +61,9 @@ section.contact-bar {
   }
 }
 
-// maps to the custom blog section
-section.blog {
-  background-color: #FFFFFF;
-  @include margin(null null null null);
-  @include padding(null null null null);
-}
-
 // maps to the custom contact us section
 section.contact-us {
-  @include padding(40px null 40px null);
-  @include padding(null null null null);
-  & h2.section-heading {
-    @include margin(null null null null);
-    padding-bottom: 20px;
-  }
   & img {
-    @include margin(null null null null);
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
   }
