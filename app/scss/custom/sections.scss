@@ -44,6 +44,9 @@ section.section-action {
   border-top: solid 2px #CCCCCC;
   border-bottom: solid 2px #CCCCCC;
   background-image: url("images/sayagata.png");
+  & .heading {
+    margin-top: 20px;
+  }
   & .button {
     font-family: $contactBarFontStack;
     font-weight: bold;
