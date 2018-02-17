@@ -40,7 +40,7 @@ section.get-started {
 }
 
 // maps to the custom contact bar class
-section.contact-bar {
+section.section-action {
   border-top: solid 2px #CCCCCC;
   border-bottom: solid 2px #CCCCCC;
   background-image: url("images/sayagata.png");
@@ -51,14 +51,10 @@ section.contact-bar {
     text-transform: uppercase;
     margin-top: 20px;
   }
-  & .contact-bar-heading {
-    color: #222222;
-    margin-top: 15px;
-    font-family: $contactBarFontStack;
-    font-size: 45px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
+}
+
+section.section-heading {
+  background-image: url('https://placehold.it/1280/670/670');
 }
 
 // maps to the custom contact us section
@@ -75,6 +71,10 @@ section.contact-us {
 
 .callout {
   border: solid 2px #CCCCCC;
+}
+
+.section-divider {
+  background-color: #3366FF;
 }
 
 .callout-quote {
