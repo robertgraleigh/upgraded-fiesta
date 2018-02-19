@@ -1,8 +1,8 @@
 // filename: main.scss
 
 // import scss files into app
-@import 'app/scss/custom/custom';
 @import 'settings/settings';
+@import 'app/scss/custom/custom';
 @import 'util/util';
 @import 'foundation';
 @include foundation-everything(true);

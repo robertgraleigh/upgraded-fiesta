@@ -14,13 +14,6 @@ exports.files = {
   }
 };
 
-// export the initiazize script to the end of the app js file
-exports.modules = {
-  autoRequire: {
-    'js/app.js': ['initialize']
-  }
-};
-
 // module exports for babel, generated sass, and brunch plugins
 exports.plugins = {
   babel: {

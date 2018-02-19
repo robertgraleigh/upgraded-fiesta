@@ -23,8 +23,13 @@ html {
 }
 
 body {
+  font-family: $copyFontStack;
   font-size: 16px;
   font-size: 1em;
+}
+
+p {
+  font-family: $copyFontStack;
 }
 
 .heading {
